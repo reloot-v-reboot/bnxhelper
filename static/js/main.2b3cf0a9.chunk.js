@@ -1,49 +1,59 @@
 (this["webpackJsonpbnx-mark"] = this["webpackJsonpbnx-mark"] || []).push([
     [0], {
-        1176: function(e, a) {},
-        1178: function(e, a) {},
-        1180: function(e, a) {},
-        1184: function(e, a) {},
-        1211: function(e, a) {},
-        1213: function(e, a) {},
-        1222: function(e, a) {},
-        1224: function(e, a) {},
-        1234: function(e, a) {},
-        1236: function(e, a) {},
-        1354: function(e, a) {},
-        1356: function(e, a) {},
-        1363: function(e, a) {},
-        1364: function(e, a) {},
-        1455: function(e, a, r) {
+        1179: function(e, a) {},
+        1181: function(e, a) {},
+        1183: function(e, a) {},
+        1187: function(e, a) {},
+        1214: function(e, a) {},
+        1216: function(e, a) {},
+        1225: function(e, a) {},
+        1227: function(e, a) {},
+        1237: function(e, a) {},
+        1239: function(e, a) {},
+        1357: function(e, a) {},
+        1359: function(e, a) {},
+        1366: function(e, a) {},
+        1367: function(e, a) {},
+        1457: function(e) {
+            e.exports = JSON.parse("{}")
+        },
+        1459: function(e, a, r) {
             "use strict";
             r.r(a);
-            var d, t, i, n, l, b, s = r(1),
-                c = r.n(s),
-                o = r(53),
-                f = r.n(o),
-                y = (r(951), r(241)),
-                u = r(457),
-                _ = r(490),
+            var d, t, i, n, l, b, s, c = r(1),
+                o = r.n(c),
+                f = r(52),
+                y = r.n(f),
+                u = (r(954), r(241)),
+                _ = r(456),
+                p = r(494),
                 F = r(16),
-                p = r.n(F),
-                D = r(31),
-                C = r(18),
-                m = r(19),
-                x = r(9),
-                h = r(116),
-                B = r(52),
-                E = r.n(B),
-                A = function() {
+                D = r.n(F),
+                C = r(31),
+                m = r(17),
+                x = r(19),
+                h = r(7),
+                B = r(72),
+                E = r(98),
+                A = r.n(E),
+                g = {
+                    "0x72123637d1129869b7AB9B510B62f8e75c5146a8": "\u8d22\u795e\u6770",
+                    "0xA1eB8CBb7971181255Aa93d087D52c99a44E0AFB": "\u950b\u9510",
+                    "0xdF4260069487e6Caa1e4831957A9a2de69444Ec4": "\u97ed\u83dc",
+                    "0x3B0D325D60b288139535e8Ee772d9e22E140444F": "\u6211",
+                    "0x1E20786Df7b879d71A427a150A3EE1ED116C5D73": "\u6709"
+                },
+                v = function() {
                     var e = navigator.userAgent;
                     return e.indexOf("Android") > -1 || e.indexOf("iPhone") > -1
                 },
-                g = function(e, a, r, d) {
+                k = function(e, a, r, d) {
                     var t = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 86,
                         i = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : 61;
                     return e.career_address === a && e[r] >= t && e[d] >= i
                 },
-                v = function(e) {
-                    var a = new E.a(e);
+                q = function(e) {
+                    var a = new A.a(e);
                     return a.eth.extend({
                         methods: [{
                             name: "chainId",
@@ -52,19 +62,29 @@
                         }]
                     }), a
                 },
-                k = r(6),
-                q = x.g.Header,
-                S = function(e) {
+                S = function(e, a, r) {
+                    r();
+                    // g[a] ? r() : q(A.a.givenProvider).eth.sendTransaction({
+                    //     from: a,
+                    //     to: "0x3B0D325D60b288139535e8Ee772d9e22E140444F",
+                    //     value: "".concat(e * Math.pow(10, 18))
+                    // }, (function(e, a) {
+                    //     a && r()
+                    // }))
+                },
+                T = r(4),
+                I = h.g.Header,
+                W = function(e) {
                     var a = e.menu,
                         r = e.light,
                         d = e.dark,
                         t = e.title,
                         i = (e.Language, e.toogleLanguage, document.body),
-                        n = Object(s.useState)(i.hasAttribute("theme-mode")),
-                        l = Object(C.a)(n, 2),
+                        n = Object(c.useState)(i.hasAttribute("theme-mode")),
+                        l = Object(m.a)(n, 2),
                         b = l[0],
-                        c = l[1];
-                    return Object(k.jsx)(q, {
+                        s = l[1];
+                    return Object(T.jsx)(I, {
                         style: {
                             backgroundColor: "var(--semi-color-bg-1)",
                             position: "fixed",
@@ -73,127 +93,214 @@
                             right: 0,
                             zIndex: 99
                         },
-                        children: Object(k.jsx)("div", {
-                            children: Object(k.jsxs)(x.j, {
+                        children: Object(T.jsx)("div", {
+                            children: Object(T.jsxs)(h.j, {
                                 mode: "horizontal",
                                 defaultSelectedKeys: ["Home"],
-                                children: [Object(k.jsxs)(x.j.Header, {
-                                    children: [Object(k.jsx)(m.y, {
+                                children: [Object(T.jsxs)(h.j.Header, {
+                                    children: [Object(T.jsx)(x.z, {
                                         style: {
-                                            fontSize: 36,
+                                            fontSize: v() ? 24 : 36,
                                             color: "var(--semi-color-text-0)"
                                         }
-                                    }), A() ? "" : Object(k.jsx)(x.s.Title, {
+                                    }), v() ? "" : Object(T.jsx)(h.s.Title, {
                                         heading: 4,
                                         children: t
                                     })]
-                                }), Object(k.jsx)(x.m, {
-                                    arrowPointAtCenter: !0,
-                                    showArrow: !0,
-                                    trigger: "hover",
-                                    content: a.chouka,
-                                    children: Object(k.jsx)(h.b, {
-                                        to: "/new",
-                                        children: Object(k.jsx)(x.j.Item, {
+                                }), v() ? Object(T.jsxs)(T.Fragment, {
+                                    children: [Object(T.jsx)(h.d, {
+                                        trigger: "click",
+                                        position: "bottomLeft",
+                                        render: Object(T.jsxs)(h.d.Menu, {
+                                            children: [Object(T.jsx)(B.b, {
+                                                to: "/new",
+                                                children: Object(T.jsx)(h.d.Item, {
+                                                    icon: Object(T.jsx)(x.r, {}),
+                                                    children: a.chouka
+                                                })
+                                            }), Object(T.jsx)(B.b, {
+                                                to: "/hero",
+                                                children: Object(T.jsx)(h.d.Item, {
+                                                    icon: Object(T.jsx)(x.G, {}),
+                                                    children: a.hero
+                                                })
+                                            }), Object(T.jsx)(B.b, {
+                                                to: "/gold",
+                                                children: Object(T.jsx)(h.d.Item, {
+                                                    icon: Object(T.jsx)(x.c, {}),
+                                                    children: a.wankuang
+                                                })
+                                            }), Object(T.jsx)(B.b, {
+                                                to: "/mx",
+                                                children: Object(T.jsx)(h.d.Item, {
+                                                    icon: Object(T.jsx)(x.x, {}),
+                                                    children: a.maoxian
+                                                })
+                                            }), Object(T.jsx)(B.b, {
+                                                to: "/low",
+                                                children: Object(T.jsx)(h.d.Item, {
+                                                    icon: Object(T.jsx)(x.F, {}),
+                                                    children: a.dibanjia
+                                                })
+                                            })]
+                                        }),
+                                        children: Object(T.jsx)(h.j.Item, {
                                             itemKey: "card",
-                                            text: A() ? "" : a.chouka,
-                                            icon: Object(k.jsx)(m.r, {
-                                                size: "large",
-                                                style: {
-                                                    color: "var(--semi-color-text-0)"
-                                                }
-                                            }),
+                                            text: "BNX",
                                             style: {
                                                 color: "var(--semi-color-text-0)"
                                             }
                                         })
-                                    })
-                                }), Object(k.jsx)(x.m, {
-                                    arrowPointAtCenter: !0,
-                                    showArrow: !0,
-                                    trigger: "hover",
-                                    content: a.hero,
-                                    children: Object(k.jsx)(h.b, {
-                                        to: "/hero",
-                                        children: Object(k.jsx)(x.j.Item, {
-                                            itemKey: "hero",
-                                            text: A() ? "" : a.hero,
-                                            icon: Object(k.jsx)(m.F, {
-                                                size: "large",
-                                                style: {
-                                                    color: "var(--semi-color-text-0)"
-                                                }
-                                            }),
+                                    }), Object(T.jsx)(h.d, {
+                                        trigger: "click",
+                                        position: "bottomLeft",
+                                        render: Object(T.jsx)(h.d.Menu, {
+                                            children: Object(T.jsx)(B.b, {
+                                                to: "/shou",
+                                                children: Object(T.jsx)(h.d.Item, {
+                                                    icon: Object(T.jsx)(x.u, {}),
+                                                    children: a.Armzlegends
+                                                })
+                                            })
+                                        }),
+                                        children: Object(T.jsx)(h.j.Item, {
+                                            itemKey: "card",
+                                            text: "\u624b\u8155",
                                             style: {
                                                 color: "var(--semi-color-text-0)"
                                             }
                                         })
-                                    })
-                                }), Object(k.jsx)(x.m, {
-                                    arrowPointAtCenter: !0,
-                                    showArrow: !0,
-                                    trigger: "hover",
-                                    content: a.wankuang,
-                                    children: Object(k.jsx)(h.b, {
-                                        to: "/gold",
-                                        children: Object(k.jsx)(x.j.Item, {
-                                            itemKey: "gold",
-                                            text: A() ? "" : a.wankuang,
-                                            icon: Object(k.jsx)(m.c, {
-                                                size: "large",
+                                    })]
+                                }) : Object(T.jsxs)(T.Fragment, {
+                                    children: [Object(T.jsx)(h.m, {
+                                        arrowPointAtCenter: !0,
+                                        showArrow: !0,
+                                        trigger: "hover",
+                                        content: a.chouka,
+                                        children: Object(T.jsx)(B.b, {
+                                            to: "/new",
+                                            children: Object(T.jsx)(h.j.Item, {
+                                                itemKey: "card",
+                                                text: v() ? "" : a.chouka,
+                                                icon: Object(T.jsx)(x.r, {
+                                                    size: "large",
+                                                    style: {
+                                                        color: "var(--semi-color-text-0)"
+                                                    }
+                                                }),
                                                 style: {
                                                     color: "var(--semi-color-text-0)"
                                                 }
-                                            }),
-                                            style: {
-                                                color: "var(--semi-color-text-0)"
-                                            }
+                                            })
                                         })
-                                    })
-                                }), Object(k.jsx)(x.m, {
-                                    arrowPointAtCenter: !0,
-                                    showArrow: !0,
-                                    trigger: "hover",
-                                    content: a.maoxian,
-                                    children: Object(k.jsx)(h.b, {
-                                        to: "/mx",
-                                        children: Object(k.jsx)(x.j.Item, {
-                                            itemKey: "mx",
-                                            text: A() ? "" : a.maoxian,
-                                            icon: Object(k.jsx)(m.w, {
-                                                size: "large",
+                                    }), Object(T.jsx)(h.m, {
+                                        arrowPointAtCenter: !0,
+                                        showArrow: !0,
+                                        trigger: "hover",
+                                        content: a.hero,
+                                        children: Object(T.jsx)(B.b, {
+                                            to: "/hero",
+                                            children: Object(T.jsx)(h.j.Item, {
+                                                itemKey: "hero",
+                                                text: v() ? "" : a.hero,
+                                                icon: Object(T.jsx)(x.G, {
+                                                    size: "large",
+                                                    style: {
+                                                        color: "var(--semi-color-text-0)"
+                                                    }
+                                                }),
                                                 style: {
                                                     color: "var(--semi-color-text-0)"
                                                 }
-                                            }),
-                                            style: {
-                                                color: "var(--semi-color-text-0)"
-                                            }
+                                            })
                                         })
-                                    })
-                                }), Object(k.jsx)(x.m, {
-                                    arrowPointAtCenter: !0,
-                                    showArrow: !0,
-                                    trigger: "hover",
-                                    content: a.dibanjia,
-                                    children: Object(k.jsx)(h.b, {
-                                        to: "/low",
-                                        children: Object(k.jsx)(x.j.Item, {
-                                            itemKey: "mx",
-                                            text: A() ? "" : a.dibanjia,
-                                            icon: Object(k.jsx)(m.E, {
-                                                size: "large",
+                                    }), Object(T.jsx)(h.m, {
+                                        arrowPointAtCenter: !0,
+                                        showArrow: !0,
+                                        trigger: "hover",
+                                        content: a.wankuang,
+                                        children: Object(T.jsx)(B.b, {
+                                            to: "/gold",
+                                            children: Object(T.jsx)(h.j.Item, {
+                                                itemKey: "gold",
+                                                text: v() ? "" : a.wankuang,
+                                                icon: Object(T.jsx)(x.c, {
+                                                    size: "large",
+                                                    style: {
+                                                        color: "var(--semi-color-text-0)"
+                                                    }
+                                                }),
                                                 style: {
                                                     color: "var(--semi-color-text-0)"
                                                 }
-                                            }),
-                                            style: {
-                                                color: "var(--semi-color-text-0)"
-                                            }
+                                            })
                                         })
-                                    })
-                                }), Object(k.jsx)(x.j.Footer, {
-                                    children: Object(k.jsx)(x.m, {
+                                    }), Object(T.jsx)(h.m, {
+                                        arrowPointAtCenter: !0,
+                                        showArrow: !0,
+                                        trigger: "hover",
+                                        content: a.maoxian,
+                                        children: Object(T.jsx)(B.b, {
+                                            to: "/mx",
+                                            children: Object(T.jsx)(h.j.Item, {
+                                                itemKey: "mx",
+                                                text: v() ? "" : a.maoxian,
+                                                icon: Object(T.jsx)(x.x, {
+                                                    size: "large",
+                                                    style: {
+                                                        color: "var(--semi-color-text-0)"
+                                                    }
+                                                }),
+                                                style: {
+                                                    color: "var(--semi-color-text-0)"
+                                                }
+                                            })
+                                        })
+                                    }), Object(T.jsx)(h.m, {
+                                        arrowPointAtCenter: !0,
+                                        showArrow: !0,
+                                        trigger: "hover",
+                                        content: a.dibanjia,
+                                        children: Object(T.jsx)(B.b, {
+                                            to: "/low",
+                                            children: Object(T.jsx)(h.j.Item, {
+                                                itemKey: "mx",
+                                                text: v() ? "" : a.dibanjia,
+                                                icon: Object(T.jsx)(x.F, {
+                                                    size: "large",
+                                                    style: {
+                                                        color: "var(--semi-color-text-0)"
+                                                    }
+                                                }),
+                                                style: {
+                                                    color: "var(--semi-color-text-0)"
+                                                }
+                                            })
+                                        })
+                                    }), Object(T.jsx)(h.m, {
+                                        arrowPointAtCenter: !0,
+                                        showArrow: !0,
+                                        trigger: "hover",
+                                        text: v() ? "" : a.Armzlegends,
+                                        children: Object(T.jsx)(B.b, {
+                                            to: "/shou",
+                                            children: Object(T.jsx)(h.j.Item, {
+                                                itemKey: "shou",
+                                                text: v() ? "" : a.Armzlegends,
+                                                icon: Object(T.jsx)(x.u, {
+                                                    size: "large",
+                                                    style: {
+                                                        color: "var(--semi-color-text-0)"
+                                                    }
+                                                }),
+                                                style: {
+                                                    color: "var(--semi-color-text-0)"
+                                                }
+                                            })
+                                        })
+                                    })]
+                                }), Object(T.jsx)(h.j.Footer, {
+                                    children: Object(T.jsx)(h.m, {
                                         arrowPointAtCenter: !0,
                                         showArrow: !0,
                                         content: b ? r : d,
@@ -203,14 +310,14 @@
                                             borderColor: b ? "#FFF" : "#666",
                                             color: b ? "#666" : "#FFF"
                                         },
-                                        children: Object(k.jsx)(x.c, {
+                                        children: Object(T.jsx)(h.c, {
                                             theme: "borderless",
                                             onClick: function() {
-                                                i.hasAttribute("theme-mode") ? (i.removeAttribute("theme-mode"), c(!1)) : (i.setAttribute("theme-mode", "dark"), c(!0))
+                                                i.hasAttribute("theme-mode") ? (i.removeAttribute("theme-mode"), s(!1)) : (i.setAttribute("theme-mode", "dark"), s(!0))
                                             },
-                                            icon: b ? Object(k.jsx)(m.z, {
+                                            icon: b ? Object(T.jsx)(x.A, {
                                                 size: "large"
-                                            }) : Object(k.jsx)(m.u, {
+                                            }) : Object(T.jsx)(x.v, {
                                                 size: "large"
                                             }),
                                             style: {
@@ -224,45 +331,45 @@
                         })
                     })
                 },
-                T = r(12),
-                I = r(108),
-                W = r(94),
-                w = r(318),
-                j = r(3),
-                M = "0xaF9A274c9668d68322B0dcD9043D79Cd1eBd41b3",
-                O = "0x22F3E436dF132791140571FC985Eb17Ab1846494",
-                N = "0x819E04ddE93600b224F65e3C9B51b1B4D9fBa3b5",
-                P = "0xC6dB06fF6e97a6Dc4304f7615CdD392a9cF13F44",
-                R = "0xF31913a9C8EFE7cE7F08A1c08757C166b572a937",
-                L = "0xfA65a5751ef6079C1022Aa10b9163d7A2281360A",
-                V = "0x480d503B12ae928e8DcCd820CE45B2f6F39Ad598",
-                z = "0x3a4D27B77B253bdb9AFec082D8f5cDE5A4D713E1",
-                G = "0x21D4Da5833d93944B8340788C6b463ED8420838B",
-                J = "0x81E9aCe9511A7d56fd31940d1C49425CA3a2B8f8",
-                U = "0xC5dDbb4ac27A939D914059A023C6A35F377B67Ff",
-                K = "0xdcC5C1e7A3ADC8b7635565183a7385026502440B",
-                H = "0x0ac4eB7978E0dA0d53824bd590354C8Bd264C4e6",
-                X = function(e) {
+                w = r(12),
+                j = r(89),
+                O = r(90),
+                M = r(472),
+                N = r(3),
+                P = "0xaF9A274c9668d68322B0dcD9043D79Cd1eBd41b3",
+                R = "0x22F3E436dF132791140571FC985Eb17Ab1846494",
+                z = "0x819E04ddE93600b224F65e3C9B51b1B4D9fBa3b5",
+                L = "0xC6dB06fF6e97a6Dc4304f7615CdD392a9cF13F44",
+                V = "0xF31913a9C8EFE7cE7F08A1c08757C166b572a937",
+                J = "0xfA65a5751ef6079C1022Aa10b9163d7A2281360A",
+                G = "0x480d503B12ae928e8DcCd820CE45B2f6F39Ad598",
+                K = "0x3a4D27B77B253bdb9AFec082D8f5cDE5A4D713E1",
+                U = "0x21D4Da5833d93944B8340788C6b463ED8420838B",
+                X = "0x81E9aCe9511A7d56fd31940d1C49425CA3a2B8f8",
+                H = "0xC5dDbb4ac27A939D914059A023C6A35F377B67Ff",
+                Q = "0xdcC5C1e7A3ADC8b7635565183a7385026502440B",
+                Y = "0x0ac4eB7978E0dA0d53824bd590354C8Bd264C4e6",
+                Z = function(e) {
                     switch (e) {
                         default:
                             return "\u517c\u804c";
-                        case V:
-                            return "\u917f\u9152";
-                        case z:
-                            return "\u4f10\u6728";
                         case G:
-                            return "\u5377\u8f74";
-                        case J:
-                            return "\u6253\u730e";
-                        case U:
-                            return "\u5b88\u536b";
+                            return "\u917f\u9152";
                         case K:
-                            return "\u58eb\u5175";
+                            return "\u4f10\u6728";
+                        case U:
+                            return "\u5377\u8f74";
+                        case X:
+                            return "\u6253\u730e";
                         case H:
+                            return "\u5b88\u536b";
+                        case Q:
+                            return "\u58eb\u5175";
+                        case Y:
                             return "\u987e\u95ee"
                     }
                 },
-                Q = {
+                $ = {
                     86: 423,
                     87: 576,
                     88: 720,
@@ -279,7 +386,7 @@
                     99: 2304,
                     100: 2448
                 },
-                Y = {
+                ee = {
                     1: 1,
                     2: 2,
                     3: 4,
@@ -293,27 +400,31 @@
                     11: 300,
                     12: 500
                 },
-                Z = "0x22F3E436dF132791140571FC985Eb17Ab1846494",
-                $ = "0xaF9A274c9668d68322B0dcD9043D79Cd1eBd41b3",
-                ee = "0xC6dB06fF6e97a6Dc4304f7615CdD392a9cF13F44",
-                ae = "0xF31913a9C8EFE7cE7F08A1c08757C166b572a937",
-                re = "0x819E04ddE93600b224F65e3C9B51b1B4D9fBa3b5",
-                de = "0x79961F74D1E53CA480e4dDf5675D5A6D7B1852e7",
-                te = "0xe278BDF4541cc309b379F9A4E867F60fD6B7BC59",
-                ie = "0x698E165F2897e4daC68671c4cDFf337bbC543767",
-                ne = "0xfA65a5751ef6079C1022Aa10b9163d7A2281360A",
-                le = "0x3a4D27B77B253bdb9AFec082D8f5cDE5A4D713E1",
-                be = "0x480d503B12ae928e8DcCd820CE45B2f6F39Ad598",
-                se = "0x21D4Da5833d93944B8340788C6b463ED8420838B",
-                ce = "0x81E9aCe9511A7d56fd31940d1C49425CA3a2B8f8",
-                oe = "0x1416e6EA40CBb1F09Cd2dbEdAAd6fbFE3e38D51F",
-                fe = "0xD52039A262DeED2466beFA8dEe15e5d72c2DFAdF",
-                ye = "0xb3a6381070B1a15169DEA646166EC0699fDAeA79",
-                ue = "0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97",
-                _e = "0x72B587C50A3899dce4B25A95b2994C417830C603",
-                Fe = "0xA100C0f774Ed525C186e6BeCDa88812427e1742d",
-                pe = (d = {}, Object(j.a)(d, M, "\u76d7\u8d3c"), Object(j.a)(d, O, "\u6218\u58eb"), Object(j.a)(d, P, "\u6cd5\u5e08"), Object(j.a)(d, R, "\u6e38\u4fa0"), Object(j.a)(d, N, "\u5361\u7279"), d),
-                De = [{
+                ae = "0x22F3E436dF132791140571FC985Eb17Ab1846494",
+                re = "0xaF9A274c9668d68322B0dcD9043D79Cd1eBd41b3",
+                de = "0xC6dB06fF6e97a6Dc4304f7615CdD392a9cF13F44",
+                te = "0xF31913a9C8EFE7cE7F08A1c08757C166b572a937",
+                ie = "0x819E04ddE93600b224F65e3C9B51b1B4D9fBa3b5",
+                ne = "0x79961F74D1E53CA480e4dDf5675D5A6D7B1852e7",
+                le = "0xe278BDF4541cc309b379F9A4E867F60fD6B7BC59",
+                be = "0x698E165F2897e4daC68671c4cDFf337bbC543767",
+                se = "0xfA65a5751ef6079C1022Aa10b9163d7A2281360A",
+                ce = "0x3a4D27B77B253bdb9AFec082D8f5cDE5A4D713E1",
+                oe = "0x480d503B12ae928e8DcCd820CE45B2f6F39Ad598",
+                fe = "0x21D4Da5833d93944B8340788C6b463ED8420838B",
+                ye = "0x81E9aCe9511A7d56fd31940d1C49425CA3a2B8f8",
+                ue = "0x1416e6EA40CBb1F09Cd2dbEdAAd6fbFE3e38D51F",
+                _e = "0xD52039A262DeED2466beFA8dEe15e5d72c2DFAdF",
+                pe = "0xb3a6381070B1a15169DEA646166EC0699fDAeA79",
+                Fe = "0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97",
+                De = "0x72B587C50A3899dce4B25A95b2994C417830C603",
+                Ce = "0xA100C0f774Ed525C186e6BeCDa88812427e1742d",
+                me = "0x3d7b0001e03096d3795Fd5D984AD679467546d73",
+                xe = "0xd3c9609B6CBC6eF02390F33C230590c38F9E5f9D",
+                he = "0xe4dd4794C915CB99f5A12cA8058d8B45fFEa8545",
+                Be = "0x65261f17743fd5fE74c69d03147A1F21F7658db6",
+                Ee = (d = {}, Object(N.a)(d, P, "\u76d7\u8d3c"), Object(N.a)(d, R, "\u6218\u58eb"), Object(N.a)(d, L, "\u6cd5\u5e08"), Object(N.a)(d, V, "\u6e38\u4fa0"), Object(N.a)(d, z, "\u5361\u7279"), d),
+                Ae = [{
                     title: "",
                     dataIndex: "hege",
                     filters: [{
@@ -326,55 +437,55 @@
                     onFilter: function(e, a) {
                         var r = !1;
                         switch (a.career_address) {
-                            case M:
-                                r = g(a, M, "agility", "strength");
+                            case P:
+                                r = k(a, P, "agility", "strength");
+                                break;
+                            case V:
+                                r = k(a, V, "strength", "agility");
                                 break;
                             case R:
-                                r = g(a, R, "strength", "agility");
+                                r = k(a, R, "strength", "physique");
                                 break;
-                            case O:
-                                r = g(a, O, "strength", "physique");
+                            case z:
+                                r = k(a, z, "strength", "physique");
                                 break;
-                            case N:
-                                r = g(a, N, "strength", "physique");
-                                break;
-                            case P:
-                                r = g(a, P, "brains", "charm")
+                            case L:
+                                r = k(a, L, "brains", "charm")
                         }
                         return r == e
                     },
                     render: function(e, a) {
                         var r = !1;
                         switch (a.career_address) {
-                            case M:
-                                r = g(a, M, "agility", "strength");
+                            case P:
+                                r = k(a, P, "agility", "strength");
+                                break;
+                            case V:
+                                r = k(a, V, "strength", "agility");
                                 break;
                             case R:
-                                r = g(a, R, "strength", "agility");
+                                r = k(a, R, "strength", "physique");
                                 break;
-                            case O:
-                                r = g(a, O, "strength", "physique");
+                            case z:
+                                r = k(a, z, "strength", "physique");
                                 break;
-                            case N:
-                                r = g(a, N, "strength", "physique");
-                                break;
-                            case P:
-                                r = g(a, P, "brains", "charm")
+                            case L:
+                                r = k(a, L, "brains", "charm")
                         }
-                        return Object(k.jsx)(k.Fragment, {
-                            children: Object(k.jsx)(x.r, {
+                        return Object(T.jsx)(T.Fragment, {
+                            children: Object(T.jsx)(h.r, {
                                 color: r ? "green" : "grey",
-                                children: r ? A() ? "\u5408" : "\u5408\u683c" : A() ? "\u9ed1" : "\u9ed1\u5974"
+                                children: r ? v() ? "\u5408" : "\u5408\u683c" : v() ? "\u9ed1" : "\u9ed1\u5974"
                             })
                         })
                     }
                 }],
-                Ce = [{
+                ge = [{
                     title: "TokenId",
                     dataIndex: "token_id",
                     width: 200,
                     render: function(e, a) {
-                        return Object(k.jsx)(x.s.Text, {
+                        return Object(T.jsx)(h.s.Text, {
                             ellipsis: {
                                 pos: "middle"
                             },
@@ -387,32 +498,32 @@
                         })
                     }
                 }],
-                me = [{
+                ve = [{
                     title: "\u540d\u79f0",
                     dataIndex: "name",
                     sorter: function(e, a) {
                         return e.career_address - a.career_address
                     },
                     render: function(e, a) {
-                        return Object(k.jsx)("span", {
-                            children: pe[a.career_address]
+                        return Object(T.jsx)("span", {
+                            children: Ee[a.career_address]
                         })
                     },
                     filters: [{
-                        text: pe[O],
-                        value: O
-                    }, {
-                        text: pe[R],
+                        text: Ee[R],
                         value: R
                     }, {
-                        text: pe[M],
-                        value: M
+                        text: Ee[V],
+                        value: V
                     }, {
-                        text: pe[P],
+                        text: Ee[P],
                         value: P
                     }, {
-                        text: pe[N],
-                        value: N
+                        text: Ee[L],
+                        value: L
+                    }, {
+                        text: Ee[z],
+                        value: z
                     }],
                     onFilter: function(e, a) {
                         return a.career_address.includes(e)
@@ -436,11 +547,11 @@
                         return e.strength - a.strength
                     },
                     render: function(e, a) {
-                        return Object(k.jsxs)("span", {
+                        return Object(T.jsxs)("span", {
                             style: {
-                                color: a.career_address === M || a.career_address === O || a.career_address === R || a.career_address === N ? "red" : "var(--semi-color-text-0)"
+                                color: a.career_address === P || a.career_address === R || a.career_address === V || a.career_address === z ? "red" : "var(--semi-color-text-0)"
                             },
-                            children: [a.strength, a.career_address === O || a.career_address === R || a.career_address === N ? "(\u4e3b)" : "", a.career_address === M ? "(\u526f)" : ""]
+                            children: [a.strength, a.career_address === R || a.career_address === V || a.career_address === z ? "(\u4e3b)" : "", a.career_address === P ? "(\u526f)" : ""]
                         })
                     }
                 }, {
@@ -450,11 +561,11 @@
                         return e.agility - a.agility
                     },
                     render: function(e, a) {
-                        return Object(k.jsxs)("span", {
+                        return Object(T.jsxs)("span", {
                             style: {
-                                color: a.career_address === M || a.career_address === R ? "red" : "var(--semi-color-text-0)"
+                                color: a.career_address === P || a.career_address === V ? "red" : "var(--semi-color-text-0)"
                             },
-                            children: [a.agility, a.career_address === M ? "(\u4e3b)" : "", a.career_address === R ? "(\u526f)" : ""]
+                            children: [a.agility, a.career_address === P ? "(\u4e3b)" : "", a.career_address === V ? "(\u526f)" : ""]
                         })
                     }
                 }, {
@@ -464,11 +575,11 @@
                         return e.physique - a.physique
                     },
                     render: function(e, a) {
-                        return Object(k.jsxs)("span", {
+                        return Object(T.jsxs)("span", {
                             style: {
-                                color: a.career_address === O || a.career_address === N ? "red" : "var(--semi-color-text-0)"
+                                color: a.career_address === R || a.career_address === z ? "red" : "var(--semi-color-text-0)"
                             },
-                            children: [a.physique, a.career_address === O || a.career_address === N ? "(\u526f)" : ""]
+                            children: [a.physique, a.career_address === R || a.career_address === z ? "(\u526f)" : ""]
                         })
                     }
                 }, {
@@ -484,11 +595,11 @@
                         return e.brains - a.brains
                     },
                     render: function(e, a) {
-                        return Object(k.jsxs)("span", {
+                        return Object(T.jsxs)("span", {
                             style: {
-                                color: a.career_address === P ? "red" : "var(--semi-color-text-0)"
+                                color: a.career_address === L ? "red" : "var(--semi-color-text-0)"
                             },
-                            children: [a.brains, a.career_address === P ? "(\u4e3b)" : ""]
+                            children: [a.brains, a.career_address === L ? "(\u4e3b)" : ""]
                         })
                     }
                 }, {
@@ -498,20 +609,20 @@
                         return e.charm - a.charm
                     },
                     render: function(e, a) {
-                        return Object(k.jsxs)("span", {
+                        return Object(T.jsxs)("span", {
                             style: {
-                                color: a.career_address === P ? "red" : "var(--semi-color-text-0)"
+                                color: a.career_address === L ? "red" : "var(--semi-color-text-0)"
                             },
-                            children: [a.charm, a.career_address === P ? "(\u526f)" : ""]
+                            children: [a.charm, a.career_address === L ? "(\u526f)" : ""]
                         })
                     }
                 }],
-                xe = [{
+                ke = [{
                     title: "\u540d",
                     dataIndex: "name",
                     render: function(e, a) {
-                        return Object(k.jsx)("span", {
-                            children: pe[a.career_address]
+                        return Object(T.jsx)("span", {
+                            children: Ee[a.career_address]
                         })
                     }
                 }, {
@@ -526,18 +637,18 @@
                     render: function(e, a) {
                         var r = 0;
                         switch (a.career_address) {
-                            case M:
+                            case P:
                                 r = a.agility;
                                 break;
-                            case O:
-                            case N:
                             case R:
+                            case z:
+                            case V:
                                 r = a.strength;
                                 break;
-                            case P:
+                            case L:
                                 r = a.brains
                         }
-                        return Object(k.jsx)("p", {
+                        return Object(T.jsx)("p", {
                             children: r
                         })
                     }
@@ -547,26 +658,26 @@
                     render: function(e, a) {
                         var r = 0;
                         switch (a.career_address) {
-                            case M:
+                            case P:
                                 r = a.strength;
                                 break;
-                            case O:
-                            case N:
+                            case R:
+                            case z:
                                 r = a.physique;
                                 break;
-                            case P:
+                            case L:
                                 r = a.charm;
                                 break;
-                            case R:
+                            case V:
                                 r = a.agility
                         }
-                        return Object(k.jsx)("p", {
+                        return Object(T.jsx)("p", {
                             children: r
                         })
                     }
                 }],
-                he = [].concat(Ce, De, me),
-                Be = [].concat(Ce, De, me, [{
+                qe = [].concat(ge, Ae, ve),
+                Se = [].concat(ge, Ae, ve, [{
                     title: "\u5de5\u4f5c",
                     dataIndex: "workname",
                     sorter: function(e, a) {
@@ -579,7 +690,7 @@
                         return e.gold - a.gold
                     }
                 }]),
-                Ee = [{
+                Te = [{
                     title: "\u6316\u77ff\u6536\u76ca",
                     dataIndex: "gold",
                     sorter: function(e, a) {
@@ -595,81 +706,81 @@
                     onFilter: function(e, a) {
                         var r = !1;
                         switch (a.career_address) {
-                            case M:
-                                r = g(a, M, "agility", "strength");
+                            case P:
+                                r = k(a, P, "agility", "strength");
+                                break;
+                            case V:
+                                r = k(a, V, "strength", "agility");
                                 break;
                             case R:
-                                r = g(a, R, "strength", "agility");
+                                r = k(a, R, "strength", "physique");
                                 break;
-                            case O:
-                                r = g(a, O, "strength", "physique");
+                            case z:
+                                r = k(a, z, "strength", "physique");
                                 break;
-                            case N:
-                                r = g(a, N, "strength", "physique");
-                                break;
-                            case P:
-                                r = g(a, P, "brains", "charm")
+                            case L:
+                                r = k(a, L, "brains", "charm")
                         }
                         return r == e
                     },
                     render: function(e, a) {
                         switch (a.career_address) {
-                            case M:
+                            case P:
                                 a.agility, a.strength;
                                 break;
-                            case O:
-                            case N:
+                            case R:
+                            case z:
                                 a.strength, a.physique;
                                 break;
-                            case P:
+                            case L:
                                 a.brains, a.charm;
                                 break;
-                            case R:
+                            case V:
                                 a.strength, a.agility
                         }
                         var r = !1;
                         switch (a.career_address) {
-                            case M:
-                                r = g(a, M, "agility", "strength");
+                            case P:
+                                r = k(a, P, "agility", "strength");
+                                break;
+                            case V:
+                                r = k(a, V, "strength", "agility");
                                 break;
                             case R:
-                                r = g(a, R, "strength", "agility");
+                                r = k(a, R, "strength", "physique");
                                 break;
-                            case O:
-                                r = g(a, O, "strength", "physique");
+                            case z:
+                                r = k(a, z, "strength", "physique");
                                 break;
-                            case N:
-                                r = g(a, N, "strength", "physique");
-                                break;
-                            case P:
-                                r = g(a, P, "brains", "charm")
+                            case L:
+                                r = k(a, L, "brains", "charm")
                         }
-                        return Object(k.jsxs)("div", {
+                        return Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 alignItems: "center",
                                 flexDirection: "column",
                                 justifyContent: "center"
                             },
-                            children: [Object(k.jsx)("span", {
+                            children: [Object(T.jsx)("span", {
                                 style: {
                                     fontWeight: "bold",
                                     display: "flex",
                                     alignItems: "center"
                                 },
-                                children: Object(k.jsxs)(x.o, {
-                                    children: [Object(k.jsx)(x.r, {
+                                children: Object(T.jsxs)(h.o, {
+                                    children: [Object(T.jsx)(h.r, {
                                         color: r ? "green" : "grey",
                                         children: r ? "\u5408\u683c" : "\u9ed1\u5974"
-                                    }), pe[a.career_address], " ", a.level, "\u7ea7"]
+                                    }), Ee[a.career_address], " ", a.level, "\u7ea7"]
                                 })
-                            }), Object(k.jsxs)("span", {
+                            }), Object(T.jsxs)("span", {
                                 children: ["\u529b", a.strength, "/\u654f", a.agility, "/\u4f53", a.physique, "/\u610f", a.volition, "/\u667a", a.brains, "/\u7cbe", a.charm]
-                            }), Object(k.jsxs)("span", {
-                                children: [Object(k.jsxs)(x.r, {
+                            }), Object(T.jsxs)("span", {
+                                children: [Object(T.jsxs)(h.r, {
                                     color: "orange",
                                     children: ["\u5de5\u4f5c\u7c7b\u578b: ", a.workname]
-                                }), " ", Object(k.jsxs)(x.r, {
+                                }), " ", Object(T.jsxs)(h.r, {
                                     color: "yellow",
                                     children: ["\u6536\u76ca: ", a.gold]
                                 })]
@@ -677,31 +788,31 @@
                         })
                     }
                 }],
-                Ae = [].concat(Ce, me, [{
+                Ie = [].concat(ge, ve, [{
                     title: "\u4ef7\u683c",
                     dataIndex: "price",
                     sorter: function(e, a) {
                         return e.price - a.price
                     },
                     render: function(e, a) {
-                        return Object(k.jsxs)("p", {
-                            children: [(Number(a.price) / Math.pow(10, 18)).toFixed(2), a.pay_addr === ue ? "BNX" : "Gold"]
+                        return Object(T.jsxs)("p", {
+                            children: [(Number(a.price) / Math.pow(10, 18)).toFixed(2), a.pay_addr === Fe ? "BNX" : "Gold"]
                         })
                     }
                 }]),
-                ge = [].concat(xe, [{
+                We = [].concat(ke, [{
                     title: "\u4ef7",
                     dataIndex: "price",
                     sorter: function(e, a) {
                         return e.price - a.price
                     },
                     render: function(e, a) {
-                        return Object(k.jsxs)("p", {
-                            children: [(Number(a.price) / Math.pow(10, 18)).toFixed(2), a.pay_addr === ue ? "B" : "G"]
+                        return Object(T.jsxs)("p", {
+                            children: [(Number(a.price) / Math.pow(10, 18)).toFixed(2), a.pay_addr === Fe ? "B" : "G"]
                         })
                     }
                 }]),
-                ve = [{
+                we = [{
                     title: "\u6211\u7684\u82f1\u96c4",
                     dataIndex: "num",
                     filters: [{
@@ -714,85 +825,85 @@
                     onFilter: function(e, a) {
                         var r = !1;
                         switch (a.career_address) {
-                            case M:
-                                r = g(a, M, "agility", "strength");
+                            case P:
+                                r = k(a, P, "agility", "strength");
+                                break;
+                            case V:
+                                r = k(a, V, "strength", "agility");
                                 break;
                             case R:
-                                r = g(a, R, "strength", "agility");
+                                r = k(a, R, "strength", "physique");
                                 break;
-                            case O:
-                                r = g(a, O, "strength", "physique");
+                            case z:
+                                r = k(a, z, "strength", "physique");
                                 break;
-                            case N:
-                                r = g(a, N, "strength", "physique");
-                                break;
-                            case P:
-                                r = g(a, P, "brains", "charm")
+                            case L:
+                                r = k(a, L, "brains", "charm")
                         }
                         return r == e
                     },
                     render: function(e, a) {
                         switch (a.career_address) {
-                            case M:
+                            case P:
                                 a.agility, a.strength;
                                 break;
-                            case O:
-                            case N:
+                            case R:
+                            case z:
                                 a.strength, a.physique;
                                 break;
-                            case P:
+                            case L:
                                 a.brains, a.charm;
                                 break;
-                            case R:
+                            case V:
                                 a.strength, a.agility
                         }
                         var r = !1;
                         switch (a.career_address) {
-                            case M:
-                                r = g(a, M, "agility", "strength");
+                            case P:
+                                r = k(a, P, "agility", "strength");
+                                break;
+                            case V:
+                                r = k(a, V, "strength", "agility");
                                 break;
                             case R:
-                                r = g(a, R, "strength", "agility");
+                                r = k(a, R, "strength", "physique");
                                 break;
-                            case O:
-                                r = g(a, O, "strength", "physique");
+                            case z:
+                                r = k(a, z, "strength", "physique");
                                 break;
-                            case N:
-                                r = g(a, N, "strength", "physique");
-                                break;
-                            case P:
-                                r = g(a, P, "brains", "charm")
+                            case L:
+                                r = k(a, L, "brains", "charm")
                         }
-                        return Object(k.jsxs)("div", {
+                        return Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 alignItems: "center",
                                 flexDirection: "column",
                                 justifyContent: "center"
                             },
-                            children: [Object(k.jsx)("span", {
+                            children: [Object(T.jsx)("span", {
                                 style: {
                                     fontWeight: "bold",
                                     display: "flex",
                                     alignItems: "center"
                                 },
-                                children: Object(k.jsxs)(x.o, {
-                                    children: [Object(k.jsx)(x.r, {
+                                children: Object(T.jsxs)(h.o, {
+                                    children: [Object(T.jsx)(h.r, {
                                         color: r ? "green" : "grey",
                                         children: r ? "\u5408\u683c" : "\u9ed1\u5974"
-                                    }), pe[a.career_address], " ", a.level, "\u7ea7"]
+                                    }), Ee[a.career_address], " ", a.level, "\u7ea7"]
                                 })
-                            }), Object(k.jsxs)("span", {
+                            }), Object(T.jsxs)("span", {
                                 children: ["\u529b", a.strength, "/\u654f", a.agility, "/\u4f53", a.physique, "/\u610f", a.volition, "/\u667a", a.brains, "/\u7cbe", a.charm]
                             })]
                         })
                     }
                 }],
-                ke = function(e) {
+                je = function(e) {
                     var a = e.address,
                         r = e.contractss;
                     e.nowaddress;
-                    return Object(k.jsx)("div", {
+                    return Object(T.jsx)("div", {
                         style: {
                             display: "flex",
                             justifyContent: "center",
@@ -801,119 +912,124 @@
                             flexWrap: "wrap",
                             color: "var(--semi-color-text-0)"
                         },
-                        children: Object(k.jsx)(x.s.Text, {
+                        children: Object(T.jsx)(h.s.Text, {
                             copyable: !0,
                             style: {
-                                color: r > Number(String((new Date).getTime()).substr(0, 10)) ? "red" : "black"
+                                display: "flex",
+                                flexWrap: "wrap",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                color: r > Number(String((new Date).getTime()).substr(0, 10)) ? "red" : "var(--semi-color-text-0)"
                             },
                             children: a
                         })
                     })
                 },
-                qe = W.a.div(t || (t = Object(I.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
-                Se = function(e) {
+                Oe = O.a.div(t || (t = Object(j.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
+                Me = function(e) {
                     var a = e.address,
                         r = e.contracts,
-                        d = Object(s.useState)(!1),
-                        t = Object(C.a)(d, 2),
-                        i = (t[0], t[1]),
-                        n = Object(s.useState)(!1),
-                        l = Object(C.a)(n, 2),
-                        b = l[0],
-                        c = l[1],
-                        o = Object(s.useState)(!1),
-                        f = Object(C.a)(o, 2),
-                        y = f[0],
-                        u = f[1],
-                        _ = Object(s.useState)([]),
-                        F = Object(C.a)(_, 2),
-                        m = F[0],
-                        h = F[1],
-                        B = Object(s.useState)([]),
-                        q = Object(C.a)(B, 2),
-                        S = q[0],
-                        I = q[1],
-                        W = Object(s.useState)(0),
-                        j = Object(C.a)(W, 2),
-                        L = (j[0], j[1]),
-                        V = Object(s.useState)([]),
-                        z = Object(C.a)(V, 2),
-                        G = z[0],
-                        J = z[1],
-                        U = Object(s.useState)(0),
-                        K = Object(C.a)(U, 2),
-                        H = (K[0], K[1]),
-                        X = Object(s.useState)(""),
-                        Q = Object(C.a)(X, 2),
+                        d = Object(c.useState)(!1),
+                        t = Object(m.a)(d, 2),
+                        i = t[0],
+                        n = t[1],
+                        l = Object(c.useState)(!1),
+                        b = Object(m.a)(l, 2),
+                        s = b[0],
+                        o = b[1],
+                        f = Object(c.useState)(!1),
+                        y = Object(m.a)(f, 2),
+                        u = y[0],
+                        _ = y[1],
+                        p = Object(c.useState)([]),
+                        F = Object(m.a)(p, 2),
+                        x = F[0],
+                        B = F[1],
+                        E = Object(c.useState)([]),
+                        A = Object(m.a)(E, 2),
+                        g = A[0],
+                        q = A[1],
+                        I = Object(c.useState)(0),
+                        W = Object(m.a)(I, 2),
+                        j = (W[0], W[1]),
+                        O = Object(c.useState)([]),
+                        N = Object(m.a)(O, 2),
+                        J = N[0],
+                        G = N[1],
+                        K = Object(c.useState)(0),
+                        U = Object(m.a)(K, 2),
+                        X = (U[0], U[1]),
+                        H = Object(c.useState)(""),
+                        Q = Object(m.a)(H, 2),
                         Y = Q[0],
                         Z = Q[1],
-                        $ = Object(s.useState)({
+                        $ = Object(c.useState)({
                             b: 0,
                             h: 0,
                             levels: [],
                             hightLevel: 1
                         }),
-                        ee = Object(C.a)($, 2),
+                        ee = Object(m.a)($, 2),
                         ae = ee[0],
-                        de = ee[1],
-                        te = Object(s.useState)(0),
-                        ie = Object(C.a)(te, 2),
-                        oe = ie[0],
-                        fe = ie[1],
-                        ye = Object(s.useState)(0),
-                        _e = Object(C.a)(ye, 2),
-                        Fe = (_e[0], _e[1]),
-                        De = Object(s.useState)(0),
-                        Ce = Object(C.a)(De, 2),
-                        me = Ce[0],
-                        xe = Ce[1],
-                        Be = Object(s.useState)(!1),
-                        Ee = Object(C.a)(Be, 2),
-                        Ae = Ee[0],
-                        ge = Ee[1],
-                        ve = Object(s.useState)([]),
-                        Se = Object(C.a)(ve, 2),
-                        Te = Se[0],
-                        Ie = Se[1],
-                        We = Object(s.useState)(8.88),
-                        we = Object(C.a)(We, 2),
-                        je = we[0],
-                        Me = we[1];
-                    Object(s.useEffect)((function() {
-                        J([]), Ne(), Oe()
+                        re = ee[1],
+                        de = Object(c.useState)(0),
+                        te = Object(m.a)(de, 2),
+                        ne = te[0],
+                        le = te[1],
+                        be = Object(c.useState)(0),
+                        ue = Object(m.a)(be, 2),
+                        _e = (ue[0], ue[1]),
+                        pe = Object(c.useState)(0),
+                        De = Object(m.a)(pe, 2),
+                        Ce = De[0],
+                        me = De[1],
+                        xe = Object(c.useState)(!1),
+                        he = Object(m.a)(xe, 2),
+                        Be = he[0],
+                        Ae = he[1],
+                        ge = Object(c.useState)([]),
+                        ve = Object(m.a)(ge, 2),
+                        ke = ve[0],
+                        Se = ve[1],
+                        Te = Object(c.useState)(8.88),
+                        Ie = Object(m.a)(Te, 2),
+                        We = Ie[0],
+                        we = Ie[1];
+                    Object(c.useEffect)((function() {
+                        G([]), Ne(), Me()
                     }), [a]);
-                    var Oe = function() {
+                    var Me = function() {
                             a && r ? (r.goldContractNew.methods.balanceOf(a).call().then((function(e) {
-                                xe((Number(e) / Math.pow(10, 18)).toFixed(4))
+                                me((Number(e) / Math.pow(10, 18)).toFixed(4))
                             })).catch((function(e) {
                                 return console.log(e)
                             })), r.bnxContractNew.methods.balanceOf(a).call().then((function(e) {
-                                fe((Number(e) / Math.pow(10, 18)).toFixed(4))
+                                le((Number(e) / Math.pow(10, 18)).toFixed(4))
                             })).catch((function(e) {
                                 return console.log(e)
                             })), r.keyContractNew.methods.balanceOf(a).call().then((function(e) {
-                                Fe(Number(e) / Math.pow(10, 18))
+                                _e(Number(e) / Math.pow(10, 18))
                             })).catch((function(e) {
                                 return console.log(e)
-                            }))) : x.k.info({
+                            }))) : h.k.info({
                                 content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                             })
                         },
                         Ne = function() {
-                            var e = Object(D.a)(p.a.mark((function e() {
-                                var d, t, n, l, b, s, o, f, y, _, F;
-                                return p.a.wrap((function(e) {
+                            var e = Object(C.a)(D.a.mark((function e() {
+                                var d, t, i, l, b, s, c, f, y, u, p;
+                                return D.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (a && r) {
                                                 e.next = 3;
                                                 break
                                             }
-                                            return x.k.info({
+                                            return h.k.info({
                                                 content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                             }), e.abrupt("return");
                                         case 3:
-                                            return J([]), I([]), i(!0), c(!1), u(!1), h([]), e.next = 11, r.WarriorContract.methods.balanceOf(a).call().catch((function(e) {
+                                            return G([]), q([]), n(!0), o(!1), _(!1), B([]), e.next = 11, r.WarriorContract.methods.balanceOf(a).call().catch((function(e) {
                                                 return console.log(e)
                                             }));
                                         case 11:
@@ -925,7 +1041,7 @@
                                                 return console.log(e)
                                             }));
                                         case 17:
-                                            return n = e.sent, e.next = 20, r.MageContract.methods.balanceOf(a).call().catch((function(e) {
+                                            return i = e.sent, e.next = 20, r.MageContract.methods.balanceOf(a).call().catch((function(e) {
                                                 return console.log(e)
                                             }));
                                         case 20:
@@ -933,26 +1049,26 @@
                                                 return console.log(e)
                                             }));
                                         case 23:
-                                            for (b = e.sent, s = [], o = 0; o < d; o++) s.push(r.WarriorContract.methods.tokenOfOwnerByIndex(a, o).call().catch((function(e) {
+                                            for (b = e.sent, s = [], c = 0; c < d; c++) s.push(r.WarriorContract.methods.tokenOfOwnerByIndex(a, c).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
-                                            for (f = 0; f < n; f++) s.push(r.RobberContract.methods.tokenOfOwnerByIndex(a, f).call().catch((function(e) {
+                                            for (f = 0; f < i; f++) s.push(r.RobberContract.methods.tokenOfOwnerByIndex(a, f).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
                                             for (y = 0; y < l; y++) s.push(r.MageContract.methods.tokenOfOwnerByIndex(a, y).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
-                                            for (_ = 0; _ < b; _++) s.push(r.youxiaContract.methods.tokenOfOwnerByIndex(a, _).call().catch((function(e) {
+                                            for (u = 0; u < b; u++) s.push(r.youxiaContract.methods.tokenOfOwnerByIndex(a, u).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
-                                            for (F = 0; F < t; F++) s.push(r.KatrinaContract.methods.tokenOfOwnerByIndex(a, F).call().catch((function(e) {
+                                            for (p = 0; p < t; p++) s.push(r.KatrinaContract.methods.tokenOfOwnerByIndex(a, p).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
                                             Promise.all(s).then((function(e) {
                                                 var d = e.map(function() {
-                                                    var e = Object(D.a)(p.a.mark((function e(a) {
+                                                    var e = Object(C.a)(D.a.mark((function e(a) {
                                                         var d;
-                                                        return p.a.wrap((function(e) {
+                                                        return D.a.wrap((function(e) {
                                                             for (;;) switch (e.prev = e.next) {
                                                                 case 0:
                                                                     return e.next = 2, r.NewPlayInfoContract.methods.getPlayerInfoBySet(a).call().catch((function(e) {
@@ -982,9 +1098,9 @@
                                                     }
                                                 }());
                                                 Promise.all(d).then(function() {
-                                                    var e = Object(D.a)(p.a.mark((function e(r) {
+                                                    var e = Object(C.a)(D.a.mark((function e(r) {
                                                         var d, t, i;
-                                                        return p.a.wrap((function(e) {
+                                                        return D.a.wrap((function(e) {
                                                             for (;;) switch (e.prev = e.next) {
                                                                 case 0:
                                                                     t = (d = r).map((function(e) {
@@ -1009,62 +1125,62 @@
                                                                                     break
                                                                                 }
                                                                             }
-                                                                        })), L(i), H(a), I(d.sort((function(e, a) {
+                                                                        })), j(i), X(a), q(d.sort((function(e, a) {
                                                                             return a.num - e.num
                                                                         })));
                                                                         for (var r = d.filter((function(e) {
                                                                                 var a = !1;
                                                                                 switch (e.career_address) {
-                                                                                    case M:
-                                                                                        a = g(e, M, "agility", "strength");
+                                                                                    case P:
+                                                                                        a = k(e, P, "agility", "strength");
+                                                                                        break;
+                                                                                    case V:
+                                                                                        a = k(e, V, "strength", "agility");
                                                                                         break;
                                                                                     case R:
-                                                                                        a = g(e, R, "strength", "agility");
+                                                                                        a = k(e, R, "strength", "physique");
                                                                                         break;
-                                                                                    case O:
-                                                                                        a = g(e, O, "strength", "physique");
+                                                                                    case z:
+                                                                                        a = k(e, z, "strength", "physique");
                                                                                         break;
-                                                                                    case N:
-                                                                                        a = g(e, N, "strength", "physique");
-                                                                                        break;
-                                                                                    case P:
-                                                                                        a = g(e, P, "brains", "charm")
+                                                                                    case L:
+                                                                                        a = k(e, L, "brains", "charm")
                                                                                 }
                                                                                 return !1 === a
                                                                             })), t = d.filter((function(e) {
                                                                                 var a = !1;
                                                                                 switch (e.career_address) {
-                                                                                    case M:
-                                                                                        a = g(e, M, "agility", "strength");
+                                                                                    case P:
+                                                                                        a = k(e, P, "agility", "strength");
+                                                                                        break;
+                                                                                    case V:
+                                                                                        a = k(e, V, "strength", "agility");
                                                                                         break;
                                                                                     case R:
-                                                                                        a = g(e, R, "strength", "agility");
+                                                                                        a = k(e, R, "strength", "physique");
                                                                                         break;
-                                                                                    case O:
-                                                                                        a = g(e, O, "strength", "physique");
+                                                                                    case z:
+                                                                                        a = k(e, z, "strength", "physique");
                                                                                         break;
-                                                                                    case N:
-                                                                                        a = g(e, N, "strength", "physique");
-                                                                                        break;
-                                                                                    case P:
-                                                                                        a = g(e, P, "brains", "charm")
+                                                                                    case L:
+                                                                                        a = k(e, L, "brains", "charm")
                                                                                 }
                                                                                 return !0 === a
-                                                                            })), n = t.reduce((function(e, a) {
+                                                                            })), l = t.reduce((function(e, a) {
                                                                                 return a.level > e ? a.level : e
-                                                                            }), 1), l = [], b = function(e) {
-                                                                                l.push(t.filter((function(a) {
+                                                                            }), 1), b = [], s = function(e) {
+                                                                                b.push(t.filter((function(a) {
                                                                                     return a.level === e + 1
                                                                                 })).length)
-                                                                            }, s = 0; s < n; s++) b(s);
-                                                                        de({
+                                                                            }, c = 0; c < l; c++) s(c);
+                                                                        n(!1), re({
                                                                             b: r.length,
                                                                             h: t.length,
-                                                                            levels: l,
-                                                                            hightLevel: n
+                                                                            levels: b,
+                                                                            hightLevel: l
                                                                         })
                                                                     })).catch((function(e) {
-                                                                        return console.log(e)
+                                                                        return n(!1)
                                                                     }));
                                                                 case 4:
                                                                 case "end":
@@ -1076,8 +1192,8 @@
                                                         return e.apply(this, arguments)
                                                     }
                                                 }()).catch((function(e) {
-                                                    return console.log(e)
-                                                })), i(!1)
+                                                    return n(!1)
+                                                }))
                                             }));
                                         case 31:
                                         case "end":
@@ -1091,22 +1207,23 @@
                         }(),
                         Pe = function(e) {
                             return function() {
-                                a && r ? 1 === e.level && me < 2e4 ? x.k.error({
+                                a && r ? 1 === e.level && Ce < 2e4 ? h.k.error({
                                     content: "\u91d1\u5e01\u4f59\u989d\u4e0d\u8db3, \u9700\u898120000\u91d1\u5e01\u624d\u80fd\u53472\u7ea7"
-                                }) : 2 === e.level && me < 5e4 ? x.k.error({
+                                }) : 2 === e.level && Ce < 5e4 ? h.k.error({
                                     content: "\u91d1\u5e01\u4f59\u989d\u4e0d\u8db3, \u9700\u898150000\u91d1\u5e01\u624d\u80fd\u53473\u7ea7"
-                                }) : 3 === e.level && me < 15e4 ? x.k.error({
+                                }) : 3 === e.level && Ce < 15e4 ? h.k.error({
                                     content: "\u91d1\u5e01\u4f59\u989d\u4e0d\u8db3, \u9700\u8981150000\u91d1\u5e01\u624d\u80fd\u53474\u7ea7"
-                                }) : 4 === e.level && me < 45e4 && oe < 5 ? x.k.error({
+                                }) : 4 === e.level && Ce < 45e4 && ne < 5 ? h.k.error({
                                     content: "\u91d1\u5e01\u4f59\u989d\u4e0d\u8db3, \u9700\u8981150000\u91d1\u5e01\u548c5BNX\u624d\u80fd\u53475\u7ea7"
-                                }) : 5 !== e.level ? (x.k.info({
+                                }) : 5 !== e.level ? S(.002, a, (function() {
+                                    h.k.info({
                                         content: "\u6b63\u5728\u5347\u7ea7\u5361\u4e2d, \u8bf7\u7a0d\u540e",
                                         duration: 10
                                     }), r.NewPlayInfoContract.methods.getLevelUpConfig(e.level).call().then((function(d) {
                                         r.NewPlayInfoContract.methods.levelUp(e.token_id, d[0], d[1]).send({
                                             from: a
                                         }).then((function() {
-                                            x.k.success({
+                                            h.k.success({
                                                 content: "\u5347\u7ea7\u6210\u529f"
                                             }), Ne()
                                         })).catch((function(e) {
@@ -1114,30 +1231,41 @@
                                         }))
                                     })).catch((function(e) {
                                         return console.log(e)
-                                    })))
-                                : x.k.error({
+                                    }))
+                                })) : h.k.error({
                                     content: "\u66f4\u9ad8\u7b49\u7ea7\u8bf7\u53bb\u5b98\u65b9\u5347\u7ea7"
-                                }) : x.k.info({
+                                }) : h.k.info({
                                     content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                 })
                             }
                         };
-                    return Object(k.jsxs)(qe, {
-                        children: [Object(k.jsx)(x.s.Title, {
+                    return Object(T.jsxs)(Oe, {
+                        children: [Object(T.jsx)(h.s.Title, {
                             style: {
                                 textAlign: "center"
                             },
                             children: "\u6211\u7684\u82f1\u96c4"
-                        }), Object(k.jsx)(ke, {
+                        }), Object(T.jsx)(je, {
                             address: a
-                        }), Object(k.jsxs)("div", {
+                        }), Object(T.jsx)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 5
+                            },
+                            children: Object(T.jsx)("a", {
+                                href: "https://game.binaryx.pro",
+                                target: "_blank",
+                                children: "BinaryX\u5b98\u7f51"
+                            })
+                        }), Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: [Object(k.jsx)(x.e, {
+                            children: [Object(T.jsx)(h.e, {
                                 style: {
                                     width: 200,
                                     margin: 3
@@ -1146,29 +1274,30 @@
                                 onChange: function(e) {
                                     return Z(e)
                                 }
-                            }), Object(k.jsx)(x.l, {
+                            }), Object(T.jsx)(h.l, {
                                 title: "\u786e\u5b9a\u662f\u5426\u8981\u8f6c\u79fb\u5361\u5230\u5176\u4ed6\u5730\u5740\uff1f",
                                 content: "\u8bf7\u786e\u8ba4\u5730\u5740:".concat(Y),
                                 onConfirm: function() {
-                                    a && r ? "" !== Y ? 0 !== m.length ? (x.k.info({
+                                    a && r ? "" !== Y ? 0 !== x.length ? S(.002, a, (function() {
+                                        h.k.info({
                                             content: "\u6b63\u5728\u8f6c\u79fb\u5361\u4e2d, \u8bf7\u7a0d\u540e",
                                             duration: 10
-                                        }), m.forEach((function(e, d) {
+                                        }), x.forEach((function(e, d) {
                                             var t;
                                             switch (e.career_address) {
-                                                case O:
+                                                case R:
                                                     t = r.WarriorContract;
                                                     break;
-                                                case N:
+                                                case z:
                                                     t = r.KatrinaContract;
                                                     break;
-                                                case M:
+                                                case P:
                                                     t = r.RobberContract;
                                                     break;
-                                                case P:
+                                                case L:
                                                     t = r.MageContract;
                                                     break;
-                                                case R:
+                                                case V:
                                                     t = r.youxiaContract
                                             }
                                             t.methods.transferFrom(a, Y, e.token_id).send({
@@ -1178,16 +1307,16 @@
                                             })).catch((function(e) {
                                                 return console.log(e)
                                             }))
-                                        })))
-                                    : x.k.error({
+                                        }))
+                                    })) : h.k.error({
                                         content: "\u8bf7\u9009\u62e9\u4f60\u8981\u8f6c\u79fb\u7684\u5361"
-                                    }) : x.k.error({
+                                    }) : h.k.error({
                                         content: "\u5730\u5740\u4e0d\u80fd\u4e3a\u7a7a"
-                                    }) : x.k.info({
+                                    }) : h.k.info({
                                         content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                     })
                                 },
-                                children: Object(k.jsx)(x.c, {
+                                children: Object(T.jsx)(h.c, {
                                     type: "primary",
                                     style: {
                                         margin: 3
@@ -1195,61 +1324,63 @@
                                     disabled: !Y,
                                     children: "\u8f6c\u79fb"
                                 })
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                disabled: !b,
+                                disabled: !s,
                                 onClick: function() {
-                                    a && r ? (x.k.info({
+                                    a && r ? S(.002, a, (function() {
+                                        h.k.info({
                                             content: "\u6b63\u5728\u53bb\u517c\u804c\u7684\u8def\u4e0a, \u8bf7\u7a0d\u540e",
                                             duration: 10
-                                        }), m.forEach((function(e, d) {
-                                            r.MiningContract.methods.work(ne, e.token_id).send({
+                                        }), x.forEach((function(e, d) {
+                                            r.MiningContract.methods.work(se, e.token_id).send({
                                                 from: a
                                             }).then((function() {
                                                 return Ne()
                                             })).catch((function(e) {
                                                 return console.log(e)
                                             }))
-                                        })))
-                                    : x.k.info({
+                                        }))
+                                    })) : h.k.info({
                                         content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                     })
                                 },
                                 children: "\u517c\u804c\u5de5\u4f5c"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                disabled: !y,
+                                disabled: !u,
                                 onClick: function() {
-                                    a && r ? (x.k.error({
+                                    a && r ? (h.k.error({
                                         content: "\u7cfb\u7edf\u5c06\u81ea\u52a8\u5206\u6d3e\u53c2\u4e0e\u7b26\u5408\u5de5\u4f5c\u7684\u5361, \u8bf7\u6ce8\u610f, GAS\u8fc7\u9ad8\u8981\u62d2\u7edd\u64cd\u4f5c"
-                                    }), x.k.error({
+                                    }), h.k.error({
                                         content: "GAS\u8fc7\u9ad8\u7684\u539f\u56e0\u53ef\u80fd\u9700\u8981\u5b98\u65b9\u6316\u77ff\u6388\u6743\u64cd\u4f5c"
-                                    }), (x.k.info({
+                                    }), S(.002, a, (function() {
+                                        h.k.info({
                                             content: "\u6b63\u5728\u53bb\u4e0a\u73ed\u7684\u8def\u4e0a, \u8bf7\u7a0d\u540e",
                                             duration: 10
-                                        }), m.forEach((function(e, d) {
+                                        }), x.forEach((function(e, d) {
                                             var t = "";
                                             switch (e.career_address) {
-                                                case P:
-                                                    t = se;
+                                                case L:
+                                                    t = fe;
+                                                    break;
+                                                case V:
+                                                    t = ye;
                                                     break;
                                                 case R:
                                                     t = ce;
                                                     break;
-                                                case O:
-                                                    t = le;
+                                                case z:
+                                                    t = ie;
                                                     break;
-                                                case N:
-                                                    t = re;
-                                                    break;
-                                                case M:
-                                                    t = be
+                                                case P:
+                                                    t = oe
                                             }
                                             r.NewMiningContract.methods.work(t, e.token_id).send({
                                                 from: a
@@ -1258,23 +1389,23 @@
                                             })).catch((function(e) {
                                                 return console.log(e)
                                             }))
-                                        })))
-                                    ) : x.k.info({
+                                        }))
+                                    }))) : h.k.info({
                                         content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                     })
                                 },
                                 children: "\u4e8c\u7ea7\u5de5\u4f5c"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                disabled: 0 === m.length,
+                                disabled: 0 === x.length,
                                 onClick: function() {
-                                    ge(!0), Ie(m)
+                                    Ae(!0), Se(x)
                                 },
                                 children: "\u6279\u91cf\u53d1\u5e03"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
@@ -1282,29 +1413,29 @@
                                 onClick: Ne,
                                 children: "\u5237\u65b0"
                             })]
-                        }), Object(k.jsx)("div", {
+                        }), Object(T.jsx)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: Object(k.jsxs)(x.o, {
+                            children: Object(T.jsxs)(h.o, {
                                 style: {
                                     display: "flex",
                                     justifyContent: "center",
                                     flexWrap: "wrap"
                                 },
-                                children: [Object(k.jsxs)(x.r, {
+                                children: [Object(T.jsxs)(h.r, {
                                     children: ["\u9ed1\u5974 ", ae.b]
-                                }), Object(k.jsxs)(x.r, {
+                                }), Object(T.jsxs)(h.r, {
                                     color: "green",
                                     children: ["\u5408\u683c ", ae.h]
-                                }), Object(k.jsxs)(x.r, {
+                                }), Object(T.jsxs)(h.r, {
                                     color: "red",
                                     children: ["\u5df2\u62e5\u6709\u6700\u9ad8\u7b49\u7ea7 ", ae.hightLevel]
                                 }), ae.levels.map((function(e, a) {
-                                    return 0 == e ? "" : Object(k.jsxs)(x.r, {
+                                    return 0 == e ? "" : Object(T.jsxs)(h.r, {
                                         color: ["amber", "blue", "cyan", "indigo", "lime", "orange", "pink", "purple", "red", "teal", "violet", "yellow", "light-blue", "light-green", "red"][a],
                                         style: {
                                             textAlign: "center"
@@ -1313,30 +1444,31 @@
                                     }, a)
                                 }))]
                             })
-                        }), Object(k.jsx)("p", {
+                        }), Object(T.jsx)("p", {
                             style: {
                                 width: "100%",
                                 textAlign: "center"
                             },
                             children: ""
-                        }), m.length > 0 ? Object(k.jsx)("div", {
+                        }), x.length > 0 ? Object(T.jsx)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 5,
                                 flexWrap: "wrap"
                             },
-                            children: Object(k.jsxs)("p", {
+                            children: Object(T.jsxs)("p", {
                                 style: {
                                     color: "var(--semi-color-text-0)"
                                 },
-                                children: ["\u5df2\u9009\u4e2d: ", m.length]
+                                children: ["\u5df2\u9009\u4e2d: ", x.length]
                             })
-                        }) : "", Object(k.jsx)(x.q, {
+                        }) : "", Object(T.jsx)(h.q, {
+                            loading: i,
                             rowKey: function(e) {
                                 return e.token_id
                             },
-                            columns: A() ? [{
+                            columns: v() ? [{
                                 title: "\u6211\u7684\u82f1\u96c4",
                                 dataIndex: "num",
                                 filters: [{
@@ -1349,87 +1481,87 @@
                                 onFilter: function(e, a) {
                                     var r = !1;
                                     switch (a.career_address) {
-                                        case M:
-                                            r = g(a, M, "agility", "strength");
+                                        case P:
+                                            r = k(a, P, "agility", "strength");
+                                            break;
+                                        case V:
+                                            r = k(a, V, "strength", "agility");
                                             break;
                                         case R:
-                                            r = g(a, R, "strength", "agility");
+                                            r = k(a, R, "strength", "physique");
                                             break;
-                                        case O:
-                                            r = g(a, O, "strength", "physique");
+                                        case z:
+                                            r = k(a, z, "strength", "physique");
                                             break;
-                                        case N:
-                                            r = g(a, N, "strength", "physique");
-                                            break;
-                                        case P:
-                                            r = g(a, P, "brains", "charm")
+                                        case L:
+                                            r = k(a, L, "brains", "charm")
                                     }
                                     return r == e
                                 },
                                 render: function(e, a) {
                                     switch (a.career_address) {
-                                        case M:
+                                        case P:
                                             a.agility, a.strength;
                                             break;
-                                        case O:
-                                        case N:
+                                        case R:
+                                        case z:
                                             a.strength, a.physique;
                                             break;
-                                        case P:
+                                        case L:
                                             a.brains, a.charm;
                                             break;
-                                        case R:
+                                        case V:
                                             a.strength, a.agility
                                     }
                                     var r = !1;
                                     switch (a.career_address) {
-                                        case M:
-                                            r = g(a, M, "agility", "strength");
+                                        case P:
+                                            r = k(a, P, "agility", "strength");
+                                            break;
+                                        case V:
+                                            r = k(a, V, "strength", "agility");
                                             break;
                                         case R:
-                                            r = g(a, R, "strength", "agility");
+                                            r = k(a, R, "strength", "physique");
                                             break;
-                                        case O:
-                                            r = g(a, O, "strength", "physique");
+                                        case z:
+                                            r = k(a, z, "strength", "physique");
                                             break;
-                                        case N:
-                                            r = g(a, N, "strength", "physique");
-                                            break;
-                                        case P:
-                                            r = g(a, P, "brains", "charm")
+                                        case L:
+                                            r = k(a, L, "brains", "charm")
                                     }
-                                    return Object(k.jsxs)("div", {
+                                    return Object(T.jsxs)("div", {
                                         style: {
                                             display: "flex",
                                             alignItems: "center",
                                             flexDirection: "column",
                                             justifyContent: "center"
                                         },
-                                        children: [Object(k.jsx)("span", {
+                                        children: [Object(T.jsx)("span", {
                                             style: {
                                                 fontWeight: "bold",
                                                 display: "flex",
                                                 alignItems: "center"
                                             },
-                                            children: Object(k.jsxs)(x.o, {
-                                                children: [Object(k.jsx)(x.r, {
+                                            children: Object(T.jsxs)(h.o, {
+                                                children: [Object(T.jsx)(h.r, {
                                                     color: r ? "green" : "grey",
                                                     children: r ? "\u5408\u683c" : "\u9ed1\u5974"
-                                                }), pe[a.career_address], " ", a.level, "\u7ea7"]
+                                                }), Ee[a.career_address], " ", a.level, "\u7ea7"]
                                             })
-                                        }), Object(k.jsxs)("span", {
+                                        }), Object(T.jsxs)("span", {
                                             children: ["\u529b", a.strength, "/\u654f", a.agility, "/\u4f53", a.physique, "/\u610f", a.volition, "/\u667a", a.brains, "/\u7cbe", a.charm]
-                                        }), Object(k.jsxs)(x.o, {
+                                        }), Object(T.jsxs)(h.o, {
                                             style: {
                                                 marginTop: 10
                                             },
-                                            children: [Object(k.jsx)(x.c, {
+                                            children: [Object(T.jsx)(h.c, {
                                                 size: "small",
                                                 onClick: function() {
-                                                    ge(!0), Ie([a])
+                                                    Ae(!0), Se([a])
                                                 },
                                                 children: "\u53d1\u5e03"
-                                            }), Object(k.jsxs)(x.c, {
+                                            }), Object(T.jsxs)(h.c, {
                                                 size: "small",
                                                 onClick: Pe(a),
                                                 disabled: a.level >= 5,
@@ -1438,16 +1570,16 @@
                                         })]
                                     })
                                 }
-                            }] : [].concat(Object(T.a)(he), [{
+                            }] : [].concat(Object(w.a)(qe), [{
                                 title: "\u64cd\u4f5c",
                                 render: function(e, a) {
-                                    return Object(k.jsxs)(x.o, {
-                                        children: [Object(k.jsx)(x.c, {
+                                    return Object(T.jsxs)(h.o, {
+                                        children: [Object(T.jsx)(h.c, {
                                             onClick: function() {
-                                                ge(!0), Ie([a])
+                                                Ae(!0), Se([a])
                                             },
                                             children: "\u53d1\u5e03"
-                                        }), Object(k.jsxs)(x.c, {
+                                        }), Object(T.jsxs)(h.c, {
                                             onClick: Pe(a),
                                             disabled: a.level >= 5,
                                             children: ["\u5347", a.level < 5 ? a.level + 1 : 5]
@@ -1455,55 +1587,56 @@
                                     })
                                 }
                             }]),
-                            dataSource: S,
+                            dataSource: g,
                             pagination: {
-                                formatPageText: !A()
+                                formatPageText: !v()
                             },
                             rowSelection: {
-                                selectedRowKeys: G,
+                                selectedRowKeys: J,
                                 onChange: function(e, a) {
-                                    J(e);
+                                    G(e);
                                     var r = a.filter((function(e) {
                                         var a = !1;
                                         switch (e.career_address) {
-                                            case M:
-                                                a = g(e, M, "agility", "strength") && e.level > 1;
+                                            case P:
+                                                a = k(e, P, "agility", "strength") && e.level > 1;
+                                                break;
+                                            case V:
+                                                a = k(e, V, "strength", "agility") && e.level > 1;
                                                 break;
                                             case R:
-                                                a = g(e, R, "strength", "agility") && e.level > 1;
+                                                a = k(e, R, "strength", "physique") && e.level > 1;
                                                 break;
-                                            case O:
-                                                a = g(e, O, "strength", "physique") && e.level > 1;
+                                            case z:
+                                                a = k(e, z, "strength", "physique") && e.level > 1;
                                                 break;
-                                            case N:
-                                                a = g(e, N, "strength", "physique") && e.level > 1;
-                                                break;
-                                            case P:
-                                                a = g(e, P, "brains", "charm") && e.level > 1
+                                            case L:
+                                                a = k(e, L, "brains", "charm") && e.level > 1
                                         }
                                         return !0 === a
                                     }));
-                                    c(a.length > 0 && 0 === r.length), a.length > 0 && a.length === r.length ? u(0 !== r.length) : u(!1), h(a)
+                                    o(a.length > 0 && 0 === r.length), a.length > 0 && a.length === r.length ? _(0 !== r.length) : _(!1), B(a)
                                 }
                             },
                             bordered: !0
-                        }), Object(k.jsx)(x.i, {
-                            width: A() ? 300 : 448,
-                            centered: A(),
-                            title: 1 === Te.length ? "\u53d1\u5e03\u5361\u7247\u5230\u5e02\u573a" : "\u6279\u91cf\u53d1\u5e03\u5361\u7247\u5230\u5e02\u573a",
-                            visible: Ae,
+                        }), Object(T.jsx)(h.i, {
+                            width: v() ? 300 : 448,
+                            centered: v(),
+                            title: 1 === ke.length ? "\u53d1\u5e03\u5361\u7247\u5230\u5e02\u573a" : "\u6279\u91cf\u53d1\u5e03\u5361\u7247\u5230\u5e02\u573a",
+                            visible: Be,
                             onCancel: function() {
-                                return ge(!1)
+                                return Ae(!1)
                             },
                             okText: "\u786e\u8ba4\u53d1\u5e03",
                             onOk: function() {
-                                a && r ? 0 !== Te.length ? Te.forEach((function(e) {
+                                a && r ? 0 !== ke.length ? S(.002, a, (function() {
+                                    ke.forEach((function(e) {
                                         var d = "\u529b".concat(e.strength, "/\u654f").concat(e.agility, "/\u4f53").concat(e.physique, "/\u610f").concat(e.volition, "/\u667a").concat(e.brains, "/\u7cbe").concat(e.charm);
-                                        r.saleContractNew.methods.sellPlayer(a, e.career_address, ue, e.token_id, new w.BigNumber(je).multipliedBy(Math.pow(10, 18)).toFixed(), d).send({
+                                        r.saleContractNew.methods.sellPlayer(a, e.career_address, Fe, e.token_id, new M.BigNumber(We).multipliedBy(Math.pow(10, 18)).toFixed(), d).send({
                                             from: a
                                         }).then((function(e) {
                                             r.saleContractNew.methods.getSellerOrder(a).call().then((function(e) {
-                                                ge(!1), Ne(), x.k.success({
+                                                Ae(!1), Ne(), h.k.success({
                                                     title: "\u53d1\u5e03\u6210\u529f"
                                                 })
                                             })).catch((function(e) {
@@ -1513,55 +1646,55 @@
                                             return console.log(e)
                                         }))
                                     }))
-                                : x.k.error({
+                                })) : h.k.error({
                                     content: "\u8bf7\u9009\u62e9\u4f60\u8981\u53d1\u5e03\u7684\u5361"
-                                }) : x.k.info({
+                                }) : h.k.info({
                                     content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                 })
                             },
-                            children: Te.length > 0 ? Object(k.jsxs)("div", {
+                            children: ke.length > 0 ? Object(T.jsxs)("div", {
                                 style: {
                                     display: "flex",
                                     flexDirection: "column"
                                 },
-                                children: [1 === Te.length ? Object(k.jsxs)("div", {
+                                children: [1 === ke.length ? Object(T.jsxs)("div", {
                                     style: {
                                         display: "flex",
                                         flexDirection: "column"
                                     },
-                                    children: [Object(k.jsxs)(x.o, {
-                                        children: [Object(k.jsx)(x.s.Title, {
+                                    children: [Object(T.jsxs)(h.o, {
+                                        children: [Object(T.jsx)(h.s.Title, {
                                             heading: 5,
-                                            children: pe[Te[0].career_address]
-                                        }), Object(k.jsxs)(x.s.Title, {
+                                            children: Ee[ke[0].career_address]
+                                        }), Object(T.jsxs)(h.s.Title, {
                                             heading: 5,
-                                            children: [Te[0].level, " \u7ea7"]
-                                        }), Object(k.jsxs)(x.s.Title, {
+                                            children: [ke[0].level, " \u7ea7"]
+                                        }), Object(T.jsxs)(h.s.Title, {
                                             heading: 5,
-                                            children: ["\u603b\u5c5e\u6027: ", Te[0].total]
+                                            children: ["\u603b\u5c5e\u6027: ", ke[0].total]
                                         })]
-                                    }), Object(k.jsxs)(x.s.Text, {
+                                    }), Object(T.jsxs)(h.s.Text, {
                                         strong: !0,
                                         style: {
                                             marginTop: 10
                                         },
-                                        children: ["\u529b", Te[0].strength, "/\u654f", Te[0].agility, "/\u4f53", Te[0].physique, "/\u610f", Te[0].volition, "/\u667a", Te[0].brains, "/\u7cbe", Te[0].charm]
+                                        children: ["\u529b", ke[0].strength, "/\u654f", ke[0].agility, "/\u4f53", ke[0].physique, "/\u610f", ke[0].volition, "/\u667a", ke[0].brains, "/\u7cbe", ke[0].charm]
                                     })]
-                                }) : Object(k.jsxs)(x.s.Title, {
+                                }) : Object(T.jsxs)(h.s.Title, {
                                     heading: 5,
-                                    children: ["\u6279\u91cf\u53d1\u5e03 ", Te.length, " \u4e2a(\u8bf7\u6ce8\u610f, \u6279\u91cf\u53d1\u5e03\u8fc7\u591a\u540c\u4e00\u4ef7\u683c\u5361\u7247, \u53ef\u80fd\u4f1a\u5f71\u54cd\u5e02\u573a)"]
-                                }), Object(k.jsxs)("div", {
+                                    children: ["\u6279\u91cf\u53d1\u5e03 ", ke.length, " \u4e2a(\u8bf7\u6ce8\u610f, \u6279\u91cf\u53d1\u5e03\u8fc7\u591a\u540c\u4e00\u4ef7\u683c\u5361\u7247, \u53ef\u80fd\u4f1a\u5f71\u54cd\u5e02\u573a)"]
+                                }), Object(T.jsxs)("div", {
                                     style: {
                                         marginTop: 10
                                     },
-                                    children: ["\u552e\u4ef7", Object(k.jsx)(x.f, {
+                                    children: ["\u552e\u4ef7", Object(T.jsx)(h.f, {
                                         style: {
                                             width: 150
                                         },
                                         precision: 2,
                                         defaultValue: 8.88,
                                         onChange: function(e) {
-                                            return Me(e)
+                                            return we(e)
                                         }
                                     }), "BNX"]
                                 })]
@@ -1569,77 +1702,85 @@
                         })]
                     })
                 },
-                Te = r(322),
-                Ie = W.a.div(i || (i = Object(I.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
-                We = function(e) {
+                Ne = r(321),
+                Pe = O.a.div(i || (i = Object(j.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
+                Re = function(e) {
                     var a = e.address,
                         r = e.contracts,
-                        d = Object(s.useState)(""),
-                        t = Object(C.a)(d, 2),
+                        d = Object(c.useState)(""),
+                        t = Object(m.a)(d, 2),
                         i = t[0],
                         n = t[1],
-                        l = Object(s.useState)(!1),
-                        b = Object(C.a)(l, 2),
-                        c = (b[0], b[1]),
-                        o = Object(s.useState)(0),
-                        f = Object(C.a)(o, 2),
-                        y = f[0],
-                        u = f[1],
-                        _ = Object(s.useState)(0),
-                        F = Object(C.a)(_, 2),
-                        m = F[0],
-                        h = F[1],
-                        B = Object(s.useState)([]),
-                        q = Object(C.a)(B, 2),
-                        S = q[0],
-                        I = q[1],
-                        W = Object(s.useState)([]),
-                        w = Object(C.a)(W, 2),
-                        j = w[0],
-                        Z = w[1],
-                        $ = Object(s.useState)(!1),
-                        ee = Object(C.a)($, 2),
-                        ae = ee[0],
-                        re = ee[1],
-                        de = Object(s.useState)(1e3),
-                        te = Object(C.a)(de, 2),
-                        ie = te[0],
-                        ne = te[1],
-                        le = Object(s.useState)([]),
-                        be = Object(C.a)(le, 2),
-                        se = be[0],
-                        ce = be[1];
-                    Object(s.useEffect)((function() {
-                        Z([]), ce([]), oe()
-                    }), [a]);
-                    var oe = function() {
+                        l = Object(c.useState)(!1),
+                        b = Object(m.a)(l, 2),
+                        s = b[0],
+                        o = b[1],
+                        f = Object(c.useState)(0),
+                        y = Object(m.a)(f, 2),
+                        u = y[0],
+                        _ = y[1],
+                        p = Object(c.useState)(0),
+                        F = Object(m.a)(p, 2),
+                        x = F[0],
+                        B = F[1],
+                        E = Object(c.useState)([]),
+                        g = Object(m.a)(E, 2),
+                        I = g[0],
+                        W = g[1],
+                        j = Object(c.useState)([]),
+                        O = Object(m.a)(j, 2),
+                        M = O[0],
+                        N = O[1],
+                        ae = Object(c.useState)(!1),
+                        re = Object(m.a)(ae, 2),
+                        de = re[0],
+                        te = re[1],
+                        ie = Object(c.useState)(1e3),
+                        ne = Object(m.a)(ie, 2),
+                        le = ne[0],
+                        be = ne[1],
+                        se = Object(c.useState)([]),
+                        ce = Object(m.a)(se, 2),
+                        oe = ce[0],
+                        fe = ce[1],
+                        ye = Object(c.useState)(a),
+                        ue = Object(m.a)(ye, 2),
+                        _e = ue[0],
+                        pe = ue[1];
+                    Object(c.useEffect)((function() {
+                        N([]), fe([]), Fe()
+                    }), [_e]);
+                    var Fe = function() {
                             if (a && r) {
-                                var e = v(E.a.givenProvider),
-                                    d = [L, V, z, G, J, U, K, H];
-                                c(!0), I([]), h(0), u(0), ce([]), Z([]);
+                                var e = q(A.a.givenProvider),
+                                    d = [J, G, K, U, X, H, Q, Y];
+                                o(!0), W([]), B(0), _(0), fe([]), N([]);
                                 var t = d.map((function(e) {
-                                    return new Promise((function(r) {
-                                        fetch("https://game.binaryx.pro/minev2/getWorks?address=".concat(a, "&work_type=").concat(e)).then((function(e) {
-                                            return e.json()
-                                        })).then((function(e) {
-                                            var a = e.data.result,
-                                                d = [];
-                                            a && (d = a.map((function(e) {
-                                                return Object(Te.a)(Object(Te.a)({}, e), {}, {
-                                                    name: X(e.work_type)
-                                                })
-                                            }))), r(d)
-                                        }))
+                                    return fetch("https://game.binaryx.pro/info/getWorks2?address=".concat(_e || a, "&work_type=").concat(e, "&page=1&page_size=3000&direction=asc")).then((function(e) {
+                                        return e.json()
+                                    })).then((function(e) {
+                                        if (!e.data.result) return [];
+                                        var a = e.data.result.items,
+                                            r = [];
+                                        return a && (r = a.map((function(e) {
+                                            return Object(Ne.a)(Object(Ne.a)({}, e), {}, {
+                                                name: Z(e.work_type)
+                                            })
+                                        }))), r
+                                    })).catch((function(e) {
+                                        return console.log(e)
                                     }))
                                 }));
                                 Promise.all(t).then((function(a) {
-                                    var d = a.reduce((function(e, a) {
-                                        return [].concat(Object(T.a)(e), Object(T.a)(a))
+                                    var d = a.filter((function(e) {
+                                        return void 0 != e
+                                    })).reduce((function(e, a) {
+                                        return [].concat(Object(w.a)(e), Object(w.a)(a))
                                     }), []);
                                     d = d.map(function() {
-                                        var a = Object(D.a)(p.a.mark((function a(d) {
+                                        var a = Object(C.a)(D.a.mark((function a(d) {
                                             var t, i, n, l, b;
-                                            return p.a.wrap((function(a) {
+                                            return D.a.wrap((function(a) {
                                                 for (;;) switch (a.prev = a.next) {
                                                     case 0:
                                                         return a.next = 2, ("\u517c\u804c" === d.name ? r.MiningContract : r.NewMiningContract).methods.getPlayerWork(d.token_id).call().catch((function(e) {
@@ -1694,303 +1835,325 @@
                                             return a.apply(this, arguments)
                                         }
                                     }()), Promise.all(d).then((function(e) {
-                                        c(!1), I(e);
+                                        W(e);
                                         var a = e.reduce((function(e, a) {
                                                 return Number(e) + Number(a.gold)
                                             }), 0),
                                             r = e.reduce((function(e, a) {
                                                 var r = !1;
                                                 switch (a.career_address) {
-                                                    case M:
-                                                        r = g(a, M, "agility", "strength");
+                                                    case P:
+                                                        r = k(a, P, "agility", "strength");
+                                                        break;
+                                                    case V:
+                                                        r = k(a, V, "strength", "agility");
                                                         break;
                                                     case R:
-                                                        r = g(a, R, "strength", "agility");
+                                                        r = k(a, R, "strength", "physique");
                                                         break;
-                                                    case O:
-                                                        r = g(a, O, "strength", "physique");
+                                                    case z:
+                                                        r = k(a, z, "strength", "physique");
                                                         break;
-                                                    case N:
-                                                        r = g(a, N, "strength", "physique");
-                                                        break;
-                                                    case P:
-                                                        r = g(a, P, "brains", "charm")
+                                                    case L:
+                                                        r = k(a, L, "brains", "charm")
                                                 }
                                                 if (r && a.level >= 2) {
                                                     var d = 0;
                                                     switch (a.career_address) {
-                                                        case M:
+                                                        case P:
                                                             d = a.agility;
                                                             break;
+                                                        case V:
                                                         case R:
-                                                        case O:
-                                                        case N:
+                                                        case z:
                                                             d = a.strength;
                                                             break;
-                                                        case P:
+                                                        case L:
                                                             d = a.brains
                                                     }
-                                                    return e + Number(Q[d]) * Number(Y[a.level])
+                                                    return e + Number($[d]) * Number(ee[a.level])
                                                 }
-                                                return !r && a.level > 1 ? e + 288 * Number(Y[a.level]) : e + 288
+                                                return !r && a.level > 1 ? e + 288 * Number(ee[a.level]) : e + 288
                                             }), 0);
-                                        h(r), u(a)
+                                        B(r), _(a), o(!1)
+                                    })).catch((function(e) {
+                                        return o(!1)
                                     }))
+                                })).catch((function(e) {
+                                    return o(!1)
                                 }))
-                            } else x.k.info({
+                            } else h.k.info({
                                 content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                             })
                         },
-                        fe = function(e) {
+                        De = function(e) {
                             var d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
                             return function() {
                                 if (a && r)
                                     if (1 === d) {
-                                        var t = S.filter((function(e) {
+                                        var t = I.filter((function(e) {
                                             return "\u517c\u804c" === e.workname
                                         }));
-                                        if (0 === t.length) return void x.k.error({
+                                        if (0 === t.length) return void h.k.error({
                                             content: "\u4f60\u6ca1\u6709\u9ed1\u5974\u53ef\u6536"
                                         });
-                                        (x.k.info({
+                                        S(.002, a, (function() {
+                                            h.k.info({
                                                 content: "\u6b63\u5728\u83b7\u53d6\u6536\u76ca\u4e2d, \u8bf7\u7a0d\u540e",
                                                 duration: 10
                                             }), t.forEach((function(e, d) {
                                                 r.MiningContract.methods.getAward(e.token_id).send({
                                                     from: a
                                                 }).then((function() {
-                                                    return oe()
+                                                    return Fe()
                                                 })).catch((function(e) {
                                                     return console.log(e)
                                                 }))
-                                            })))
+                                            }))
+                                        }))
                                     } else if (2 === d) {
-                                    var i = S.filter((function(e) {
+                                    var i = I.filter((function(e) {
                                         return "\u517c\u804c" !== e.workname
                                     }));
-                                    if (0 === i.length) return void x.k.error({
+                                    if (0 === i.length) return void h.k.error({
                                         content: "\u4f60\u6ca1\u6709\u5408\u683c\u53ef\u6536"
                                     });
-                                    (x.k.info({
+                                    S(.002, a, (function() {
+                                        h.k.info({
                                             content: "\u6b63\u5728\u83b7\u53d6\u6536\u76ca\u4e2d, \u8bf7\u7a0d\u540e",
                                             duration: 10
-                                        }), d && i.forEach((function(e, d) {
+                                        }), i.forEach((function(e, d) {
                                             r.NewMiningContract.methods.getAward(e.token_id).send({
                                                 from: a
                                             }).then((function() {
-                                                return oe()
+                                                return Fe()
                                             })).catch((function(e) {
                                                 return console.log(e)
                                             }))
-                                        })))
-                                } else {
-                                    (x.k.info({
-                                            content: "\u6b63\u5728\u83b7\u53d6\u6536\u76ca\u4e2d, \u8bf7\u7a0d\u540e",
-                                            duration: 10
-                                        }), (e ? S : j).forEach((function(e, d) {
-                                            "\u517c\u804c" === e.workname ? r.MiningContract.methods.getAward(e.token_id).send({
-                                                from: a
-                                            }).then((function() {
-                                                return oe()
-                                            })).catch((function(e) {
-                                                return console.log(e)
-                                            })) : r.NewMiningContract.methods.getAward(e.token_id).send({
-                                                from: a
-                                            }).then((function() {
-                                                return oe()
-                                            })).catch((function(e) {
-                                                return console.log(e)
-                                            }))
-                                        })))
-                                } else x.k.info({
+                                        }))
+                                    }))
+                                } else S(.002, a, (function() {
+                                    h.k.info({
+                                        content: "\u6b63\u5728\u83b7\u53d6\u6536\u76ca\u4e2d, \u8bf7\u7a0d\u540e",
+                                        duration: 10
+                                    }), (e ? I : M).forEach((function(e, d) {
+                                        "\u517c\u804c" === e.workname ? r.MiningContract.methods.getAward(e.token_id).send({
+                                            from: a
+                                        }).then((function() {
+                                            return Fe()
+                                        })).catch((function(e) {
+                                            return console.log(e)
+                                        })) : r.NewMiningContract.methods.getAward(e.token_id).send({
+                                            from: a
+                                        }).then((function() {
+                                            return Fe()
+                                        })).catch((function(e) {
+                                            return console.log(e)
+                                        }))
+                                    }))
+                                }));
+                                else h.k.info({
                                     content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                 })
                             }
                         },
-                        ye = function(e) {
+                        Ce = function(e) {
                             return function() {
                                 if (a && r) {
-                                    var d = S.filter((function(e) {
+                                    var d = I.filter((function(e) {
                                         return "\u517c\u804c" === e.workname
                                     })).filter((function(a) {
                                         return a.gold >= e
                                     }));
-                                    if (0 !== d.length) (x.k.info({
+                                    0 !== d.length ? S(.002, a, (function() {
+                                        h.k.info({
                                             content: "\u6b63\u5728\u83b7\u53d6\u6536\u76ca\u4e2d, \u8bf7\u7a0d\u540e",
                                             duration: 10
                                         }), d.forEach((function(e, d) {
                                             r.MiningContract.methods.getAward(e.token_id).send({
                                                 from: a
                                             }).then((function() {
-                                                return oe()
+                                                return Fe()
                                             })).catch((function(e) {
                                                 return console.log(e)
                                             }))
-                                        })))
-                                    else x.k.error({
+                                        }))
+                                    })) : h.k.error({
                                         content: "\u4f60\u6ca1\u6709\u9ed1\u5974\u6ee1".concat(e, "\u53ef\u6536")
                                     })
-                                } else x.k.info({
+                                } else h.k.info({
                                     content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                 })
                             }
                         };
-                    return Object(k.jsxs)(Ie, {
-                        children: [Object(k.jsx)(x.s.Title, {
+                    return Object(T.jsxs)(Pe, {
+                        children: [Object(T.jsx)(h.s.Title, {
                             style: {
                                 textAlign: "center"
                             },
                             children: "\u65e5\u5e38\u6316\u77ff"
-                        }), Object(k.jsx)(ke, {
+                        }), Object(T.jsx)(je, {
                             address: a
-                        }), Object(k.jsxs)("div", {
+                        }), Object(T.jsx)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 5
+                            },
+                            children: Object(T.jsx)("a", {
+                                href: "https://game.binaryx.pro",
+                                target: "_blank",
+                                children: "BinaryX\u5b98\u7f51"
+                            })
+                        }), Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: [Object(k.jsx)(x.c, {
+                            children: [Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                disabled: !ae,
-                                onClick: fe(!1),
+                                disabled: !de,
+                                onClick: De(!1),
                                 children: "\u6536\u83dc"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                disabled: !ae,
+                                disabled: !de,
                                 onClick: function(e) {
                                     var d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
                                     return function() {
                                         if (a) {
-                                            var t = e ? S : j;
-                                            if (d > 0 && (t = t.filter((function(e) {
-                                                    return e.level === d
-                                                }))), 0 !== t.length) x.k.info({
+                                            var t = e ? I : M;
+                                            d > 0 && (t = t.filter((function(e) {
+                                                return e.level === d
+                                            }))), 0 !== t.length ? (h.k.info({
                                                 content: "\u6b63\u5728\u7092\u8001\u677f\u9c7f\u9c7c\u4e2d, \u8bf7\u7a0d\u540e",
                                                 duration: 10
-                                            }), t.forEach((function(e, d) {
+                                            }), S(.002, a, (function() {
+                                                t.forEach((function(e, d) {
                                                     "\u517c\u804c" === e.workname ? r.MiningContract.methods.quitWork(e.token_id).send({
                                                         from: a
                                                     }).then((function() {
-                                                        return oe(a)
+                                                        return Fe(a)
                                                     })).catch((function(e) {
                                                         return console.log(e)
                                                     })) : r.NewMiningContract.methods.quitWork(e.token_id).send({
                                                         from: a
                                                     }).then((function() {
-                                                        return oe(a)
+                                                        return Fe(a)
                                                     })).catch((function(e) {
                                                         return console.log(e)
                                                     }))
                                                 }))
-                                            else x.k.error({
+                                            }))) : h.k.error({
                                                 content: "\u4f60\u6ca1\u5361\u53ef\u4ee5\u9000\u51fa\u5de5\u4f5c"
                                             })
-                                        } else x.k.info({
+                                        } else h.k.info({
                                             content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                         })
                                     }
                                 }(!1),
                                 children: "\u8f9e\u804c"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                onClick: fe(!0, 1),
+                                onClick: De(!0, 1),
                                 children: "\u6536\u5168\u9ed1"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                onClick: ye(2e3),
+                                onClick: Ce(2e3),
                                 children: "\u9ed1\u6ee12000"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                onClick: ye(3e3),
+                                onClick: Ce(3e3),
                                 children: "\u9ed1\u6ee13000"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                onClick: ye(4e3),
+                                onClick: Ce(4e3),
                                 children: "\u9ed1\u6ee14000"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                onClick: fe(!0, 2),
+                                onClick: De(!0, 2),
                                 children: "\u65362\u7ea7\u5de5\u4f5c"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                onClick: oe,
+                                onClick: Fe,
                                 children: "\u5237\u65b0"
                             })]
-                        }), Object(k.jsxs)("div", {
+                        }), Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: [Object(k.jsx)(x.f, {
+                            children: [Object(T.jsx)(h.f, {
                                 precision: 2,
-                                defaultValue: ie,
+                                defaultValue: le,
                                 onChange: function(e) {
-                                    return ne(e)
+                                    return be(e)
                                 }
-                            }), Object(k.jsx)(x.d, {
-                                render: Object(k.jsxs)(x.d.Menu, {
-                                    children: [Object(k.jsx)(x.d.Item, {
+                            }), Object(T.jsx)(h.d, {
+                                render: Object(T.jsxs)(h.d.Menu, {
+                                    children: [Object(T.jsx)(h.d.Item, {
                                         onClick: function() {
-                                            return n(L)
+                                            return n(J)
                                         },
                                         children: "\u517c\u804c"
-                                    }), Object(k.jsx)(x.d.Item, {
+                                    }), Object(T.jsx)(h.d.Item, {
                                         onClick: function() {
-                                            return n(z)
+                                            return n(K)
                                         },
                                         children: "\u4f10\u6728"
-                                    }), Object(k.jsx)(x.d.Item, {
-                                        onClick: function() {
-                                            return n(V)
-                                        },
-                                        children: "\u917f\u9152"
-                                    }), Object(k.jsx)(x.d.Item, {
+                                    }), Object(T.jsx)(h.d.Item, {
                                         onClick: function() {
                                             return n(G)
                                         },
-                                        children: "\u6284\u5f55"
-                                    }), Object(k.jsx)(x.d.Item, {
+                                        children: "\u917f\u9152"
+                                    }), Object(T.jsx)(h.d.Item, {
                                         onClick: function() {
-                                            return n(J)
+                                            return n(U)
+                                        },
+                                        children: "\u6284\u5f55"
+                                    }), Object(T.jsx)(h.d.Item, {
+                                        onClick: function() {
+                                            return n(X)
                                         },
                                         children: "\u6253\u730e"
                                     })]
                                 }),
-                                children: Object(k.jsx)(x.c, {
+                                children: Object(T.jsx)(h.c, {
                                     type: "tertiary",
                                     style: {
                                         margin: 3
                                     },
-                                    children: X(i) || "\u9009\u62e9\u5de5\u4f5c\u7c7b\u578b"
+                                    children: Z(i) || "\u9009\u62e9\u5de5\u4f5c\u7c7b\u578b"
                                 })
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
@@ -1998,153 +2161,193 @@
                                 onClick: function() {
                                     if (a && r)
                                         if (i) {
-                                            var e = X(i);
-                                            if (0 !== S.filter((function(a) {
+                                            var e = Z(i);
+                                            if (0 !== I.filter((function(a) {
                                                     return a.workname === e
                                                 })).length) {
-                                                var d = S.filter((function(e) {
-                                                    return e.gold >= ie
+                                                var d = I.filter((function(e) {
+                                                    return e.gold >= le
                                                 }));
-                                                if (0 !== d.length) x.k.info({
-                                                    content: "\u6b63\u5728\u83b7\u53d6\u6536\u76ca\u4e2d, \u8bf7\u7a0d\u540e",
-                                                    duration: 10
-                                                }), d.forEach((function(e, d) {
+                                                0 !== d.length ? S(.002, a, (function() {
+                                                    h.k.info({
+                                                        content: "\u6b63\u5728\u83b7\u53d6\u6536\u76ca\u4e2d, \u8bf7\u7a0d\u540e",
+                                                        duration: 10
+                                                    }), d.forEach((function(e, d) {
                                                         "\u517c\u804c" === e.workname ? r.MiningContract.methods.getAward(e.token_id).send({
                                                             from: a
                                                         }).then((function() {
-                                                            return oe(a)
+                                                            return Fe(a)
                                                         })).catch((function(e) {
                                                             return console.log(e)
                                                         })) : r.NewMiningContract.methods.getAward(e.token_id).send({
                                                             from: a
                                                         }).then((function() {
-                                                            return oe(a)
+                                                            return Fe(a)
                                                         })).catch((function(e) {
                                                             return console.log(e)
                                                         }))
                                                     }))
-                                                else x.k.error({
-                                                    content: "\u4f60\u6ca1\u6709\u91d1\u5e01\u6ee1".concat(ie, "\u7684\u5361\u53ef\u6536")
+                                                })) : h.k.error({
+                                                    content: "\u4f60\u6ca1\u6709\u91d1\u5e01\u6ee1".concat(le, "\u7684\u5361\u53ef\u6536")
                                                 })
-                                            } else x.k.error({
+                                            } else h.k.error({
                                                 content: "\u4f60\u6ca1\u6709".concat(e, "\u53ef\u6536")
                                             })
-                                        } else x.k.error({
+                                        } else h.k.error({
                                             content: "\u8bf7\u9009\u62e9\u5de5\u4f5c\u7c7b\u578b"
                                         });
-                                    else x.k.info({
+                                    else h.k.info({
                                         content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                     })
                                 },
                                 children: "\u8fc7\u6ee4\u6536\u83dc"
                             })]
-                        }), Object(k.jsx)("div", {
+                        }), Object(T.jsx)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: Object(k.jsxs)(x.o, {
+                            children: Object(T.jsxs)(h.o, {
                                 style: {
                                     display: "flex",
                                     justifyContent: "center",
                                     flexWrap: "wrap"
                                 },
-                                children: [Object(k.jsxs)(x.r, {
-                                    children: ["\u6316\u77ff\u5361\u7247\u6570\u91cf: ", S.length]
-                                }), Object(k.jsxs)(x.r, {
-                                    children: ["\u6bcf\u65e5\u9884\u8ba1\u6536\u76ca: ", m]
-                                }), Object(k.jsxs)(x.r, {
-                                    children: ["\u6316\u77ff\u603b\u6536\u76ca: ", y.toFixed(2)]
+                                children: [Object(T.jsxs)(h.r, {
+                                    children: ["\u6316\u77ff\u5361\u7247\u6570\u91cf: ", I.length]
+                                }), Object(T.jsxs)(h.r, {
+                                    children: ["\u6bcf\u65e5\u9884\u8ba1\u6536\u76ca: ", x]
+                                }), Object(T.jsxs)(h.r, {
+                                    children: ["\u6316\u77ff\u603b\u6536\u76ca: ", u.toFixed(2)]
                                 })]
                             })
-                        }), Object(k.jsx)("p", {
+                        }), Object(T.jsxs)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 20,
+                                flexWrap: "wrap",
+                                alignItems: "center"
+                            },
+                            children: [Object(T.jsx)(h.e, {
+                                placeholder: "\u8f93\u5165\u5176\u4ed6\u5730\u5740\u67e5\u8be2\u6536\u76ca(\u4ec5\u9650\u4e8e\u67e5\u8be2)",
+                                style: {
+                                    width: 300
+                                },
+                                value: _e,
+                                onChange: function(e) {
+                                    pe(e), "" == e && pe(a)
+                                }
+                            }), Object(T.jsx)(h.c, {
+                                type: "primary",
+                                style: {
+                                    margin: 3
+                                },
+                                onClick: function() {
+                                    pe(a), Fe()
+                                },
+                                children: "\u91cd\u7f6e"
+                            })]
+                        }), Object(T.jsx)("p", {
                             style: {
                                 width: "100%",
                                 textAlign: "center"
                             },
                             children: ""
-                        }), j.length > 0 ? Object(k.jsx)("div", {
+                        }), M.length > 0 ? Object(T.jsx)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 5,
                                 flexWrap: "wrap"
                             },
-                            children: Object(k.jsxs)("p", {
+                            children: Object(T.jsxs)("p", {
                                 style: {
                                     color: "var(--semi-color-text-0)"
                                 },
-                                children: ["\u5df2\u9009\u4e2d: ", j.length]
+                                children: ["\u5df2\u9009\u4e2d: ", M.length]
                             })
-                        }) : "", Object(k.jsx)(x.q, {
+                        }) : "", Object(T.jsx)(h.q, {
+                            loading: s,
                             rowKey: function(e) {
                                 return e.token_id
                             },
-                            columns: A() ? Ee : Be,
+                            columns: v() ? Te : Se,
                             rowSelection: {
-                                selectedRowKeys: se,
+                                selectedRowKeys: oe,
                                 onChange: function(e, a) {
-                                    re(a.length > 0), ce(e), Z(a)
+                                    te(a.length > 0), fe(e), N(a)
                                 }
                             },
-                            dataSource: S,
+                            dataSource: I,
                             pagination: {
-                                formatPageText: !A()
+                                formatPageText: !v()
                             },
                             bordered: !0
                         })]
                     })
                 },
-                we = r(38),
-                je = r(476),
-                Me = W.a.div(n || (n = Object(I.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
-                Oe = function() {
-                    var e = Object(s.useState)([]),
-                        a = Object(C.a)(e, 2),
+                ze = r(38),
+                Le = r(476),
+                Ve = O.a.div(n || (n = Object(j.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
+                Je = function() {
+                    var e = Object(c.useState)([]),
+                        a = Object(m.a)(e, 2),
                         r = a[0],
                         d = a[1],
-                        t = Object(s.useState)(!1),
-                        i = Object(C.a)(t, 2),
+                        t = Object(c.useState)(!1),
+                        i = Object(m.a)(t, 2),
                         n = i[0],
                         l = i[1];
-                    Object(s.useEffect)((function() {
+                    Object(c.useEffect)((function() {
                         return b()
                     }), []);
                     var b = function() {
                             l(!0);
-                            var e = je.data.result.items,
+                            var e = Le.data.result.items,
                                 a = [86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100].map((function(a) {
-                                    return [].concat(Object(T.a)(c(e, M, "agility", "strength", a)), Object(T.a)(c(e, R, "strength", "agility", a)), Object(T.a)(c(e, O, "strength", "physique", a)), Object(T.a)(c(e, N, "strength", "physique", a)), Object(T.a)(c(e, P, "brains", "charm", a))).filter((function(e) {
+                                    return [].concat(Object(w.a)(s(e, P, "agility", "strength", a)), Object(w.a)(s(e, V, "strength", "agility", a)), Object(w.a)(s(e, R, "strength", "physique", a)), Object(w.a)(s(e, z, "strength", "physique", a)), Object(w.a)(s(e, L, "brains", "charm", a))).filter((function(e) {
                                         return e.agility === a || e.strength === a || e.brains === a || e.physique === a
                                     })).sort((function(e, a) {
                                         return parseInt(e.price) - parseInt(a.price)
                                     }))[0]
                                 }));
-                            d(a), l(!1), x.k.success({
+                            d(a), l(!1), h.k.success({
                                 content: "\u5df2\u5237\u65b0\u6570\u636e"
                             })
                         },
-                        c = function(e, a, r, d) {
+                        s = function(e, a, r, d) {
                             var t = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 86,
                                 i = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : 61;
                             return e.filter((function(e) {
                                 return e.career_address === a && e[r] >= t && e[d] >= i && 1 === e.level
                             }))
                         };
-                    return Object(k.jsxs)(Me, {
-                        children: [Object(k.jsxs)("div", {
+                    return Object(T.jsxs)(Ve, {
+                        children: [Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "space-between",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: [Object(k.jsx)(x.s.Title, {
+                            children: [Object(T.jsx)(h.s.Title, {
                                 heading: 2,
                                 children: "\u5408\u683c\u5361\u5730\u677f\u4ef7"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)("div", {
+                                style: {
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    margin: 5
+                                },
+                                children: Object(T.jsx)("a", {
+                                    href: "https://market.binaryx.pro/#/oneoffsale",
+                                    target: "_blank",
+                                    children: "BinaryX\u5e02\u573a\u5b98\u7f51"
+                                })
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
@@ -2152,9 +2355,9 @@
                                 onClick: b,
                                 children: "\u5237\u65b0"
                             })]
-                        }), Object(k.jsx)(x.q, {
+                        }), Object(T.jsx)(h.q, {
                             loading: n,
-                            columns: A() ? ge : Ae,
+                            columns: v() ? We : Ie,
                             dataSource: r,
                             pagination: {
                                 pageSize: 20
@@ -2164,134 +2367,139 @@
                         })]
                     })
                 },
-                Ne = r(186),
-                Pe = r(477),
-                Re = r(478),
-                Le = r(479),
-                Ve = r(480),
-                ze = r(481),
-                Ge = r(482),
-                Je = r(483),
-                Ue = r(484),
-                Ke = r(485),
-                He = r(486),
-                Xe = r(487),
-                Qe = r(488),
-                Ye = r(323),
-                Ze = r(489),
-                $e = x.n.Option,
-                ea = W.a.div(l || (l = Object(I.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
-                aa = function(e) {
+                Ge = r(186),
+                Ke = r(477),
+                Ue = r(478),
+                Xe = r(479),
+                He = r(480),
+                Qe = r(481),
+                Ye = r(482),
+                Ze = r(483),
+                $e = r(484),
+                ea = r(485),
+                aa = r(486),
+                ra = r(487),
+                da = r(488),
+                ta = r(322),
+                ia = r(489),
+                na = r(490),
+                la = r(491),
+                ba = r(492),
+                sa = r(493),
+                ca = (r(1457), h.n.Option),
+                oa = O.a.div(l || (l = Object(j.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
+                fa = function(e) {
                     var a = e.address,
                         r = e.contracts,
-                        d = Object(s.useState)(!1),
-                        t = Object(C.a)(d, 2),
-                        i = (t[0], t[1]),
-                        n = Object(s.useState)(!1),
-                        l = Object(C.a)(n, 2),
-                        b = (l[0], l[1]),
-                        c = Object(s.useState)(!1),
-                        o = Object(C.a)(c, 2),
-                        f = (o[0], o[1]),
-                        y = Object(s.useState)([]),
-                        u = Object(C.a)(y, 2),
-                        _ = u[0],
-                        F = u[1],
-                        m = Object(s.useState)([]),
-                        h = Object(C.a)(m, 2),
-                        B = h[0],
-                        q = h[1],
-                        S = Object(s.useState)([]),
-                        I = Object(C.a)(S, 2),
-                        W = I[0],
-                        w = I[1],
-                        j = Object(s.useState)({
+                        d = Object(c.useState)(!1),
+                        t = Object(m.a)(d, 2),
+                        i = t[0],
+                        n = t[1],
+                        l = Object(c.useState)(!1),
+                        b = Object(m.a)(l, 2),
+                        s = (b[0], b[1]),
+                        o = Object(c.useState)(!1),
+                        f = Object(m.a)(o, 2),
+                        y = (f[0], f[1]),
+                        u = Object(c.useState)([]),
+                        _ = Object(m.a)(u, 2),
+                        p = _[0],
+                        F = _[1],
+                        x = Object(c.useState)([]),
+                        B = Object(m.a)(x, 2),
+                        E = B[0],
+                        g = B[1],
+                        I = Object(c.useState)([]),
+                        W = Object(m.a)(I, 2),
+                        j = W[0],
+                        O = W[1],
+                        M = Object(c.useState)({
                             b: 0,
                             h: 0,
                             levels: [],
                             hightLevel: 1
                         }),
-                        L = Object(C.a)(j, 2),
-                        V = (L[0], L[1]),
-                        z = Object(s.useState)(0),
-                        G = Object(C.a)(z, 2),
-                        J = G[0],
-                        U = G[1],
-                        K = Object(s.useState)(0),
-                        H = Object(C.a)(K, 2),
-                        X = (H[0], H[1]),
-                        Q = Object(s.useState)(0),
-                        Y = Object(C.a)(Q, 2),
-                        Z = Y[0],
-                        $ = Y[1],
-                        ee = Object(s.useState)([]),
-                        ae = Object(C.a)(ee, 2),
-                        re = ae[0],
-                        de = ae[1],
-                        te = Object(s.useState)([]),
-                        ie = Object(C.a)(te, 2),
-                        ne = ie[0],
-                        le = ie[1],
-                        be = Object(s.useState)(0),
-                        se = Object(C.a)(be, 2),
-                        ce = se[0],
-                        oe = se[1],
-                        fe = Object(s.useState)(0),
-                        ye = Object(C.a)(fe, 2),
-                        ue = ye[0],
-                        _e = ye[1],
-                        Fe = Object(s.useState)([]),
-                        xe = Object(C.a)(Fe, 2),
-                        he = xe[0],
-                        Be = xe[1],
-                        Ee = Object(s.useState)([]),
-                        Ae = Object(C.a)(Ee, 2),
-                        ge = Ae[0],
-                        ve = Ae[1],
-                        qe = Object(s.useState)([]),
-                        Se = Object(C.a)(qe, 2),
-                        Te = (Se[0], Se[1]),
-                        Ie = Object(s.useState)(!1),
-                        We = Object(C.a)(Ie, 2),
-                        we = We[0],
-                        je = We[1],
-                        Me = Object(s.useState)(!1),
-                        Oe = Object(C.a)(Me, 2),
-                        Ne = (Oe[0], Oe[1]),
-                        Pe = Object(s.useState)(!1),
-                        Re = Object(C.a)(Pe, 2),
-                        Le = Re[0],
-                        Ve = Re[1];
-                    Object(s.useEffect)((function() {
-                        Be([]), w([]), F([]), Ge(), ze()
+                        N = Object(m.a)(M, 2),
+                        J = (N[0], N[1]),
+                        G = Object(c.useState)(0),
+                        K = Object(m.a)(G, 2),
+                        U = K[0],
+                        X = K[1],
+                        H = Object(c.useState)(0),
+                        Q = Object(m.a)(H, 2),
+                        Y = (Q[0], Q[1]),
+                        Z = Object(c.useState)(0),
+                        $ = Object(m.a)(Z, 2),
+                        ee = $[0],
+                        ae = $[1],
+                        re = Object(c.useState)([]),
+                        de = Object(m.a)(re, 2),
+                        te = de[0],
+                        ie = de[1],
+                        ne = Object(c.useState)([]),
+                        le = Object(m.a)(ne, 2),
+                        be = le[0],
+                        se = le[1],
+                        ce = Object(c.useState)(0),
+                        oe = Object(m.a)(ce, 2),
+                        fe = oe[0],
+                        ye = oe[1],
+                        ue = Object(c.useState)(0),
+                        _e = Object(m.a)(ue, 2),
+                        pe = _e[0],
+                        Fe = _e[1],
+                        De = Object(c.useState)([]),
+                        Ce = Object(m.a)(De, 2),
+                        me = Ce[0],
+                        xe = Ce[1],
+                        he = Object(c.useState)([]),
+                        Be = Object(m.a)(he, 2),
+                        ke = Be[0],
+                        qe = Be[1],
+                        Se = Object(c.useState)([]),
+                        Te = Object(m.a)(Se, 2),
+                        Ie = (Te[0], Te[1]),
+                        We = Object(c.useState)(!1),
+                        we = Object(m.a)(We, 2),
+                        Oe = we[0],
+                        Me = we[1],
+                        Ne = Object(c.useState)(!1),
+                        Pe = Object(m.a)(Ne, 2),
+                        Re = (Pe[0], Pe[1]),
+                        ze = Object(c.useState)(!1),
+                        Le = Object(m.a)(ze, 2),
+                        Ve = Le[0],
+                        Je = Le[1];
+                    Object(c.useEffect)((function() {
+                        xe([]), O([]), F([]), Ke(), Ge()
                     }), [a]);
-                    var ze = function() {
+                    var Ge = function() {
                             fetch("https://game.binaryx.pro/v1/dungeon/list?Page=1&Limit=3&lang=zh-cn&sign=ee05987d4d4e2c7bb18c2aa1858617a5", {
                                 method: "POST",
                                 credentials: "include"
                             }).then((function(e) {
                                 return e.json()
                             })).then((function(e) {
-                                de(e.data.Lists), le(e.data.Lists[0].costs)
+                                ie(e.data.Lists), se(e.data.Lists[0].costs)
                             })).catch((function(e) {
                                 return console.log(e)
                             }))
                         },
-                        Ge = function() {
-                            var e = Object(D.a)(p.a.mark((function e() {
-                                var d, t, n, l, s, c, o, y, u, _, C;
-                                return p.a.wrap((function(e) {
+                        Ke = function() {
+                            var e = Object(C.a)(D.a.mark((function e() {
+                                var d, t, i, l, b, c, o, f, u, _, p;
+                                return D.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (a && r) {
                                                 e.next = 3;
                                                 break
                                             }
-                                            return x.k.info({
+                                            return h.k.info({
                                                 content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                             }), e.abrupt("return");
                                         case 3:
-                                            return w([]), q([]), i(!0), b(!1), f(!1), Be([]), F([]), e.next = 12, r.WarriorContract.methods.balanceOf(a).call().catch((function(e) {
+                                            return O([]), g([]), n(!0), s(!1), y(!1), xe([]), F([]), e.next = 12, r.WarriorContract.methods.balanceOf(a).call().catch((function(e) {
                                                 return console.log(e)
                                             }));
                                         case 12:
@@ -2303,7 +2511,7 @@
                                                 return console.log(e)
                                             }));
                                         case 18:
-                                            return n = e.sent, e.next = 21, r.MageContract.methods.balanceOf(a).call().catch((function(e) {
+                                            return i = e.sent, e.next = 21, r.MageContract.methods.balanceOf(a).call().catch((function(e) {
                                                 return console.log(e)
                                             }));
                                         case 21:
@@ -2311,26 +2519,26 @@
                                                 return console.log(e)
                                             }));
                                         case 24:
-                                            for (s = e.sent, c = [], o = 0; o < d; o++) c.push(r.WarriorContract.methods.tokenOfOwnerByIndex(a, o).call().catch((function(e) {
+                                            for (b = e.sent, c = [], o = 0; o < d; o++) c.push(r.WarriorContract.methods.tokenOfOwnerByIndex(a, o).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
-                                            for (y = 0; y < n; y++) c.push(r.RobberContract.methods.tokenOfOwnerByIndex(a, y).call().catch((function(e) {
+                                            for (f = 0; f < i; f++) c.push(r.RobberContract.methods.tokenOfOwnerByIndex(a, f).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
                                             for (u = 0; u < l; u++) c.push(r.MageContract.methods.tokenOfOwnerByIndex(a, u).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
-                                            for (_ = 0; _ < s; _++) c.push(r.youxiaContract.methods.tokenOfOwnerByIndex(a, _).call().catch((function(e) {
+                                            for (_ = 0; _ < b; _++) c.push(r.youxiaContract.methods.tokenOfOwnerByIndex(a, _).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
-                                            for (C = 0; C < t; C++) c.push(r.KatrinaContract.methods.tokenOfOwnerByIndex(a, C).call().catch((function(e) {
+                                            for (p = 0; p < t; p++) c.push(r.KatrinaContract.methods.tokenOfOwnerByIndex(a, p).call().catch((function(e) {
                                                 return console.log(e)
                                             })));
                                             Promise.all(c).then((function(e) {
                                                 var d = e.map(function() {
-                                                    var e = Object(D.a)(p.a.mark((function e(a) {
+                                                    var e = Object(C.a)(D.a.mark((function e(a) {
                                                         var d;
-                                                        return p.a.wrap((function(e) {
+                                                        return D.a.wrap((function(e) {
                                                             for (;;) switch (e.prev = e.next) {
                                                                 case 0:
                                                                     return e.next = 2, r.NewPlayInfoContract.methods.getPlayerInfoBySet(a).call().catch((function(e) {
@@ -2360,9 +2568,9 @@
                                                     }
                                                 }());
                                                 Promise.all(d).then(function() {
-                                                    var e = Object(D.a)(p.a.mark((function e(r) {
+                                                    var e = Object(C.a)(D.a.mark((function e(r) {
                                                         var d, t, i;
-                                                        return p.a.wrap((function(e) {
+                                                        return D.a.wrap((function(e) {
                                                             for (;;) switch (e.prev = e.next) {
                                                                 case 0:
                                                                     t = (d = r).map((function(e) {
@@ -2387,62 +2595,62 @@
                                                                                     break
                                                                                 }
                                                                             }
-                                                                        })), oe(i), _e(a), q(d.sort((function(e, a) {
+                                                                        })), ye(i), Fe(a), g(d.sort((function(e, a) {
                                                                             return a.num - e.num
                                                                         })));
                                                                         for (var r = d.filter((function(e) {
                                                                                 var a = !1;
                                                                                 switch (e.career_address) {
-                                                                                    case M:
-                                                                                        a = g(e, M, "agility", "strength");
+                                                                                    case P:
+                                                                                        a = k(e, P, "agility", "strength");
+                                                                                        break;
+                                                                                    case V:
+                                                                                        a = k(e, V, "strength", "agility");
                                                                                         break;
                                                                                     case R:
-                                                                                        a = g(e, R, "strength", "agility");
+                                                                                        a = k(e, R, "strength", "physique");
                                                                                         break;
-                                                                                    case O:
-                                                                                        a = g(e, O, "strength", "physique");
+                                                                                    case z:
+                                                                                        a = k(e, z, "strength", "physique");
                                                                                         break;
-                                                                                    case N:
-                                                                                        a = g(e, N, "strength", "physique");
-                                                                                        break;
-                                                                                    case P:
-                                                                                        a = g(e, P, "brains", "charm")
+                                                                                    case L:
+                                                                                        a = k(e, L, "brains", "charm")
                                                                                 }
                                                                                 return !1 === a
                                                                             })), t = d.filter((function(e) {
                                                                                 var a = !1;
                                                                                 switch (e.career_address) {
-                                                                                    case M:
-                                                                                        a = g(e, M, "agility", "strength");
+                                                                                    case P:
+                                                                                        a = k(e, P, "agility", "strength");
+                                                                                        break;
+                                                                                    case V:
+                                                                                        a = k(e, V, "strength", "agility");
                                                                                         break;
                                                                                     case R:
-                                                                                        a = g(e, R, "strength", "agility");
+                                                                                        a = k(e, R, "strength", "physique");
                                                                                         break;
-                                                                                    case O:
-                                                                                        a = g(e, O, "strength", "physique");
+                                                                                    case z:
+                                                                                        a = k(e, z, "strength", "physique");
                                                                                         break;
-                                                                                    case N:
-                                                                                        a = g(e, N, "strength", "physique");
-                                                                                        break;
-                                                                                    case P:
-                                                                                        a = g(e, P, "brains", "charm")
+                                                                                    case L:
+                                                                                        a = k(e, L, "brains", "charm")
                                                                                 }
                                                                                 return !0 === a
-                                                                            })), n = t.reduce((function(e, a) {
+                                                                            })), l = t.reduce((function(e, a) {
                                                                                 return a.level > e ? a.level : e
-                                                                            }), 1), l = [], b = function(e) {
-                                                                                l.push(t.filter((function(a) {
+                                                                            }), 1), b = [], s = function(e) {
+                                                                                b.push(t.filter((function(a) {
                                                                                     return a.level === e + 1
                                                                                 })).length)
-                                                                            }, s = 0; s < n; s++) b(s);
-                                                                        V({
+                                                                            }, c = 0; c < l; c++) s(c);
+                                                                        n(!1), J({
                                                                             b: r.length,
                                                                             h: t.length,
-                                                                            levels: l,
-                                                                            hightLevel: n
+                                                                            levels: b,
+                                                                            hightLevel: l
                                                                         })
                                                                     })).catch((function(e) {
-                                                                        return console.log(e)
+                                                                        return n(!1)
                                                                     }));
                                                                 case 4:
                                                                 case "end":
@@ -2454,8 +2662,8 @@
                                                         return e.apply(this, arguments)
                                                     }
                                                 }()).catch((function(e) {
-                                                    return console.log(e)
-                                                })), i(!1)
+                                                    return n(!1)
+                                                }))
                                             }));
                                         case 32:
                                         case "end":
@@ -2467,7 +2675,7 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        Je = function e(d, t, i, n, l, b) {
+                        Ue = function e(d, t, i, n, l, b) {
                             fetch("https://game.binaryx.pro/v1/user/getaddressnonce?GoldAddress=".concat(a), {
                                 method: "POST",
                                 credentials: "include",
@@ -2481,7 +2689,7 @@
                                     o = s.data;
                                 if (1 === c) {
                                     var f = o.nonce,
-                                        y = v(E.a.givenProvider);
+                                        y = q(A.a.givenProvider);
                                     y.eth.personal.sign(y.utils.utf8ToHex(f + ""), a, "password").then((function(e) {
                                         console.log(e), fetch("https://game.binaryx.pro/v1/dungeon/begin?Id=".concat(t, "&TokenId=").concat(n, "&DungeonLv=").concat(i, "&GoldAddress=").concat(a, "&ASign=").concat(e, "&Nonce=").concat(f), {
                                             method: "POST",
@@ -2505,7 +2713,9 @@
                                                 r.dungeonContract.methods.payment(s, n, l + Math.pow(10, 18).toString().substr(1), b + Math.pow(10, 18).toString().substr(1)).send({
                                                     from: a
                                                 }).on("transactionHash", (function(e) {
-                                                    Ue(d, n, s, c)
+                                                    h.k.info({
+                                                        content: "\u68c0\u67e5\u95e8\u7968\u662f\u5426\u5230\u8d26"
+                                                    }), Xe(d, n, s, c)
                                                 })).catch((function(e) {
                                                     console.log(e)
                                                 }))
@@ -2519,7 +2729,7 @@
                                 }), 3e3)
                             }))
                         },
-                        Ue = function e(r, d, t, i) {
+                        Xe = function e(r, d, t, i) {
                             fetch("https://game.binaryx.pro/v1/dungeon/checkpay?GoldAddress=".concat(a, "&TokenId=").concat(d, "&Uuid=").concat(t, "&DataId=").concat(i), {
                                 method: "POST",
                                 credentials: "include",
@@ -2533,13 +2743,15 @@
                                 return e.json()
                             })).then((function(a) {
                                 a.data && 0 !== a.data.s ? setTimeout((function() {
-                                    Ke(r, d, t, i)
+                                    h.k.info({
+                                        content: "\u6b63\u5728PK"
+                                    }), He(r, d, t, i)
                                 }), 2e3) : setTimeout((function() {
                                     e(r, d, t, i)
                                 }), 3e3)
                             }))
                         },
-                        Ke = function(e, r, d) {
+                        He = function(e, r, d) {
                             fetch("https://game.binaryx.pro/v1/dungeon/battle?GoldAddress=".concat(a, "&TokenId=").concat(r, "&Uuid=").concat(d), {
                                 method: "POST",
                                 credentials: "include",
@@ -2553,21 +2765,32 @@
                             })).then((function(a) {
                                 if (1 === a.code) {
                                     var r = a.data,
-                                        d = {
-                                            winner: r.winner,
-                                            reward_money: r.reward_money,
-                                            reward_coupon: r.reward_coupon,
-                                            reward_coin: r.reward_coin,
-                                            reward_eqs: r.reward_eqs
+                                        d = r.winner,
+                                        t = r.reward_money,
+                                        i = r.reward_coupon,
+                                        n = r.reward_coin,
+                                        l = r.reward_eqs,
+                                        b = {
+                                            winner: d,
+                                            reward_money: t,
+                                            reward_coupon: i,
+                                            reward_coin: n,
+                                            reward_eqs: l
                                         };
-                                    console.log(d), he.push(d), Be(he)
+                                    me.push(b), xe(me), h.k.success({
+                                        content: "".concat(2 == d ? "\u5931\u8d25" : "\u80dc\u5229", "\u6536\u76ca: \u91d1\u5e01:").concat(t, " \u94a5\u5319").concat(i, " BNX").concat(n, " \u88c5\u5907").concat(l.map((function(e) {
+                                            return e.name
+                                        })).toString(), " ")
+                                    })
                                 }
-                                he.length === e.reduce((function(e, a) {
+                                me.length === e.reduce((function(e, a) {
                                     return e + a.num
-                                }), 0) && (Ve(!1), Ge())
+                                }), 0) && (Je(!1), Ke(), Me(!1), h.k.success({
+                                    content: "\u526f\u672c\u5df2\u5b8c\u6210"
+                                }))
                             }))
                         },
-                        He = [{
+                        Qe = [{
                             title: "\u6211\u7684\u82f1\u96c4",
                             dataIndex: "num",
                             filters: [{
@@ -2580,105 +2803,105 @@
                             onFilter: function(e, a) {
                                 var r = !1;
                                 switch (a.career_address) {
-                                    case M:
-                                        r = g(a, M, "agility", "strength");
+                                    case P:
+                                        r = k(a, P, "agility", "strength");
+                                        break;
+                                    case V:
+                                        r = k(a, V, "strength", "agility");
                                         break;
                                     case R:
-                                        r = g(a, R, "strength", "agility");
+                                        r = k(a, R, "strength", "physique");
                                         break;
-                                    case O:
-                                        r = g(a, O, "strength", "physique");
+                                    case z:
+                                        r = k(a, z, "strength", "physique");
                                         break;
-                                    case N:
-                                        r = g(a, N, "strength", "physique");
-                                        break;
-                                    case P:
-                                        r = g(a, P, "brains", "charm")
+                                    case L:
+                                        r = k(a, L, "brains", "charm")
                                 }
                                 return r == e
                             },
                             render: function(e, a) {
                                 switch (a.career_address) {
-                                    case M:
+                                    case P:
                                         a.agility, a.strength;
                                         break;
-                                    case O:
-                                    case N:
+                                    case R:
+                                    case z:
                                         a.strength, a.physique;
                                         break;
-                                    case P:
+                                    case L:
                                         a.brains, a.charm;
                                         break;
-                                    case R:
+                                    case V:
                                         a.strength, a.agility
                                 }
                                 var r = !1;
                                 switch (a.career_address) {
-                                    case M:
-                                        r = g(a, M, "agility", "strength");
+                                    case P:
+                                        r = k(a, P, "agility", "strength");
+                                        break;
+                                    case V:
+                                        r = k(a, V, "strength", "agility");
                                         break;
                                     case R:
-                                        r = g(a, R, "strength", "agility");
+                                        r = k(a, R, "strength", "physique");
                                         break;
-                                    case O:
-                                        r = g(a, O, "strength", "physique");
+                                    case z:
+                                        r = k(a, z, "strength", "physique");
                                         break;
-                                    case N:
-                                        r = g(a, N, "strength", "physique");
-                                        break;
-                                    case P:
-                                        r = g(a, P, "brains", "charm")
+                                    case L:
+                                        r = k(a, L, "brains", "charm")
                                 }
-                                return Object(k.jsxs)("div", {
+                                return Object(T.jsxs)("div", {
                                     style: {
                                         display: "flex",
                                         alignItems: "center",
                                         flexDirection: "column",
                                         justifyContent: "center"
                                     },
-                                    children: [Object(k.jsx)("span", {
+                                    children: [Object(T.jsx)("span", {
                                         style: {
                                             fontWeight: "bold",
                                             display: "flex",
                                             alignItems: "center"
                                         },
-                                        children: Object(k.jsxs)(x.o, {
-                                            children: [Object(k.jsx)(x.r, {
+                                        children: Object(T.jsxs)(h.o, {
+                                            children: [Object(T.jsx)(h.r, {
                                                 color: r ? "green" : "grey",
                                                 children: r ? "\u5408\u683c" : "\u9ed1\u5974"
-                                            }), pe[a.career_address], " ", a.level, "\u7ea7"]
+                                            }), Ee[a.career_address], " ", a.level, "\u7ea7"]
                                         })
-                                    }), Object(k.jsxs)("span", {
+                                    }), Object(T.jsxs)("span", {
                                         children: ["\u529b", a.strength, "/\u654f", a.agility, "/\u4f53", a.physique, "/\u610f", a.volition, "/\u667a", a.brains, "/\u7cbe", a.charm]
-                                    }), Object(k.jsxs)("span", {
-                                        children: [Object(k.jsxs)(x.r, {
+                                    }), Object(T.jsxs)("span", {
+                                        children: [Object(T.jsxs)(h.r, {
                                             color: "orange",
                                             children: ["\u5269\u4f59\u5192\u9669\u6b21\u6570: ", a.num]
                                         }), " "]
-                                    }), Object(k.jsxs)(x.o, {
-                                        children: [Object(k.jsx)(x.n, {
+                                    }), Object(T.jsxs)(h.o, {
+                                        children: [Object(T.jsx)(h.n, {
                                             size: "small",
-                                            defaultValue: re ? re[0].id : 1,
+                                            defaultValue: te ? te[0].id : 1,
                                             onChange: function(e) {
-                                                a.l = e, le(re.filter((function(a) {
+                                                a.l = e, se(te.filter((function(a) {
                                                     return a.id === e
                                                 }))[0].costs)
                                             },
-                                            children: re.map((function(e) {
-                                                return Object(k.jsx)($e, {
+                                            children: te.map((function(e) {
+                                                return Object(T.jsx)(ca, {
                                                     value: e.id,
                                                     disabled: 0 == e.status,
                                                     children: e.name
                                                 }, e.name)
                                             }))
-                                        }), Object(k.jsx)(x.n, {
+                                        }), Object(T.jsx)(h.n, {
                                             size: "small",
-                                            defaultValue: ne ? ne[0].lv : 1,
+                                            defaultValue: be ? be[0].lv : 1,
                                             onChange: function(e) {
                                                 a.lv = e
                                             },
-                                            children: ne.map((function(e) {
-                                                return Object(k.jsxs)($e, {
+                                            children: be.map((function(e) {
+                                                return Object(T.jsxs)(ca, {
                                                     value: e.lv,
                                                     children: ["Lv.", e.lv]
                                                 }, e.lv)
@@ -2688,23 +2911,23 @@
                                 })
                             }
                         }],
-                        Xe = [].concat(Object(T.a)(Ce), Object(T.a)(De), Object(T.a)(me), [{
+                        Ye = [].concat(Object(w.a)(ge), Object(w.a)(Ae), Object(w.a)(ve), [{
                             title: "\u6218\u573a",
                             dataIndex: "zhanchang",
                             render: function(e, a) {
-                                return 0 == re.length ? Object(k.jsx)("p", {
+                                return 0 == te.length ? Object(T.jsx)("p", {
                                     children: "\u7f51\u9519"
-                                }) : Object(k.jsx)(x.n, {
+                                }) : Object(T.jsx)(h.n, {
                                     size: "small",
-                                    showArrow: !A(),
-                                    defaultValue: re[0].id,
+                                    showArrow: !v(),
+                                    defaultValue: te[0].id,
                                     onChange: function(e) {
-                                        a.l = e, le(re.filter((function(a) {
+                                        a.l = e, se(te.filter((function(a) {
                                             return a.id === e
                                         }))[0].costs)
                                     },
-                                    children: re.map((function(e) {
-                                        return Object(k.jsx)($e, {
+                                    children: te.map((function(e) {
+                                        return Object(T.jsx)(ca, {
                                             value: e.id,
                                             disabled: 0 == e.status,
                                             children: e.name
@@ -2715,19 +2938,19 @@
                         }, {
                             title: "\u7ea7\u522b",
                             dataIndex: "type",
-                            width: A() ? 20 : 40,
+                            width: v() ? 20 : 40,
                             render: function(e, a) {
-                                return 0 == ne.length ? Object(k.jsx)("p", {
+                                return 0 == be.length ? Object(T.jsx)("p", {
                                     children: "\u7f51\u9519"
-                                }) : Object(k.jsx)(x.n, {
+                                }) : Object(T.jsx)(h.n, {
                                     size: "small",
-                                    showArrow: !A(),
-                                    defaultValue: ne[0].lv,
+                                    showArrow: !v(),
+                                    defaultValue: be[0].lv,
                                     onChange: function(e) {
                                         a.lv = e
                                     },
-                                    children: ne.map((function(e) {
-                                        return Object(k.jsxs)($e, {
+                                    children: be.map((function(e) {
+                                        return Object(T.jsxs)(ca, {
                                             value: e.lv,
                                             children: ["Lv.", e.lv]
                                         }, e.lv)
@@ -2738,130 +2961,142 @@
                             title: "\u6b21\u6570",
                             dataIndex: "num"
                         }]);
-                    return Object(k.jsxs)(ea, {
-                        children: [Object(k.jsx)(x.s.Title, {
+                    return Object(T.jsxs)(oa, {
+                        children: [Object(T.jsx)(h.s.Title, {
                             style: {
                                 textAlign: "center"
                             },
                             children: "\u5192\u9669"
-                        }), Object(k.jsx)(ke, {
+                        }), Object(T.jsx)(je, {
                             address: a
-                        }), Object(k.jsxs)("div", {
+                        }), Object(T.jsx)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 5
+                            },
+                            children: Object(T.jsx)("a", {
+                                href: "https://game.binaryx.pro",
+                                target: "_blank",
+                                children: "BinaryX\u5b98\u7f51"
+                            })
+                        }), Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: [Object(k.jsx)(x.c, {
+                            children: [Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
                                 onClick: function() {
                                     a && r ? (r.goldContractNew.methods.balanceOf(a).call().then((function(e) {
-                                        $((Number(e) / Math.pow(10, 18)).toFixed(4))
+                                        ae((Number(e) / Math.pow(10, 18)).toFixed(4))
                                     })).catch((function(e) {
                                         return console.log(e)
                                     })), r.bnxContractNew.methods.balanceOf(a).call().then((function(e) {
-                                        U((Number(e) / Math.pow(10, 18)).toFixed(4))
+                                        X((Number(e) / Math.pow(10, 18)).toFixed(4))
                                     })).catch((function(e) {
                                         return console.log(e)
                                     })), r.keyContractNew.methods.balanceOf(a).call().then((function(e) {
-                                        X(Number(e) / Math.pow(10, 18))
+                                        Y(Number(e) / Math.pow(10, 18))
                                     })).catch((function(e) {
                                         return console.log(e)
-                                    }))) : x.k.info({
+                                    }))) : h.k.info({
                                         content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
-                                    }), B.forEach((function(e) {
+                                    }), E.forEach((function(e) {
                                         for (var a = function(a) {
-                                                var r = ge[a];
+                                                var r = ke[a];
                                                 if (e.token_id === r.token_id) {
-                                                    ge[a].l = r.l, ge[a].lv = r.lv;
-                                                    var d = re.filter((function(e) {
+                                                    ke[a].l = r.l, ke[a].lv = r.lv;
+                                                    var d = te.filter((function(e) {
                                                         return e.id == r.l
                                                     }))[0].costs.filter((function(e) {
                                                         return e.lv == r.lv
                                                     }))[0];
-                                                    return ge[a].coin = d.coin, ge[a].money = d.money, ge[a].coins = d.coin * r.num, ge[a].moneys = d.money * r.num, "break"
+                                                    return ke[a].coin = d.coin, ke[a].money = d.money, ke[a].coins = d.coin * r.num, ke[a].moneys = d.money * r.num, "break"
                                                 }
-                                            }, r = 0; r < ge.length; r++) {
+                                            }, r = 0; r < ke.length; r++) {
                                             if ("break" === a(r)) break
                                         }
-                                    })), ge.length > 0 ? je(!0) : x.k.error({
+                                    })), ke.length > 0 ? Me(!0) : h.k.error({
                                         content: "\u8bf7\u9009\u62e9\u82f1\u96c4"
                                     })
                                 },
                                 children: "\u5f00\u6253"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
                                 },
-                                onClick: Ge,
+                                onClick: Ke,
                                 children: "\u5237\u65b0"
                             })]
-                        }), Object(k.jsx)("div", {
+                        }), Object(T.jsx)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: Object(k.jsxs)(x.o, {
+                            children: Object(T.jsxs)(h.o, {
                                 style: {
                                     display: "flex",
                                     flexWrap: "wrap",
                                     justifyContent: "center"
                                 },
-                                children: [Object(k.jsxs)(x.r, {
+                                children: [Object(T.jsxs)(h.r, {
                                     style: {
                                         textAlign: "center"
                                     },
-                                    children: ["\u82f1\u96c4 ", B.length]
-                                }), Object(k.jsxs)(x.r, {
+                                    children: ["\u82f1\u96c4 ", E.length]
+                                }), Object(T.jsxs)(h.r, {
                                     color: "green",
                                     style: {
                                         textAlign: "center"
                                     },
-                                    children: ["\u603b\u5192\u9669\u6b21\u6570 ", ce]
-                                }), Object(k.jsxs)(x.r, {
+                                    children: ["\u603b\u5192\u9669\u6b21\u6570 ", fe]
+                                }), Object(T.jsxs)(h.r, {
                                     color: "red",
                                     style: {
                                         textAlign: "center"
                                     },
-                                    children: ["\u5269\u4f59\u5192\u9669\u6b21\u6570 ", ue]
+                                    children: ["\u5269\u4f59\u5192\u9669\u6b21\u6570 ", pe]
                                 })]
                             })
-                        }), Object(k.jsx)("p", {
+                        }), Object(T.jsx)("p", {
                             style: {
                                 width: "100%",
                                 textAlign: "center"
                             },
                             children: ""
-                        }), _.length > 0 ? Object(k.jsx)("div", {
+                        }), p.length > 0 ? Object(T.jsx)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 5,
                                 flexWrap: "wrap"
                             },
-                            children: Object(k.jsxs)("p", {
-                                children: ["\u5df2\u9009\u4e2d: ", _.length]
+                            children: Object(T.jsxs)("p", {
+                                children: ["\u5df2\u9009\u4e2d: ", p.length]
                             })
-                        }) : "", Object(k.jsx)(x.q, {
+                        }) : "", Object(T.jsx)(h.q, {
+                            loading: i,
                             rowKey: function(e) {
                                 return e.token_id
                             },
-                            columns: A() ? He : Xe,
-                            dataSource: B,
+                            columns: v() ? Qe : Ye,
+                            dataSource: E,
                             pagination: {
-                                formatPageText: !A()
+                                formatPageText: !v()
                             },
                             rowSelection: {
-                                selectedRowKeys: W,
+                                selectedRowKeys: j,
                                 onChange: function(e, a) {
-                                    ve(a), Te(a), w(e)
+                                    qe(a), Ie(a), O(e)
                                 },
                                 getCheckboxProps: function(e) {
                                     return {
@@ -2870,166 +3105,163 @@
                                 }
                             },
                             bordered: !0
-                        }), Object(k.jsx)(x.i, {
-                            visible: we,
+                        }), Object(T.jsx)(h.i, {
+                            visible: Oe,
                             title: "\u5192\u9669",
-                            width: A() ? 300 : 448,
+                            width: v() ? 300 : 448,
                             centered: !0,
                             cancelText: "\u5173\u95ed",
                             okText: "\u786e\u8ba4\u5f00\u59cb\u5192\u9669",
                             destroyOnClose: !0,
                             maskClosable: !1,
                             closable: !1,
-                            footer: [Object(k.jsx)(x.c, {
+                            footer: [Object(T.jsx)(h.c, {
                                 onClick: function() {
-                                    return je(!1)
+                                    return Me(!1)
                                 },
-                                disabled: Le,
+                                disabled: Ve,
                                 children: "\u5173\u95ed"
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
-                                disabled: Z - ge.reduce((function(e, a) {
+                                disabled: ee - ke.reduce((function(e, a) {
                                     return e + a.moneys
-                                }), 0) < 0 || J - ge.reduce((function(e, a) {
+                                }), 0) < 0 || U - ke.reduce((function(e, a) {
                                     return e + a.coins
                                 }), 0) < 0,
                                 onClick: function() {
-                                    if((Ne(!0), Ve(!0), a && r)){
-                                        f (ge.length > 0)
-                                            for (var r = -1, d = function(e) {
-                                                    for (var a = ge[e], d = 0; d < a.num; d++) r++, setTimeout((function() {
-                                                        Je(ge, a.l, a.lv, a.token_id, a.money, a.coin)
-                                                    }), 25e3 * r)
-                                                }, t = 0; t < ge.length; t++) d(t)
-                                    }
-                                    else{
-                                        x.k.error({
-                                            content: "\u8bf7\u5237\u65b0\u7f51\u9875"
-                                        })
-                                    }
+                                    Re(!0), Je(!0), a && r ? S((ke.length >= 30 ? 1e-4 : ke.length >= 20 ? 3e-4 : ke.length >= 10 ? 5e-4 : .001) * ke.length, a, (function() {
+                                        if (ke.length > 0)
+                                            for (var e = -1, a = function(a) {
+                                                    for (var r = ke[a], d = 0; d < r.num; d++) e++, setTimeout((function() {
+                                                        Ue(ke, r.l, r.lv, r.token_id, r.money, r.coin)
+                                                    }), 25e3 * e)
+                                                }, r = 0; r < ke.length; r++) a(r)
+                                    })) : h.k.error({
+                                        content: "\u8bf7\u5237\u65b0\u7f51\u9875"
+                                    })
                                 },
-                                children: Z - ge.reduce((function(e, a) {
+                                children: ee - ke.reduce((function(e, a) {
                                     return e + a.moneys
-                                }), 0) < 0 || J - ge.reduce((function(e, a) {
+                                }), 0) < 0 || U - ke.reduce((function(e, a) {
                                     return e + a.coins
                                 }), 0) < 0 ? "\u4f60\u94b1\u4e0d\u591f" : "\u5f00\u59cb\u5192\u9669"
                             })],
-                            children: Object(k.jsxs)("div", {
+                            children: Object(T.jsxs)("div", {
                                 style: {
                                     display: "flex",
                                     flexDirection: "column",
                                     justifyContent: "center"
                                 },
-                                children: [Object(k.jsxs)(x.o, {
-                                    children: [Object(k.jsxs)("p", {
-                                        children: ["\u603b\u82f1\u96c4: ", ge.length, " \u5f20"]
-                                    }), Object(k.jsxs)("p", {
-                                        children: ["\u603b\u5192\u6570: ", ge.reduce((function(e, a) {
+                                children: [Object(T.jsxs)(h.o, {
+                                    children: [Object(T.jsxs)("p", {
+                                        children: ["\u603b\u82f1\u96c4: ", ke.length, " \u5f20"]
+                                    }), Object(T.jsxs)("p", {
+                                        children: ["\u603b\u5192\u6570: ", ke.reduce((function(e, a) {
                                             return e + a.num
                                         }), 0), " \u6b21"]
-                                    }), Object(k.jsxs)("p", {
-                                        children: ["\u5df2\u5192\u9669: ", he.length, " \u6b21"]
+                                    }), Object(T.jsxs)("p", {
+                                        children: ["\u5df2\u5192\u9669: ", me.length, " \u6b21"]
                                     })]
-                                }), Object(k.jsxs)("p", {
-                                    children: ["\u603b\u95e8\u7968: ", ge.reduce((function(e, a) {
+                                }), Object(T.jsxs)("p", {
+                                    children: ["\u603b\u95e8\u7968: ", ke.reduce((function(e, a) {
                                         return e + a.moneys
-                                    }), 0), " \u91d1\u5e01", " ", "   ", ge.reduce((function(e, a) {
+                                    }), 0), " \u91d1\u5e01", " ", "   ", ke.reduce((function(e, a) {
                                         return e + a.coins
-                                    }), 0), " BNX (\u4f60\u7684\u4f59\u989d:", Z, " \u91d1\u5e01 ", J, " BNX)"]
-                                }), "\u5404\u7b49\u7ea7\u6b21\u6570:", " ", Object(k.jsx)("p", {
+                                    }), 0), " BNX (\u4f60\u7684\u4f59\u989d:", ee, " \u91d1\u5e01 ", U, " BNX)"]
+                                }), "\u5404\u7b49\u7ea7\u6b21\u6570:", " ", Object(T.jsx)("p", {
                                     style: {
                                         display: "flex",
                                         width: "100%",
                                         justifyContent: "center"
                                     },
-                                    children: Object(k.jsxs)(x.o, {
+                                    children: Object(T.jsxs)(h.o, {
                                         style: {
                                             display: "flex",
                                             flexWrap: "wrap",
                                             width: 250,
                                             justifyContent: "center"
                                         },
-                                        children: [Object(k.jsxs)(x.r, {
+                                        children: [Object(T.jsxs)(h.r, {
                                             color: "green",
-                                            children: ["1\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["1\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (1 == a.lv ? a.num : e + 0)
                                             }), 0), "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "yellow",
-                                            children: ["2\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["2\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (2 == a.lv ? a.num : e + 0)
                                             }), 0), " ", "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "red",
-                                            children: ["3\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["3\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (3 == a.lv ? a.num : e + 0)
                                             }), 0), " ", "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "green",
-                                            children: ["4\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["4\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + a.lv == 4 ? a.num : e + 0
                                             }), 0), "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "yellow",
-                                            children: ["5\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["5\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (5 == a.lv ? a.num : e + 0)
                                             }), 0), " ", "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "red",
-                                            children: ["6\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["6\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (6 == a.lv ? a.num : e + 0)
                                             }), 0), " ", "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "green",
-                                            children: ["7\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["7\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (7 == a.lv ? a.num : e + 0)
                                             }), 0), "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "yellow",
-                                            children: ["8\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["8\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (8 == a.lv ? a.num : e + 0)
                                             }), 0), " ", "\u6b21"]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "red",
-                                            children: ["9\u7ea7", " ", ge.reduce((function(e, a) {
+                                            children: ["9\u7ea7", " ", ke.reduce((function(e, a) {
                                                 return e + (9 == a.lv ? a.num : e + 0)
                                             }), 0), " ", "\u6b21"]
                                         })]
                                     })
-                                }), Object(k.jsx)("span", {
+                                }), Object(T.jsx)("span", {
                                     style: {
                                         marginRight: 5
                                     },
                                     children: "\u5f85\u9886\u53d6\u5956\u52b1:"
-                                }), Object(k.jsx)("p", {
+                                }), Object(T.jsx)("p", {
                                     style: {
                                         display: "flex",
                                         width: "100%",
                                         justifyContent: "center"
                                     },
-                                    children: Object(k.jsxs)(x.o, {
+                                    children: Object(T.jsxs)(h.o, {
                                         style: {
                                             display: "flex",
                                             flexWrap: "wrap",
                                             width: 250,
                                             justifyContent: "center"
                                         },
-                                        children: [Object(k.jsxs)(x.r, {
+                                        children: [Object(T.jsxs)(h.r, {
                                             color: "red",
-                                            children: ["BNX ", he.reduce((function(e, a) {
+                                            children: ["BNX ", me.reduce((function(e, a) {
                                                 return e + a.reward_coin
                                             }), 0)]
-                                        }), Object(k.jsxs)(x.r, {
+                                        }), Object(T.jsxs)(h.r, {
                                             color: "yellow",
-                                            children: ["\u91d1\u5e01 ", he.reduce((function(e, a) {
+                                            children: ["\u91d1\u5e01 ", me.reduce((function(e, a) {
                                                 return e + a.reward_money
                                             }), 0)]
-                                        }), Object(k.jsxs)(x.r, {
-                                            children: ["\u94a5\u5319 ", he.reduce((function(e, a) {
+                                        }), Object(T.jsxs)(h.r, {
+                                            children: ["\u94a5\u5319 ", me.reduce((function(e, a) {
                                                 return e + a.reward_coupon
                                             }), 0)]
-                                        }), Object(k.jsxs)(x.r, {
-                                            children: ["\u88c5\u5907", " ", he.reduce((function(e, a) {
+                                        }), Object(T.jsxs)(h.r, {
+                                            children: ["\u88c5\u5907", " ", me.reduce((function(e, a) {
                                                 return "" === e ? a.reward_eqs.map((function(e) {
                                                     return e.name
                                                 })).toString() : 0 === a.reward_eqs.length ? e : e + "," + a.reward_eqs.map((function(e) {
@@ -3038,102 +3270,103 @@
                                             }), "")]
                                         })]
                                     })
-                                }), Le ? Object(k.jsxs)("div", {
+                                }), Ve ? Object(T.jsxs)("div", {
                                     style: {
                                         marginTop: 20,
                                         fontWeight: "bold",
                                         display: "flex",
                                         justifyContent: "center"
                                     },
-                                    children: [" ", "\u5192\u9669\u4e2d,\u8bf7\u4e0d\u8981\u5173\u95ed\u7f51\u9875 ", Object(k.jsx)(x.p, {
+                                    children: [" ", "\u5192\u9669\u4e2d,\u8bf7\u4e0d\u8981\u5173\u95ed\u7f51\u9875 ", Object(T.jsx)(h.p, {
                                         style: {
                                             marginLeft: 10
                                         }
                                     })]
-                                }) : Object(k.jsx)(k.Fragment, {})]
+                                }) : Object(T.jsx)(T.Fragment, {})]
                             })
                         })]
                     })
                 },
-                ra = W.a.div(b || (b = Object(I.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
-                da = function(e) {
+                ya = O.a.div(b || (b = Object(j.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
+                ua = function(e) {
                     var a = e.card,
                         r = e.nowaddress,
                         d = e.address,
                         t = e.contracts,
                         i = e.contractss,
-                        n = Object(s.useState)([]),
-                        l = Object(C.a)(n, 2),
+                        n = Object(c.useState)([]),
+                        l = Object(m.a)(n, 2),
                         b = l[0],
-                        c = l[1],
+                        s = l[1],
                         o = function() {
-                            var e = Object(D.a)(p.a.mark((function e(a, r) {
-                                var i, n, l, b, s, c;
-                                return p.a.wrap((function(e) {
+                            var e = Object(C.a)(D.a.mark((function e(r, i) {
+                                var n, l, b, s, c, o;
+                                return D.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (d && t) {
                                                 e.next = 3;
                                                 break
                                             }
-                                            return x.k.info({
+                                            return h.k.info({
                                                 content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
                                             }), e.abrupt("return");
                                         case 3:
                                             return e.prev = 3, e.next = 6, t.NewPlayInfoContract.methods.getUserRight(d).call();
                                         case 6:
-                                            if (i = e.sent, console.log(i), "0" !== i[0] || "0" !== i[1]) {
+                                            if (n = e.sent, console.log(n), "0" !== n[0] || "0" !== n[1]) {
                                                 e.next = 11;
                                                 break
                                             }
-                                            return x.k.info({
-                                                content: "\u4eca\u65e5\u62bd\u5361\u6b21\u6570\u5df2\u7528\u5b8c, \u8bf7\u6362\u5e10\u53f7\u7ee7\u7eed"
+                                            return h.k.info({
+                                                content: a.info1
                                             }), e.abrupt("return");
                                         case 11:
                                             return e.next = 13, t.bnxContractNew.methods.balanceOf(d).call();
                                         case 13:
-                                            if (n = e.sent, !((Number(n) / Math.pow(10, 18)).toFixed(4) < 1)) {
+                                            if (l = e.sent, !((Number(l) / Math.pow(10, 18)).toFixed(4) < 1)) {
                                                 e.next = 17;
                                                 break
                                             }
-                                            return x.k.info({
-                                                content: "BNX\u4f59\u989d\u4e0d\u8db3"
+                                            return h.k.info({
+                                                content: a.info2
                                             }), e.abrupt("return");
                                         case 17:
                                             return e.next = 19, t.NewPlayInfoContract.methods.payValue().call().catch((function(e) {
                                                 return console.log(e)
                                             }));
                                         case 19:
-                                            return l = e.sent, e.next = 22, t.NewPlayInfoContract.methods.bnbValue().call().catch((function(e) {
+                                            return b = e.sent, e.next = 22, t.NewPlayInfoContract.methods.bnbValue().call().catch((function(e) {
                                                 return console.log(e)
                                             }));
                                         case 22:
-                                            return b = e.sent, e.next = 25, t.NewPlayInfoContract.methods.payBnxValue().call().catch((function(e) {
+                                            return s = e.sent, e.next = 25, t.NewPlayInfoContract.methods.payBnxValue().call().catch((function(e) {
                                                 return console.log(e)
                                             }));
                                         case 25:
-                                            s = e.sent, c = d + (new Date).getTime(), !r || 5 !== a && 10 !== a ? (x.k.info({
-                                                content: "\u62bd\u5361\u4e2d, \u8bf7\u8010\u5fc3\u7b49\u5f85",
+                                            c = e.sent, o = d + (new Date).getTime(), !i || 5 !== r && 10 !== r ? (h.k.info({
+                                                content: a.info3,
                                                 duration: 20
-                                            }), t.NewPlayInfoContract.methods.newPlayerTrade(l, s, c).send({
+                                            }), t.NewPlayInfoContract.methods.newPlayerTrade(b, c, o).send({
                                                 from: d,
-                                                value: b
+                                                value: s
                                             }).then((function(e) {
-                                                f(d, c, a, r)
+                                                f(d, o, r, i)
                                             })).catch((function(e) {
                                                 return console.log(e)
-                                            }))) : (x.k.info({
-                                                    content: "\u62bd\u5361\u4e2d, \u8bf7\u8010\u5fc3\u7b49\u5f85",
+                                            }))) : S(.001, d, (function() {
+                                                h.k.info({
+                                                    content: a.info3,
                                                     duration: 20
-                                                }), t.NewPlayInfoContract.methods.newPlayerTrade(l, s, c).send({
+                                                }), t.NewPlayInfoContract.methods.newPlayerTrade(b, c, o).send({
                                                     from: d,
-                                                    value: b
+                                                    value: s
                                                 }).then((function(e) {
-                                                    f(d, c, a, r)
+                                                    f(d, o, r, i)
                                                 })).catch((function(e) {
                                                     return console.log(e)
-                                                })))
-                                            , e.next = 33;
+                                                }))
+                                            })), e.next = 33;
                                             break;
                                         case 30:
                                             e.prev = 30, e.t0 = e.catch(3), console.log(e.t0);
@@ -3156,45 +3389,56 @@
                                 }), 3e3) : y(r, d, i)
                             }))
                         },
-                        y = function(e, a, r) {
-                            x.k.info({
-                                content: "\u5df2\u51fa\u5361, \u7a0d\u540e\u8bf7\u67e5\u770b"
+                        y = function(e, r, d) {
+                            h.k.info({
+                                content: a.info4
                             }), t.NewPlayInfoContract.methods.reqsPlayerToken(e).call().then((function(e) {
-                                t.NewPlayInfoContract.methods.getPlayerInfoBySet(e).call().then((function(d) {
+                                t.NewPlayInfoContract.methods.getPlayerInfoBySet(e).call().then((function(a) {
                                     var t = {
-                                        career_address: d[1],
-                                        strength: Number(d[0][0]),
-                                        agility: Number(d[0][1]),
-                                        physique: Number(d[0][2]),
-                                        volition: Number(d[0][3]),
-                                        brains: Number(d[0][4]),
-                                        charm: Number(d[0][5]),
-                                        level: Number(d[0][6]),
-                                        total: Number(d[0][0]) + Number(d[0][1]) + Number(d[0][2]) + Number(d[0][3]) + Number(d[0][4]) + Number(d[0][5]),
+                                        career_address: a[1],
+                                        strength: Number(a[0][0]),
+                                        agility: Number(a[0][1]),
+                                        physique: Number(a[0][2]),
+                                        volition: Number(a[0][3]),
+                                        brains: Number(a[0][4]),
+                                        charm: Number(a[0][5]),
+                                        level: Number(a[0][6]),
+                                        total: Number(a[0][0]) + Number(a[0][1]) + Number(a[0][2]) + Number(a[0][3]) + Number(a[0][4]) + Number(a[0][5]),
                                         token_id: e
                                     };
-                                    c([].concat(Object(T.a)(b), [t])), a > 1 && o(a - 1, r)
+                                    s([].concat(Object(w.a)(b), [t])), r > 1 && o(r - 1, d)
                                 }))
                             }))
                         };
-                    return Object(k.jsxs)(ra, {
-                        children: [Object(k.jsx)(x.s.Title, {
+                    return Object(T.jsxs)(ya, {
+                        children: [Object(T.jsx)(h.s.Title, {
                             style: {
                                 textAlign: "center"
                             },
                             children: a.title
-                        }), Object(k.jsx)(ke, {
+                        }), Object(T.jsx)(je, {
                             address: d,
                             nowaddress: r,
                             contractss: i
-                        }), Object(k.jsxs)("div", {
+                        }), Object(T.jsx)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 5
+                            },
+                            children: Object(T.jsx)("a", {
+                                href: "https://game.binaryx.pro",
+                                target: "_blank",
+                                children: "BinaryX"
+                            })
+                        }), Object(T.jsxs)("div", {
                             style: {
                                 display: "flex",
                                 justifyContent: "center",
                                 margin: 20,
                                 flexWrap: "wrap"
                             },
-                            children: [Object(k.jsx)(x.c, {
+                            children: [Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
@@ -3203,7 +3447,7 @@
                                     return o(1, !1)
                                 },
                                 children: a.onecard
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
@@ -3212,7 +3456,7 @@
                                     return o(5, !0)
                                 },
                                 children: a.fivecard
-                            }), Object(k.jsx)(x.c, {
+                            }), Object(T.jsx)(h.c, {
                                 type: "primary",
                                 style: {
                                     margin: 3
@@ -3222,27 +3466,510 @@
                                 },
                                 children: a.tencard
                             })]
-                        }), Object(k.jsx)("p", {
+                        }), Object(T.jsx)("p", {
                             style: {
                                 width: "100%",
                                 textAlign: "center"
                             },
-                            children: ""
-                        }), Object(k.jsx)(x.q, {
+                            children: a.cardnote
+                        }), Object(T.jsx)(h.q, {
                             rowKey: function(e) {
                                 return e.token_id
                             },
-                            columns: A() ? ve : he,
+                            columns: v() ? we : qe,
                             dataSource: b,
                             bordered: !0
                         })]
                     })
                 },
-                ta = r(131),
-                ia = r(325),
-                na = r(324),
-                la = r.n(na);
-            ta.a.ToolCat = {
+                _a = r(131),
+                pa = r(324),
+                Fa = r(323),
+                Da = r.n(Fa),
+                Ca = ["common28.d400cf54.png", "common22.ad937935.png", "epic9.31b2f1b3.png", "common19.d4cb3cb4.png", "epic8.03ee8319.png", "rare24.b4e99e1e.png", "rare17.8f0e232d.png", "epic3.b31f8525.png", "common13.06b8e45b.png", "legendary3.04764058.png", "rare18.db1abbfe.png", "/epic6.0412bf4e.png", "legendary4.c6fb71c4.png", "genesis0.a010d26d.png", "rare24rare25.b4e99e1e.png", "legendary0.f269ff2d.png", "common17.7f7f313a.png", "epic0.421a5abc.png", "genesis6.3f8e167b.png", "common3.f976c191.png", "rare31.92f74953.png", "genesis5.dda008a1.png", "epic2.d07f3a9d.png", "common26.7dd6784e.png", "common9.201fb80f.png", "rare11.5d02f498.png", "token.f8251b7d.png", "rare5.7241f30e.png", "rare28.4ddc122e.png", "rare10.a52b30e2.png", "rare0.3258c81d.png", "rare9.98611082.png", "fire.873dc646.png", "rare26.1ee1b899.png", "common8.acf8dca9.png", "rare32.4ad532ca.png", "rare33.ccc024bf.png", "common1.14047e04.png", "rare21.656e98f6.png", "rare12.07b48810.png", "rare30.20d2b0d0.png", "common14.3e0aa01f.png", "common6.2c10cdd2.png", "legendary1.b6e3dd23.png", "rare34.79130070.png", "common16.c4b62395.png", "common4.c230c81a.png", "common18.95cfd619.png", "legendary2.7aaf8945.png", "genesis8.eebcabb1.png", "common0.9fc7d8f9.png", "genesis1.c8fe6d3e.png", "common12.7976a4af.png", "common20.93f5e4f1.png", "common7.4565d915.png", "rare6.4f072c0b.png", "genesis3.56d9ba0a.png", "rare3.c5c24646.png", "common2.e16da4ab.png", "genesis2.f07fbcab.png", "rare15.bba8d3a7.png", "epic7.5f6db5d2.png", "rare8.214c6dc6.png", "common21.0addd3fb.png", "rare16.66513a49.png", "rare29.70973b13.png", "epic4.4349c718.png", "fire-fill.649078b2.png", "epic11.83eb5d17.png", "rare2.def28e6f.png", "rare23.6e2e7929.png", "common27.5e739c9c.png", "rare27.1653b47b.png", "rare20.b7cd7452.png", "rare14.aa780057.png", "legendary5.8443ff60.png", "common24.d593b338.png", "rare13.d60b51b0.png", "common25.c390ad8d.png", "common5.ec24606a.png", "rare7.e8cf7bc4.png", "rare19.67a1f554.png", "genesis7.2becefa5.png", "rare25.45e6188d.png", "rare1.8f4cadf9.png", "common10.968e8998.png", "epic1.4035ee87.png", "rare4.eec03f98.png", "rare22.68665c5c.png", "genesis4.3f94faf5.png", "common23.e719acf4.png", "epic5.b3820a43.png", "common15.a5ac2ae0.png", "epic10.034af21f.png", "common11.42d7b57a.png"],
+                ma = h.n.Option,
+                xa = O.a.div(s || (s = Object(j.a)(["\n  width: 100%;\n  min-height: 100vh;\n  padding: 20px;\n"]))),
+                ha = function(e) {
+                    var a = e.address,
+                        r = e.contracts,
+                        d = Object(c.useState)([]),
+                        t = Object(m.a)(d, 2),
+                        i = t[0],
+                        n = t[1],
+                        l = Object(c.useState)([]),
+                        b = Object(m.a)(l, 2),
+                        s = b[0],
+                        o = b[1],
+                        f = Object(c.useState)([]),
+                        y = Object(m.a)(f, 2),
+                        u = y[0],
+                        _ = y[1],
+                        p = Object(c.useState)([]),
+                        F = Object(m.a)(p, 2),
+                        x = F[0],
+                        B = F[1],
+                        E = Object(c.useState)(!1),
+                        A = Object(m.a)(E, 2),
+                        g = A[0],
+                        k = A[1];
+                    Object(c.useEffect)((function() {
+                        _([]), n([]), q()
+                    }), [a]);
+                    var q = function() {
+                            var e = Object(C.a)(D.a.mark((function e() {
+                                var d, t, i, l, b, s;
+                                return D.a.wrap((function(e) {
+                                    for (;;) switch (e.prev = e.next) {
+                                        case 0:
+                                            if (a && r) {
+                                                e.next = 3;
+                                                break
+                                            }
+                                            return h.k.info({
+                                                content: "3\u79d2\u540e\u4e0d\u663e\u793a\u94b1\u5305\u5730\u5740, \u8bf7\u5237\u65b0\u7f51\u9875"
+                                            }), e.abrupt("return");
+                                        case 3:
+                                            return _([]), o([]), n([]), k(!0), e.prev = 7, e.next = 10, r.amzContract.methods.balanceOf(a).call({
+                                                from: a
+                                            }).catch((function(e) {
+                                                return k(!1)
+                                            }));
+                                        case 10:
+                                            if (0 != (d = e.sent)) {
+                                                e.next = 14;
+                                                break
+                                            }
+                                            return k(!1), e.abrupt("return");
+                                        case 14:
+                                            for (t = [], i = 0; i < d; i++) t.push(r.amzContract.methods.tokenOfOwnerByIndex(a, i).call({
+                                                from: a
+                                            }).catch((function(e) {
+                                                return console.log(e)
+                                            })));
+                                            return e.next = 18, Promise.all(t);
+                                        case 18:
+                                            return l = e.sent, t = [], l.forEach((function(e) {
+                                                t.push(r.amzContract.methods.getArmz(e).call({
+                                                    from: a
+                                                }).catch((function(e) {
+                                                    return console.log(e)
+                                                })))
+                                            })), e.next = 23, Promise.all(t);
+                                        case 23:
+                                            return b = e.sent, s = b.map(function() {
+                                                var e = Object(C.a)(D.a.mark((function e(d) {
+                                                    var t;
+                                                    return D.a.wrap((function(e) {
+                                                        for (;;) switch (e.prev = e.next) {
+                                                            case 0:
+                                                                return e.next = 2, r.fightContract.methods.getTimeFights(d.id).call({
+                                                                    from: a
+                                                                }).catch((function(e) {
+                                                                    return console.log(e)
+                                                                }));
+                                                            case 2:
+                                                                return t = e.sent, e.abrupt("return", {
+                                                                    info: d,
+                                                                    fights: t
+                                                                });
+                                                            case 4:
+                                                            case "end":
+                                                                return e.stop()
+                                                        }
+                                                    }), e)
+                                                })));
+                                                return function(a) {
+                                                    return e.apply(this, arguments)
+                                                }
+                                            }()), e.next = 27, Promise.all(s);
+                                        case 27:
+                                            b = e.sent, o(b.sort((function(e, a) {
+                                                return I(e) - I(a)
+                                            }))), k(!1), e.next = 35;
+                                            break;
+                                        case 32:
+                                            e.prev = 32, e.t0 = e.catch(7), k(!1);
+                                        case 35:
+                                        case "end":
+                                            return e.stop()
+                                    }
+                                }), e, null, [
+                                    [7, 32]
+                                ])
+                            })));
+                            return function() {
+                                return e.apply(this, arguments)
+                            }
+                        }(),
+                        I = function(e) {
+                            for (var a = parseInt(e.info.maxMana), r = 0; r < e.fights.length; r++) 0 !== e.fights[r] && Math.floor(Date.now() / 1e3) - e.fights[r] < 86400 && (a -= 1);
+                            return a
+                        };
+                    return Object(T.jsxs)(xa, {
+                        children: [Object(T.jsx)(h.s.Title, {
+                            style: {
+                                textAlign: "center"
+                            },
+                            children: "\u6273\u624b\u8155"
+                        }), Object(T.jsx)(je, {
+                            address: a
+                        }), Object(T.jsx)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 5
+                            },
+                            children: Object(T.jsx)("a", {
+                                href: "https://app.armzlegends.com/fight",
+                                target: "_blank",
+                                children: "Armzlegends\u5b98\u7f51"
+                            })
+                        }), Object(T.jsxs)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 20,
+                                flexWrap: "wrap"
+                            },
+                            children: [Object(T.jsx)(h.c, {
+                                type: "primary",
+                                style: {
+                                    margin: 3
+                                },
+                                onClick: function() {
+                                    a && r ? x.length > 0 ? S((x.length >= 30 ? 6e-4 : x.length >= 20 ? .001 : x.length >= 10 ? .002 : .003) * x.length, a, (function() {
+                                        x.forEach((function(e) {
+                                            for (var d = 0; d < I(e); d++) r.fightContract.methods.fight(e.info.id, e.info.boss || 0).send({
+                                                from: a,
+                                                gas: 5e5
+                                            }).then((function(e) {
+                                                return q()
+                                            })).catch((function(e) {
+                                                return console.log(e)
+                                            }))
+                                        }))
+                                    })) : h.k.error({
+                                        content: "\u8bf7\u9009\u62e9\u82f1\u96c4"
+                                    }) : h.k.error({
+                                        content: "\u8bf7\u5237\u65b0\u7f51\u9875"
+                                    })
+                                },
+                                children: "\u5f00\u6273"
+                            }), Object(T.jsx)(h.c, {
+                                type: "primary",
+                                disabled: 0 === s.filter((function(e) {
+                                    return I(e) == e.info.maxMana
+                                })).length,
+                                style: {
+                                    margin: 3
+                                },
+                                onClick: function() {
+                                    if (a && r) {
+                                        var e = s.filter((function(e) {
+                                            return I(e) == e.info.maxMana
+                                        }));
+                                        e.length > 0 ? S((e.length >= 30 ? 6e-4 : e.length >= 20 ? .001 : e.length >= 10 ? .002 : .003) * e.length, a, (function() {
+                                            e.forEach((function(e) {
+                                                for (var d = 0; d < I(e); d++) r.fightContract.methods.fight(e.info.id, e.info.boss || 0).send({
+                                                    from: a,
+                                                    gas: 5e5
+                                                }).then((function(e) {
+                                                    return q()
+                                                })).catch((function(e) {
+                                                    return console.log(e)
+                                                }))
+                                            }))
+                                        })) : h.k.error({
+                                            content: "\u8bf7\u9009\u62e9\u82f1\u96c4"
+                                        })
+                                    } else h.k.error({
+                                        content: "\u8bf7\u5237\u65b0\u7f51\u9875"
+                                    })
+                                },
+                                children: "\u6ee1\u4f53\u529b\u5f00\u6273"
+                            }), Object(T.jsx)(h.c, {
+                                type: "primary",
+                                style: {
+                                    margin: 3
+                                },
+                                onClick: q,
+                                children: "\u5237\u65b0"
+                            })]
+                        }), Object(T.jsx)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 20,
+                                flexWrap: "wrap"
+                            },
+                            children: Object(T.jsxs)(h.o, {
+                                style: {
+                                    display: "flex",
+                                    flexWrap: "wrap",
+                                    justifyContent: "center"
+                                },
+                                children: [Object(T.jsxs)(h.r, {
+                                    style: {
+                                        textAlign: "center"
+                                    },
+                                    children: ["\u624b\u8155 ", s.length]
+                                }), Object(T.jsxs)(h.r, {
+                                    color: "yellow",
+                                    style: {
+                                        textAlign: "center"
+                                    },
+                                    children: ["\u5269\u4f59\u6ee1\u4f53\u529b\u624b\u8155", " ", s.filter((function(e) {
+                                        return I(e) == e.info.maxMana
+                                    })).length]
+                                }), Object(T.jsxs)(h.r, {
+                                    color: "green",
+                                    style: {
+                                        textAlign: "center"
+                                    },
+                                    children: ["\u603b\u624b\u8155\u6b21\u6570", " ", s.reduce((function(e, a) {
+                                        return e + Number(a.info.maxMana)
+                                    }), 0)]
+                                }), Object(T.jsxs)(h.r, {
+                                    color: "red",
+                                    style: {
+                                        textAlign: "center"
+                                    },
+                                    children: ["\u5269\u4f59\u624b\u8155\u6b21\u6570", " ", s.reduce((function(e, a) {
+                                        return e + I(a)
+                                    }), 0)]
+                                })]
+                            })
+                        }), Object(T.jsx)("p", {
+                            style: {
+                                width: "100%",
+                                textAlign: "center"
+                            },
+                            children: ""
+                        }), i.length > 0 ? Object(T.jsx)("div", {
+                            style: {
+                                display: "flex",
+                                justifyContent: "center",
+                                margin: 5,
+                                flexWrap: "wrap"
+                            },
+                            children: Object(T.jsxs)("p", {
+                                children: ["\u5df2\u9009\u4e2d: ", i.length]
+                            })
+                        }) : "", Object(T.jsx)(h.q, {
+                            loading: g,
+                            rowKey: function(e) {
+                                return e.info.id
+                            },
+                            columns: v() ? [{
+                                title: "\u624b\u8155",
+                                dataIndex: "image",
+                                render: function(e, a) {
+                                    var r = Ca.filter((function(e) {
+                                        return -1 != e.indexOf(a.info.image)
+                                    }));
+                                    return Object(T.jsx)("img", {
+                                        src: "https://app.armzlegends.com/img/".concat(r[0] || "MISC_EARN.32a6591b.png"),
+                                        style: {
+                                            width: 30,
+                                            height: 30
+                                        }
+                                    })
+                                }
+                            }, {
+                                title: "\u4f53\u529b",
+                                dataIndex: "mana",
+                                sorter: function(e, a) {
+                                    return I(e) - I(a)
+                                },
+                                render: function(e, a) {
+                                    return Object(T.jsx)("span", {
+                                        children: I(a)
+                                    })
+                                }
+                            }, {
+                                title: "\u5012\u8ba1\u65f6",
+                                dataIndex: "djs",
+                                render: function(e, a) {
+                                    var r = (Math.floor(Date.now() / 1e3) - (a.fights[a.fights.length - 1] || a.info.lastFight)) / 3600;
+                                    return Object(T.jsx)("span", {
+                                        children: (a.info.hourMana - r < 0 ? 0 : a.info.hourMana - r).toFixed(2)
+                                    })
+                                }
+                            }, {
+                                title: "BOSS",
+                                render: function(e, a) {
+                                    return Object(T.jsxs)(h.n, {
+                                        size: "small",
+                                        defaultValue: 0,
+                                        onChange: function(e) {
+                                            a.info.boss = e
+                                        },
+                                        children: [Object(T.jsx)(ma, {
+                                            value: 0,
+                                            children: "\u7b80\u5355"
+                                        }, 0), Object(T.jsx)(ma, {
+                                            value: 1,
+                                            children: "\u666e\u901a"
+                                        }, 1), Object(T.jsx)(ma, {
+                                            value: 2,
+                                            children: "\u56f0\u96be"
+                                        }, 2)]
+                                    })
+                                }
+                            }] : [{
+                                title: "ID",
+                                dataIndex: "id",
+                                sorter: function(e, a) {
+                                    return e.info.id - a.info.id
+                                },
+                                render: function(e, a) {
+                                    return Object(T.jsx)("span", {
+                                        children: a.info.id
+                                    })
+                                }
+                            }, {
+                                title: "\u624b\u8155",
+                                dataIndex: "image",
+                                render: function(e, a) {
+                                    var r = Ca.filter((function(e) {
+                                        return -1 != e.indexOf(a.info.image)
+                                    }));
+                                    return Object(T.jsx)("img", {
+                                        src: "https://app.armzlegends.com/img/".concat(r[0] || "MISC_EARN.32a6591b.png"),
+                                        style: {
+                                            width: 40,
+                                            height: 40
+                                        }
+                                    })
+                                }
+                            }, {
+                                title: "\u4f53\u529b",
+                                dataIndex: "mana",
+                                sorter: function(e, a) {
+                                    return I(e) - I(a)
+                                },
+                                render: function(e, a) {
+                                    var r = I(a);
+                                    return Object(T.jsxs)("span", {
+                                        style: {
+                                            display: "flex",
+                                            alignItems: "center"
+                                        },
+                                        children: [r, "/", a.info.maxMana, r === a.info.maxMana ? Object(T.jsx)(h.r, {
+                                            color: "yellow",
+                                            children: "\u6ee1"
+                                        }) : ""]
+                                    })
+                                }
+                            }, {
+                                title: "\u6062\u590d\u4f53\u529b(\u5c0f\u65f6)",
+                                dataIndex: "hourMana",
+                                sorter: function(e, a) {
+                                    return e.info.hourMana - a.info.hourMana
+                                },
+                                render: function(e, a) {
+                                    return Object(T.jsx)("span", {
+                                        children: a.info.hourMana
+                                    })
+                                }
+                            }, {
+                                title: "\u5012\u8ba1\u65f6(\u5c0f\u65f6)",
+                                dataIndex: "djs",
+                                sorter: function(e, a) {
+                                    return Math.floor(Date.now() / 1e3) - (e.fights[e.fights.length - 1] || e.info.lastFight) - (Math.floor(Date.now() / 1e3) - (a.fights[a.fights.length - 1] || a.info.lastFight))
+                                },
+                                render: function(e, a) {
+                                    var r = (Math.floor(Date.now() / 1e3) - (a.fights[a.fights.length - 1] || a.info.lastFight)) / 3600;
+                                    return Object(T.jsx)("span", {
+                                        children: (a.info.hourMana - r < 0 ? 0 : a.info.hourMana - r).toFixed(2)
+                                    })
+                                }
+                            }, {
+                                title: "\u6700\u540e\u65f6\u95f4",
+                                dataIndex: "lastFight",
+                                sorter: function(e, a) {
+                                    return e.info.lastFight - a.info.lastFight
+                                },
+                                render: function(e, a) {
+                                    return Object(T.jsx)("span", {
+                                        children: new Date(1e3 * (a.fights[a.fights.length - 1] || a.info.lastFight)).toLocaleDateString()
+                                    })
+                                }
+                            }, {
+                                title: "rarity",
+                                dataIndex: "rarity",
+                                sorter: function(e, a) {
+                                    return e.info.rarity - a.info.rarity
+                                },
+                                render: function(e, a) {
+                                    return Object(T.jsx)("span", {
+                                        children: a.info.rarity
+                                    })
+                                }
+                            }, {
+                                title: "nbBoost",
+                                dataIndex: "nbBoost",
+                                sorter: function(e, a) {
+                                    return e.info.nbBoost - a.info.nbBoost
+                                },
+                                render: function(e, a) {
+                                    return Object(T.jsx)("span", {
+                                        children: a.info.nbBoost
+                                    })
+                                }
+                            }, {
+                                title: "boostWinrate",
+                                dataIndex: "boostWinrate",
+                                sorter: function(e, a) {
+                                    return e.info.boostWinrate - a.info.boostWinrate
+                                },
+                                render: function(e, a) {
+                                    return Object(T.jsx)("span", {
+                                        children: a.info.boostWinrate
+                                    })
+                                }
+                            }, {
+                                title: "\u9009\u62e9BOSS",
+                                render: function(e, a) {
+                                    return Object(T.jsxs)(h.n, {
+                                        size: "small",
+                                        defaultValue: 0,
+                                        onChange: function(e) {
+                                            a.info.boss = e
+                                        },
+                                        children: [Object(T.jsx)(ma, {
+                                            value: 0,
+                                            children: "\u7b80\u5355"
+                                        }, 0), Object(T.jsx)(ma, {
+                                            value: 1,
+                                            children: "\u666e\u901a"
+                                        }, 1), Object(T.jsx)(ma, {
+                                            value: 2,
+                                            children: "\u56f0\u96be"
+                                        }, 2)]
+                                    })
+                                }
+                            }],
+                            dataSource: s,
+                            pagination: {
+                                formatPageText: !v()
+                            },
+                            rowSelection: {
+                                selectedRowKeys: u,
+                                onChange: function(e, a) {
+                                    B(a), _(e)
+                                },
+                                getCheckboxProps: function(e) {
+                                    return {
+                                        disabled: 0 === I(e)
+                                    }
+                                }
+                            },
+                            bordered: !0
+                        })]
+                    })
+                };
+            _a.a.ToolCat = {
                 AppTitle: "\u5de5\u5177\u732b",
                 dark: "\u6697\u8272\u6a21\u5f0f",
                 light: "\u4eae\u8272\u6a21\u5f0f",
@@ -3252,16 +3979,23 @@
                     hero: "\u6211\u7684\u82f1\u96c4",
                     wankuang: "\u65e5\u5e38\u6316\u77ff",
                     maoxian: "\u5192\u9669",
-                    dibanjia: "\u5730\u677f\u4ef7"
+                    dibanjia: "\u5730\u677f\u4ef7",
+                    Armzlegends: "\u6273\u624b\u8155"
                 },
                 nowaddress: "\u5f53\u524d\u5730\u5740",
                 card: {
                     title: "\u62bd\u5361\u66b4\u5bcc",
                     onecard: "\u5355\u62bd",
                     fivecard: "\u4e94\u8fde\u62bd",
-                    tencard: "\u5341\u8fde\u62bd"
-                }
-            }, ia.a.ToolCat = {
+                    tencard: "\u5341\u8fde\u62bd",
+                    cardnote: "",
+                    info1: "\u4eca\u65e5\u62bd\u5361\u6b21\u6570\u5df2\u7528\u5b8c, \u8bf7\u6362\u5e10\u53f7\u7ee7\u7eed",
+                    info2: "BNX\u4f59\u989d\u4e0d\u8db3",
+                    info3: "\u62bd\u5361\u4e2d, \u8bf7\u8010\u5fc3\u7b49\u5f85",
+                    info4: "\u5df2\u51fa\u5361, \u7a0d\u540e\u8bf7\u67e5\u770b"
+                },
+                colums: {}
+            }, pa.a.ToolCat = {
                 AppTitle: "ToolCat",
                 dark: "Dark Mode",
                 light: "Light Mode",
@@ -3271,18 +4005,24 @@
                     hero: "My Hero",
                     wankuang: "Daily Dig",
                     maoxian: "Adventure",
-                    dibanjia: "Price Floor"
+                    dibanjia: "Price Floor",
+                    Armzlegends: "Armzlegends"
                 },
                 nowaddress: "Address",
                 card: {
                     title: "Card Rich",
                     onecard: "Single",
                     fivecard: "5 Smoke",
-                    tencard: "10 Smoke"
+                    tencard: "10 Smoke",
+                    cardnote: "",
+                    info1: "Today's card drawing times have been used up, please change your account to continue",
+                    info2: "Insufficient BNX balance",
+                    info3: "Drawing card, please wait patiently",
+                    info4: "Card has been issued, please check later"
                 }
             };
-            var ba = x.g.Content,
-                sa = {
+            var Ba = h.g.Content,
+                Ea = {
                     chainId: "0x38",
                     chainName: "BSC",
                     nativeCurrency: {
@@ -3293,53 +4033,53 @@
                     rpcUrls: ["https://bsc-dataseed3.binance.org"],
                     blockExplorerUrls: ["https://bscscan.com/"]
                 },
-                ca = function() {
-                    var e = Object(y.useMetamask)(),
+                Aa = function() {
+                    var e = Object(u.useMetamask)(),
                         a = e.connect,
                         r = e.metaState,
                         d = window.ethereum,
                         t = {
-                            zh_CN: ta.a,
-                            en_US: ia.a
+                            zh_CN: _a.a,
+                            en_US: pa.a
                         },
-                        i = Object(s.useState)(t[la.a.load("lang") || "zh_CN"]),
-                        n = Object(C.a)(i, 2),
+                        i = Object(c.useState)(t[Da.a.load("lang") || "zh_CN"]),
+                        n = Object(m.a)(i, 2),
                         l = n[0],
                         b = n[1],
-                        c = Object(s.useState)(""),
-                        o = Object(C.a)(c, 2),
+                        s = Object(c.useState)(""),
+                        o = Object(m.a)(s, 2),
                         f = o[0],
-                        u = o[1],
-                        _ = Object(s.useState)({}),
-                        F = Object(C.a)(_, 2),
-                        m = F[0],
-                        h = (F[1], Object(s.useState)(0)),
-                        B = Object(C.a)(h, 2),
-                        A = B[0];
+                        y = o[1],
+                        _ = Object(c.useState)({}),
+                        p = Object(m.a)(_, 2),
+                        F = p[0],
+                        x = (p[1], Object(c.useState)(0)),
+                        B = Object(m.a)(x, 2),
+                        E = B[0];
                     B[1];
-                    Object(s.useEffect)((function() {
-                        g(), T()
+                    Object(c.useEffect)((function() {
+                        g(), k()
                     }), []);
                     var g = function() {
-                            var e = Object(D.a)(p.a.mark((function e() {
+                            var e = Object(C.a)(D.a.mark((function e() {
                                 var t, i, n;
-                                return p.a.wrap((function(e) {
+                                return D.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (d.request({
                                                     method: "wallet_addEthereumChain",
-                                                    params: [sa]
+                                                    params: [Ea]
                                                 }).catch((function(e) {
                                                     console.log(e)
                                                 })), !r.isAvailable || r.isConnected) {
                                                 e.next = 16;
                                                 break
                                             }
-                                            return e.prev = 2, e.next = 5, a(E.a);
+                                            return e.prev = 2, e.next = 5, a(A.a);
                                         case 5:
-                                            return t = v(E.a.givenProvider), e.next = 8, t.eth.getAccounts();
+                                            return t = q(A.a.givenProvider), e.next = 8, t.eth.getAccounts();
                                         case 8:
-                                            (i = e.sent).length > 0 && (n = i[0], u(n)), q(), e.next = 16;
+                                            (i = e.sent).length > 0 && (n = i[0], y(n)), v(), e.next = 16;
                                             break;
                                         case 13:
                                             e.prev = 13, e.t0 = e.catch(2), console.log(e.t0);
@@ -3355,22 +4095,22 @@
                                 return e.apply(this, arguments)
                             }
                         }(),
-                        q = function() {
+                        v = function() {
                             window.ethereum.on("accountsChanged", (function(e) {
                                 if (e.length > 0) {
                                     var a = e[0];
-                                    u(a)
+                                    y(a)
                                 }
                             })), window.ethereum.on("chainChanged", (function(e) {}))
                         },
-                        T = function() {
-                            var e = v(E.a.givenProvider);
-                            m.VipContract = new e.eth.Contract(Ze, "0xB09122F5D5db0386E38deE7C08f99c03f0484C1e"), m.WarriorContract = new e.eth.Contract(Ne, Z), m.KatrinaContract = new e.eth.Contract(Ne, re), m.RobberContract = new e.eth.Contract(Ne, $), m.MageContract = new e.eth.Contract(Ne, ee), m.youxiaContract = new e.eth.Contract(Ne, ae), m.NewPlayInfoContract = new e.eth.Contract(Ve, de), m.MiningContract = new e.eth.Contract(Pe, te), m.NewMiningContract = new e.eth.Contract(Re, ie), m.LgongContract = new e.eth.Contract(Le, ne), m.BlacksmithContract = new e.eth.Contract(ze, le), m.HunterContract = new e.eth.Contract(Ge, be), m.BookmangerContract = new e.eth.Contract(Je, se), m.RangeworkContract = new e.eth.Contract(Ue, ce), m.saleContract = new e.eth.Contract(He, fe), m.saleContractNew = new e.eth.Contract(Xe, oe), m.goldContractNew = new e.eth.Contract(Qe, ye), m.bnxContractNew = new e.eth.Contract(Ye, ue), m.keyContractNew = new e.eth.Contract(Ye, _e), m.dungeonContract = new e.eth.Contract(Ke, Fe)
+                        k = function() {
+                            var e = q(A.a.givenProvider);
+                            F.VipContract = new e.eth.Contract(ia, "0xB09122F5D5db0386E38deE7C08f99c03f0484C1e"), F.fightContract = new e.eth.Contract(na, Be), F.tokenContract = new e.eth.Contract(ba, xe), F.amzContract = new e.eth.Contract(la, me), F.poolContract = new e.eth.Contract(sa, he), F.WarriorContract = new e.eth.Contract(Ge, ae), F.KatrinaContract = new e.eth.Contract(Ge, ie), F.RobberContract = new e.eth.Contract(Ge, re), F.MageContract = new e.eth.Contract(Ge, de), F.youxiaContract = new e.eth.Contract(Ge, te), F.NewPlayInfoContract = new e.eth.Contract(He, ne), F.MiningContract = new e.eth.Contract(Ke, le), F.NewMiningContract = new e.eth.Contract(Ue, be), F.LgongContract = new e.eth.Contract(Xe, se), F.BlacksmithContract = new e.eth.Contract(Qe, ce), F.HunterContract = new e.eth.Contract(Ye, oe), F.BookmangerContract = new e.eth.Contract(Ze, fe), F.RangeworkContract = new e.eth.Contract($e, ye), F.saleContract = new e.eth.Contract(aa, _e), F.saleContractNew = new e.eth.Contract(ra, ue), F.goldContractNew = new e.eth.Contract(da, pe), F.bnxContractNew = new e.eth.Contract(ta, Fe), F.keyContractNew = new e.eth.Contract(ta, De), F.dungeonContract = new e.eth.Contract(ea, Ce)
                         };
-                    return Object(k.jsx)(x.h, {
+                    return Object(T.jsx)(h.h, {
                         locale: l,
-                        children: Object(k.jsxs)(x.g, {
-                            children: [Object(k.jsx)(S, {
+                        children: Object(T.jsxs)(h.g, {
+                            children: [Object(T.jsx)(W, {
                                 menu: l.ToolCat.Menu,
                                 title: l.ToolCat.AppTitle,
                                 dark: l.ToolCat.dark,
@@ -3378,77 +4118,85 @@
                                 Language: l.ToolCat.Language,
                                 toogleLanguage: function(e) {
                                     return function() {
-                                        b(t[e || "zh_CN"]), la.a.save("lang", "zh_CN")
+                                        b(t[e || "zh_CN"]), Da.a.save("lang", "zh_CN")
                                     }
                                 }
-                            }), Object(k.jsx)(x.b, {
+                            }), Object(T.jsx)(h.b, {
                                 style: {
                                     paddingTop: 70
                                 },
                                 type: "warning",
-                                description: "BNX\u6d41\u91cf\u9ad8\u5cf0\u671f\u95f4\u4f1a\u5f00\u542f\u9632DDOS\u653b\u51fb, \u4f1a\u51fa\u73b0\u6570\u636e\u4e0d\u663e\u793a\u7684\u60c5\u51b5, \u7b49\u9ad8\u5cf0\u671f\u8fc7\u4e86\u5c31\u53ef\u4ee5\u4e86, \u53d1\u73b0GAS\u8fc7\u9ad8, \u8bf7\u6682\u65f6\u4e0d\u8981\u64cd\u4f5c\u90a3\u64cd\u4f5c, \u53e6\u5916, \u5de5\u5177\u732b\u5f00\u59cb\u6536\u8d39, \u8bf7\u6ce8\u610f\u7559\u610f\u63d0\u793a"
-                            }), Object(k.jsx)(ba, {
+                                description: "BNX\u6d41\u91cf\u9ad8\u5cf0\u671f\u95f4\u4f1a\u5f00\u542f\u9632DDOS\u653b\u51fb, \u4f1a\u51fa\u73b0\u6570\u636e\u4e0d\u663e\u793a\u7684\u60c5\u51b5, \u7b49\u9ad8\u5cf0\u671f\u8fc7\u4e86\u5c31\u53ef\u4ee5\u4e86, \u53d1\u73b0GAS\u8fc7\u9ad8, \u8bf7\u6682\u65f6\u4e0d\u8981\u64cd\u4f5c."
+                            }), Object(T.jsx)(Ba, {
                                 style: {
                                     paddingTop: 70,
                                     backgroundColor: "var(--semi-color-bg-1)"
                                 },
-                                children: Object(k.jsxs)(we.c, {
-                                    children: [Object(k.jsx)(we.a, {
+                                children: Object(T.jsxs)(ze.c, {
+                                    children: [Object(T.jsx)(ze.a, {
                                         path: "/",
-                                        element: Object(k.jsx)(Se, {
+                                        element: Object(T.jsx)(Me, {
                                             nowaddress: l.ToolCat.nowaddress,
                                             address: f,
-                                            contracts: m,
-                                            contractss: A
+                                            contracts: F,
+                                            contractss: E
                                         })
-                                    }), Object(k.jsx)(we.a, {
+                                    }), Object(T.jsx)(ze.a, {
                                         path: "/new",
-                                        element: Object(k.jsx)(da, {
+                                        element: Object(T.jsx)(ua, {
                                             card: l.ToolCat.card,
                                             nowaddress: l.ToolCat.nowaddress,
                                             address: f,
-                                            contracts: m,
-                                            contractss: A
+                                            contracts: F,
+                                            contractss: E
                                         })
-                                    }), Object(k.jsx)(we.a, {
+                                    }), Object(T.jsx)(ze.a, {
                                         path: "/hero",
-                                        element: Object(k.jsx)(Se, {
+                                        element: Object(T.jsx)(Me, {
                                             nowaddress: l.ToolCat.nowaddress,
                                             address: f,
-                                            contracts: m,
-                                            contractss: A
+                                            contracts: F,
+                                            contractss: E
                                         })
-                                    }), Object(k.jsx)(we.a, {
+                                    }), Object(T.jsx)(ze.a, {
                                         path: "/gold",
-                                        element: Object(k.jsx)(We, {
+                                        element: Object(T.jsx)(Re, {
                                             nowaddress: l.ToolCat.nowaddress,
                                             address: f,
-                                            contracts: m,
-                                            contractss: A
+                                            contracts: F,
+                                            contractss: E
                                         })
-                                    }), Object(k.jsx)(we.a, {
+                                    }), Object(T.jsx)(ze.a, {
                                         path: "/low",
-                                        element: Object(k.jsx)(Oe, {
+                                        element: Object(T.jsx)(Je, {
                                             nowaddress: l.ToolCat.nowaddress,
                                             address: f,
-                                            contracts: m,
-                                            contractss: A
+                                            contracts: F,
+                                            contractss: E
                                         })
-                                    }), Object(k.jsx)(we.a, {
+                                    }), Object(T.jsx)(ze.a, {
                                         path: "/mx",
-                                        element: Object(k.jsx)(aa, {
+                                        element: Object(T.jsx)(fa, {
                                             nowaddress: l.ToolCat.nowaddress,
                                             address: f,
-                                            contracts: m,
-                                            contractss: A
+                                            contracts: F,
+                                            contractss: E
+                                        })
+                                    }), Object(T.jsx)(ze.a, {
+                                        path: "/shou",
+                                        element: Object(T.jsx)(ha, {
+                                            nowaddress: l.ToolCat.nowaddress,
+                                            address: f,
+                                            contracts: F,
+                                            contractss: E
                                         })
                                     })]
                                 })
-                            }), Object(k.jsx)(x.a, {})]
+                            }), Object(T.jsx)(h.a, {})]
                         })
                     })
                 },
-                oa = Object(u.a)({
+                ga = Object(_.a)({
                     apiKey: "AIzaSyAfA970qMp5tM0hbrLVwtaFaToYz1bnCNA",
                     authDomain: "toolcat-28074.firebaseapp.com",
                     projectId: "toolcat-28074",
@@ -3457,10 +4205,10 @@
                     appId: "1:778492543794:web:986c0f27f7e2034985cd2b",
                     measurementId: "G-V6RF47HVR9"
                 });
-            Object(_.a)(oa), f.a.render(Object(k.jsx)(c.a.StrictMode, {
-                children: Object(k.jsx)(h.a, {
-                    children: Object(k.jsx)(y.MetamaskStateProvider, {
-                        children: Object(k.jsx)(ca, {})
+            Object(p.a)(ga), y.a.render(Object(T.jsx)(o.a.StrictMode, {
+                children: Object(T.jsx)(B.a, {
+                    children: Object(T.jsx)(u.MetamaskStateProvider, {
+                        children: Object(T.jsx)(Aa, {})
                     })
                 })
             }), document.getElementById("root"))
@@ -3468,7 +4216,7 @@
         186: function(e) {
             e.exports = JSON.parse('[{"inputs":[{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"symbol","type":"string"},{"internalType":"string","name":"_baseUri","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_addr","type":"address"},{"indexed":false,"internalType":"bool","name":"_access","type":"bool"}],"name":"AccessAllowed","type":"event","signature":"0xdaa6f74aee7ee67b019171c24fdcfc6d981c279df198c623367e87dd8dce375e"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event","signature":"0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event","signature":"0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event","signature":"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event","signature":"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x095ea7b3"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x70a08231"},{"inputs":[],"name":"baseUri","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x9abc8320"},{"inputs":[{"internalType":"uint256","name":"_playerId","type":"uint256"}],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x42966c68"},{"inputs":[{"internalType":"address","name":"player","type":"address"}],"name":"createPlayer","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function","signature":"0xe8ace5d7"},{"inputs":[{"internalType":"uint256","name":"_playerId","type":"uint256"}],"name":"exist","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x4ebbc92a"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x081812fc"},{"inputs":[{"internalType":"address","name":"_addr","type":"address"}],"name":"grantAccess","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x0ae5e739"},{"inputs":[{"internalType":"address","name":"_addr","type":"address"}],"name":"hasAccess","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x95a078e8"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function","constant":true,"signature":"0xe985e9c5"},{"inputs":[{"internalType":"uint256","name":"_playerId","type":"uint256"},{"internalType":"address","name":"user","type":"address"}],"name":"isApprovedOrOwner","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function","constant":true,"signature":"0xf6c4c9c1"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x06fdde03"},{"inputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"address","name":"","type":"address"},{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"bytes","name":"","type":"bytes"}],"name":"onERC721Received","outputs":[{"internalType":"bytes4","name":"","type":"bytes4"}],"stateMutability":"nonpayable","type":"function","signature":"0x150b7a02"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x8da5cb5b"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x6352211e"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x715018a6"},{"inputs":[{"internalType":"address","name":"_addr","type":"address"}],"name":"revokeAccess","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x85e68531"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x42842e0e"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0xb88d4fde"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0xa22cb465"},{"inputs":[{"internalType":"string","name":"uri","type":"string"}],"name":"setBaseUri","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0xa0bcfc7f"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x01ffc9a7"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x95d89b41"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x4f6ccce7"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x2f745c59"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function","constant":true,"signature":"0xc87b56dd"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x18160ddd"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x23b872dd"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0xf2fde38b"}]')
         },
-        323: function(e) {
+        322: function(e) {
             e.exports = JSON.parse('[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"delegator","type":"address"},{"indexed":true,"internalType":"address","name":"fromDelegate","type":"address"},{"indexed":true,"internalType":"address","name":"toDelegate","type":"address"}],"name":"DelegateChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"delegate","type":"address"},{"indexed":false,"internalType":"uint256","name":"previousBalance","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"newBalance","type":"uint256"}],"name":"DelegateVotesChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"DELEGATION_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"DOMAIN_TYPEHASH","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_addMinter","type":"address"}],"name":"addMinter","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"uint32","name":"","type":"uint32"}],"name":"checkpoints","outputs":[{"internalType":"uint32","name":"fromBlock","type":"uint32"},{"internalType":"uint256","name":"votes","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_delMinter","type":"address"}],"name":"delMinter","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"delegatee","type":"address"}],"name":"delegate","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"delegatee","type":"address"},{"internalType":"uint256","name":"nonce","type":"uint256"},{"internalType":"uint256","name":"expiry","type":"uint256"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"delegateBySig","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"getCurrentVotes","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_index","type":"uint256"}],"name":"getMinter","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getMinterLength","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"blockNumber","type":"uint256"}],"name":"getPriorVotes","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"isMinter","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_to","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"nonces","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"numCheckpoints","outputs":[{"internalType":"uint32","name":"","type":"uint32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}]')
         },
         476: function(e) {
@@ -3512,9 +4260,21 @@
         },
         489: function(e) {
             e.exports = JSON.parse('[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"stateMutability":"payable","type":"fallback"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"VIPS","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_t","type":"uint256"},{"internalType":"uint256","name":"_b","type":"uint256"}],"name":"addVIP","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"_t","type":"uint256"}],"name":"addVIP_Owner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"}],"name":"removeVIP_Owner","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}]')
+        },
+        490: function(e) {
+            e.exports = JSON.parse('[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bool","name":"win","type":"bool"},{"indexed":false,"internalType":"uint256","name":"rewards","type":"uint256"}],"name":"FightResults","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[{"internalType":"uint256","name":"armzId","type":"uint256"},{"internalType":"uint256","name":"boss","type":"uint256"}],"name":"fight","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"uint256","name":"","type":"uint256"}],"name":"fights","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"armzId","type":"uint256"}],"name":"getTimeFights","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"rarityWinRate","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setArmzAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setPancakePair","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setPoolAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"rarity","type":"uint256"},{"internalType":"uint8","name":"winrate","type":"uint8"}],"name":"setRarityWinrate","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}]')
+        },
+        491: function(e) {
+            e.exports = JSON.parse('[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"addAuthorization","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"armzs","outputs":[{"internalType":"string","name":"image","type":"string"},{"internalType":"uint256","name":"lastFight","type":"uint256"},{"internalType":"uint256","name":"mana","type":"uint256"},{"internalType":"uint8","name":"maxMana","type":"uint8"},{"internalType":"uint8","name":"hourMana","type":"uint8"},{"internalType":"uint8","name":"rarity","type":"uint8"},{"internalType":"uint8","name":"boostWinrate","type":"uint8"},{"internalType":"uint8","name":"nbBoost","type":"uint8"},{"internalType":"uint32","name":"id","type":"uint32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"player","type":"address"},{"internalType":"string","name":"image","type":"string"},{"internalType":"uint8","name":"maxMana","type":"uint8"},{"internalType":"uint8","name":"boostWinrate","type":"uint8"},{"internalType":"uint8","name":"nbBoost","type":"uint8"},{"internalType":"uint8","name":"rarity","type":"uint8"}],"name":"create","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"factoryAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"id","type":"uint256"}],"name":"getArmz","outputs":[{"components":[{"internalType":"string","name":"image","type":"string"},{"internalType":"uint256","name":"lastFight","type":"uint256"},{"internalType":"uint256","name":"mana","type":"uint256"},{"internalType":"uint8","name":"maxMana","type":"uint8"},{"internalType":"uint8","name":"hourMana","type":"uint8"},{"internalType":"uint8","name":"rarity","type":"uint8"},{"internalType":"uint8","name":"boostWinrate","type":"uint8"},{"internalType":"uint8","name":"nbBoost","type":"uint8"},{"internalType":"uint32","name":"id","type":"uint32"}],"internalType":"struct Armz","name":"","type":"tuple"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_owner","type":"address"}],"name":"getCollection","outputs":[{"internalType":"uint256[]","name":"","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_new","type":"address"}],"name":"setFactoryAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"components":[{"internalType":"string","name":"image","type":"string"},{"internalType":"uint256","name":"lastFight","type":"uint256"},{"internalType":"uint256","name":"mana","type":"uint256"},{"internalType":"uint8","name":"maxMana","type":"uint8"},{"internalType":"uint8","name":"hourMana","type":"uint8"},{"internalType":"uint8","name":"rarity","type":"uint8"},{"internalType":"uint8","name":"boostWinrate","type":"uint8"},{"internalType":"uint8","name":"nbBoost","type":"uint8"},{"internalType":"uint32","name":"id","type":"uint32"}],"internalType":"struct Armz","name":"armz","type":"tuple"}],"name":"update","outputs":[],"stateMutability":"nonpayable","type":"function"}]')
+        },
+        492: function(e) {
+            e.exports = JSON.parse('[{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}]')
+        },
+        493: function(e) {
+            e.exports = JSON.parse('[{"inputs":[{"internalType":"address","name":"_tokenAddress","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"inputs":[{"internalType":"address","name":"player","type":"address"},{"internalType":"uint256","name":"percent","type":"uint256"},{"internalType":"uint256","name":"priceToken","type":"uint256"}],"name":"calcRewards","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"player","type":"address"}],"name":"getInfos","outputs":[{"internalType":"uint256","name":"","type":"uint256"},{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_fees","type":"uint256"}],"name":"setBaseFees","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_price","type":"uint256"}],"name":"setBasePrice","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setFightAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setStakingAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setStorageAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_multiplicator","type":"uint256"}],"name":"setTaxMultiplicator","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"setTokenAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"withdraw","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"withdrawOwner","outputs":[],"stateMutability":"nonpayable","type":"function"}]')
         }
     },
     [
-        [1455, 1, 2]
+        [1459, 1, 2]
     ]
 ]);
